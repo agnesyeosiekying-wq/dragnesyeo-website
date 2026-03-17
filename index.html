@@ -18,7 +18,17 @@ nav a{margin-left:20px;text-decoration:none;color:#333;font-weight:500}
 
 .button{display:inline-block;margin-top:20px;padding:12px 22px;background:#2d6cdf;color:white;text-decoration:none;border-radius:8px}
 
-.section{max-width:1000px;margin:auto;padding:60px 20px}
+.section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 70px 20px;
+}
+.section:nth-child(even){
+    background:#ffffff;
+}
+.section:nth-child(odd){
+    background:#f4f6fb;
+}
 .card{background:white;padding:30px;border-radius:12px;box-shadow:0 8px 25px rgba(0,0,0,0.05);margin-bottom:25px}
 
 .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
@@ -46,21 +56,26 @@ nav a{margin-left:20px;text-decoration:none;color:#333;font-weight:500}
 <!-- HERO -->
 <section class="hero">
 <div class="hero-text">
-<h1>Natural Results. Ethical Care.</h1>
+<h1>Refined, Natural Results You Can Trust</h1>
+<p>Specialising in reconstructive and aesthetic plastic surgery with a patient-first approach.</p>
 <p>Consultant Plastic Surgeon focused on safe, evidence-based treatments and natural aesthetic outcomes.</p>
 <a class="button" href="https://wa.me/60189657735">WhatsApp Consultation</a>
 </div>
 
-<img src="https://via.placeholder.com/320x420" alt="Dr Agnes Yeo">
+<img src="YOUR_REAL_PHOTO_LINK">
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="section">
 <div class="card">
 <h2>About Dr Agnes Yeo</h2>
+
+<p><strong>Consultant Plastic Surgeon | Bukit Tinggi Medical Centre</strong></p>
+
 <p>
 Dr Agnes Yeo is a Consultant Plastic Surgeon at Bukit Tinggi Medical Centre. She provides reconstructive and aesthetic procedures with a strong emphasis on patient safety, ethical practice, and natural results.
 </p>
+
 </div>
 </section>
 
@@ -69,7 +84,10 @@ Dr Agnes Yeo is a Consultant Plastic Surgeon at Bukit Tinggi Medical Centre. She
 <div class="card">
 <h2>Services</h2>
 <div class="services">
-<div class="service-box">Scar Management</div>
+<div class="service-box">
+    <strong>Scar Management</strong><br>
+    Improving appearance and function of scars.
+</div>
 <div class="service-box">Burn Treatment</div>
 <div class="service-box">Breast Surgery</div>
 <div class="service-box">Skin Lesion Removal</div>
