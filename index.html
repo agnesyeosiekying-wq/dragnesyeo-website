@@ -10,14 +10,30 @@ body{font-family:'Segoe UI',Arial,sans-serif;margin:0;background:#f8f9fb;color:#
 header{background:#fff;padding:20px 40px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #eee}
 nav a{margin-left:20px;text-decoration:none;color:#333;font-weight:500}
 
-.hero{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:80px 20px;max-width:1100px;margin:auto}
-.hero-text{flex:1;min-width:280px}
-.hero-text h1{font-size:38px;margin-bottom:10px}
-.hero-text p{font-size:18px;color:#666}
-.hero img{width:320px;border-radius:20px}
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 20px;
+    max-width: 1100px;
+    margin: auto;
+    background: linear-gradient(to right, #f8fafc, #eef2f7);
+    border-radius: 20px;
+}
 
-.button{display:inline-block;margin-top:20px;padding:12px 22px;background:#2d6cdf;color:white;text-decoration:none;border-radius:8px}
-
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 26px;
+    background: linear-gradient(135deg, #2d6cdf, #4f8dfd);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 500;
+    box-shadow: 0 8px 20px rgba(45,108,223,0.2);
+}
+    
 .section {
     max-width: 1000px;
     margin: auto;
@@ -29,8 +45,13 @@ nav a{margin-left:20px;text-decoration:none;color:#333;font-weight:500}
 .section:nth-child(odd){
     background:#f4f6fb;
 }
-.card{background:white;padding:30px;border-radius:12px;box-shadow:0 8px 25px rgba(0,0,0,0.05);margin-bottom:25px}
-
+.card {
+    background: white;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+    margin-bottom: 30px;
+}
 .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
 .service-box{background:#f3f6fb;padding:15px;border-radius:8px;text-align:center}
 
@@ -57,12 +78,17 @@ nav a{margin-left:20px;text-decoration:none;color:#333;font-weight:500}
 <section class="hero">
 <div class="hero-text">
 <h1>Refined, Natural Results You Can Trust</h1>
+.hero-text h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
 <p>Specialising in reconstructive and aesthetic plastic surgery with a patient-first approach.</p>
 <p>Consultant Plastic Surgeon focused on safe, evidence-based treatments and natural aesthetic outcomes.</p>
 <a class="button" href="https://wa.me/60189657735">WhatsApp Consultation</a>
 </div>
 
-<img src="YOUR_REAL_PHOTO_LINK">
+<img src="https://via.placeholder.com/320x420">
 </section>
 
 <!-- ABOUT -->
