@@ -26,7 +26,17 @@ header {
     border-bottom: 1px solid #eee;
 }
 
-header strong {
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    height: 45px;
+}
+
+.logo-text {
     font-family: 'Playfair Display', serif;
     color: #2F4F6F;
     font-size: 20px;
@@ -39,17 +49,17 @@ nav a {
     font-weight: 500;
 }
 
-/* HERO (your new branding style) */
+/* HERO */
 .hero {
     padding: 140px 40px;
     background: linear-gradient(135deg, #6F8FA3, #DCE6EC);
-    color: #2F4F6F;
 }
 
 .hero-text h1 {
     font-family: 'Playfair Display', serif;
     font-size: 48px;
     margin-bottom: 20px;
+    color: #2F4F6F;
 }
 
 .hero-text p {
@@ -119,14 +129,20 @@ nav a {
 <body>
 
 <header>
-<div><strong>Dr Agnes Yeo</strong></div>
-<img src="https://raw.githubusercontent.com/agnesyeosiekying-wq/dragnesyeo-website/main/IMG_3259.jpeg" style="height:50px;">
+
+<div class="logo">
+<img src="https://raw.githubusercontent.com/agnesyeosiekying-wq/dragnesyeo-website/main/IMG_3259.jpeg">
+<div class="logo-text">Dr Agnes Yeo</div>
+</div>
+
+<nav>
 <a href="#about">About</a>
 <a href="#services">Services</a>
 <a href="#why">Why Choose Me</a>
 <a href="#education">Education</a>
 <a href="#contact">Contact</a>
 </nav>
+
 </header>
 
 <section class="hero">
@@ -141,11 +157,6 @@ Consultant Plastic Surgeon at Bukit Tinggi Medical Centre, specialising in recon
 <a class="button" href="https://wa.me/60189657735">
 WhatsApp Consultation
 </a>
-    
-</div>
-
-<div class="hero-image">
-<img src="https://raw.githubusercontent.com/agnesyeosiekying-wq/dragnesyeo-website/main/8ddf9aae-888f-4d45-9d44-47e1f29192b4.jpeg?raw=true" alt="Dr Agnes Yeo">
 </div>
 
 </section>
@@ -241,7 +252,5 @@ Follow Dr Agnes Yeo for educational content on scar management, burn care, and c
 ©️ 2026 Dr Agnes Yeo. All rights reserved.
 </div>
 
-</body>
-</html>
 </body>
 </html>
