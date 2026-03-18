@@ -6,60 +6,60 @@
 
 <style>
 body {
-    font-family: 'Inter', Arial, sans-serif;
-}
-    header{background:#fff;padding:20px 40px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #eee}
-nav a{margin-left:20px;text-decoration:none;color:#333;font-weight:500}
-
-/* HERO */
-.hero {
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 140px 40px;
-    width: 100%;
+    font-family: 'Inter', sans-serif;
     margin: 0;
-    overflow: hidden;
+    background: #F4F7FA;
+    color: #333;
 }
 
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('https://raw.githubusercontent.com/agnesyeosiekying-wq/dragnesyeo-website/main/profile.jpg') center/cover no-repeat;
-    filter: brightness(0.7);
-    z-index: 1;
+/* HEADER */
+header {
+    background: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
 }
 
-.hero-text {
-    position: relative;
-    z-index: 2;
-    max-width: 650px;
+header strong {
+    font-family: 'Playfair Display', serif;
+    color: #2F4F6F;
+    font-size: 20px;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #2F4F6F;
+    font-weight: 500;
+}
+
+/* HERO (your new branding style) */
+.hero {
+    padding: 140px 40px;
+    background: linear-gradient(135deg, #6F8FA3, #DCE6EC);
+    color: #2F4F6F;
 }
 
 .hero-text h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 52px;
-    line-height: 1.2;
+    font-size: 48px;
     margin-bottom: 20px;
-    color: white;
 }
 
 .hero-text p {
-    font-family: 'Inter', sans-serif;
     font-size: 18px;
-    color: #eee;
+    color: #444;
 }
 
+/* BUTTON */
 .button {
     display: inline-block;
     margin-top: 25px;
     padding: 14px 28px;
-    background: linear-gradient(135deg, #d4af37, #f1d77a);
-    color: #333;
+    background: #2F4F6F;
+    color: white;
     text-decoration: none;
     border-radius: 30px;
     font-weight: 500;
@@ -72,13 +72,6 @@ nav a{margin-left:20px;text-decoration:none;color:#333;font-weight:500}
     padding: 70px 20px;
 }
 
-.section:nth-child(even){
-    background:#ffffff;
-}
-.section:nth-child(odd){
-    background:#f4f6fb;
-}
-
 .card {
     background: white;
     padding: 35px;
@@ -88,41 +81,39 @@ nav a{margin-left:20px;text-decoration:none;color:#333;font-weight:500}
 }
 
 /* SERVICES */
-.services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:15px
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 15px;
 }
 
-.service-box{
-    background:#f3f6fb;
-    padding:18px;
-    border-radius:10px;
-    text-align:center
+.service-box {
+    background: #EAF1F5;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 /* HIGHLIGHT */
-.highlight{
-    background:#eef2ff;
-    padding:20px;
-    border-radius:12px;
-    margin-top:20px
+.highlight {
+    background: #EEF4F8;
+    padding: 20px;
+    border-radius: 12px;
 }
 
 /* FOOTER */
-.footer{
-    text-align:center;
-    padding:40px;
-    background:#fff;
-    color:#777
+.footer {
+    text-align: center;
+    padding: 40px;
+    background: white;
+    color: #777;
 }
-</style>
-</head>
 
 <body>
 
 <header>
 <div><strong>Dr Agnes Yeo</strong></div>
+<img src="https://github.com/agnesyeosiekying-wq/dragnesyeo-website/blob/main/IMG_3259.jpeg?raw=true" style="height:50px;">
 <nav>
 <a href="#about">About</a>
 <a href="#services">Services</a>
