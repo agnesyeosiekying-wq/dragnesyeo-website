@@ -49,37 +49,37 @@ nav a {
     font-weight: 500;
 }
 
-/* HERO */
+/* HERO (fixed version) */
 .hero {
     position: relative;
-    padding: 160px 40px;
-    color: white;
-    text-align: left;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    overflow: hidden;
 }
 
-/* Background image */
-.hero::before {
-    content: "";
+.hero-bg {
     position: absolute;
-    inset: 0;
-    background: url('https://raw.githubusercontent.com/agnesyeosiekying-wq/dragnesyeo-website/main/8ddf9aae-888f-4d45-9d44-47e1f29192b4.jpeg') center/cover no-repeat;
-    filter: brightness(0.6);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.75);
     z-index: 1;
 }
 
-/* Content stays on top */
 .hero-text {
     position: relative;
     z-index: 2;
+    color: white;
     max-width: 600px;
 }
 
-/* Make text nicer on dark background */
 .hero-text h1 {
     font-family: 'Playfair Display', serif;
     font-size: 48px;
     margin-bottom: 20px;
-    color: white;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
 .hero-text p {
@@ -92,8 +92,8 @@ nav a {
     display: inline-block;
     margin-top: 25px;
     padding: 14px 28px;
-    background: #2F4F6F;
-    color: white;
+    background: rgba(255,255,255,0.9);
+    color: #2F4F6F;
     text-decoration: none;
     border-radius: 30px;
     font-weight: 500;
@@ -165,7 +165,10 @@ nav a {
 
 </header>
 
+<!-- HERO -->
 <section class="hero">
+
+<img class="hero-bg" src="https://raw.githubusercontent.com/agnesyeosiekying-wq/dragnesyeo-website/main/8ddf9aae-888f-4d45-9d44-47e1f29192b4.jpeg">
 
 <div class="hero-text">
 <h1>Trusted Expertise. Natural Results.</h1>
