@@ -51,20 +51,40 @@ nav a {
 
 /* HERO */
 .hero {
-    padding: 140px 40px;
-    background: linear-gradient(135deg, #6F8FA3, #DCE6EC);
+    position: relative;
+    padding: 160px 40px;
+    color: white;
+    text-align: left;
 }
 
+/* Background image */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('https://raw.githubusercontent.com/agnesyeosiekying-wq/dragnesyeo-website/main/8ddf9aae-888f-4d45-9d44-47e1f29192b4.jpeg') center/cover no-repeat;
+    filter: brightness(0.6);
+    z-index: 1;
+}
+
+/* Content stays on top */
+.hero-text {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+}
+
+/* Make text nicer on dark background */
 .hero-text h1 {
     font-family: 'Playfair Display', serif;
     font-size: 48px;
     margin-bottom: 20px;
-    color: #2F4F6F;
+    color: white;
 }
 
 .hero-text p {
     font-size: 18px;
-    color: #444;
+    color: #f1f1f1;
 }
 
 /* BUTTON */
