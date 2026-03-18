@@ -56,7 +56,6 @@ nav a {
     display: flex;
     align-items: center;
     padding: 0 40px;
-    overflow: hidden;
 }
 
 /* Background image */
@@ -65,24 +64,25 @@ nav a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center top;
-    filter: brightness(0.75);
+
+    /* Adjust your face position */
+    object-position: 65% center;
+
     z-index: 1;
 }
 
-/* Overlay for better text readability */
-.hero::after {
-    content: "";
+/* Overlay */
+.hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(0,0,0,0.55), rgba(0,0,0,0.1));
-    z-index: 1;
+    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.1));
+    z-index: 2;
 }
 
 /* Content */
 .hero-text {
     position: relative;
-    z-index: 2;
+    z-index: 3;
     color: white;
     max-width: 600px;
 }
@@ -91,7 +91,6 @@ nav a {
     font-family: 'Playfair Display', serif;
     font-size: 48px;
     margin-bottom: 20px;
-    text-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
 .hero-text p {
@@ -99,7 +98,7 @@ nav a {
     color: #f1f1f1;
 }
 
-/* BUTTON (upgraded) */
+/* BUTTON */
 .button {
     display: inline-block;
     margin-top: 25px;
@@ -109,7 +108,6 @@ nav a {
     text-decoration: none;
     border-radius: 30px;
     font-weight: 500;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
 /* SECTIONS */
@@ -139,13 +137,6 @@ nav a {
     padding: 15px;
     border-radius: 10px;
     text-align: center;
-}
-
-/* HIGHLIGHT */
-.highlight {
-    background: #EEF4F8;
-    padding: 20px;
-    border-radius: 12px;
 }
 
 /* FOOTER */
@@ -182,6 +173,8 @@ nav a {
 <section class="hero">
 
 <img class="hero-bg" src="https://raw.githubusercontent.com/agnesyeosiekying-wq/dragnesyeo-website/main/CA530CA8-D92A-49FF-9917-09A727CB28C5.png">
+
+<div class="hero-overlay"></div>
 
 <div class="hero-text">
 <h1>Trusted Expertise. Natural Results.</h1>
@@ -243,44 +236,6 @@ Personalised treatments for natural results.
 </div>
 
 </div>
-</div>
-</section>
-
-<!-- WHY -->
-<section id="why" class="section">
-<div class="card">
-<h2>Why Choose Dr Agnes Yeo</h2>
-<div class="highlight">
-<p>✔ Patient-focused and ethical approach</p>
-<p>✔ Natural and balanced results</p>
-<p>✔ Evidence-based medical treatments</p>
-<p>✔ Clear communication and education</p>
-</div>
-</div>
-</section>
-
-<!-- EDUCATION -->
-<section id="education" class="section">
-<div class="card">
-<h2>Patient Education</h2>
-<p>
-Follow Dr Agnes Yeo for educational content on scar management, burn care, and common misconceptions in plastic surgery.
-</p>
-
-<div class="highlight">
-<p>• Will scars completely disappear?</p>
-<p>• What to do after a burn injury?</p>
-<p>• Myths about breast augmentation</p>
-</div>
-</div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section">
-<div class="card">
-<h2>Contact</h2>
-<p>Bukit Tinggi Medical Centre</p>
-<a class="button" href="https://wa.me/60189657735">Chat on WhatsApp</a>
 </div>
 </section>
 
