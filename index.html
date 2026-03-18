@@ -65,8 +65,11 @@ nav a {
     height: 100%;
     object-fit: cover;
 
-    /* Adjust your face position */
-    object-position: 65% 30%;
+        /* 👇 THIS is the key line */
+    transform: scale(0.85);
+
+    /* Adjust position after zoom */
+    object-position: 65% 20%;
 
     z-index: 1;
 }
