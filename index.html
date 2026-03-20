@@ -1,280 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr Agnes Yeo | Consultant Plastic Surgeon</title>
-    
-    <meta name="description" content="Dr. Agnes Yeo is a Consultant Plastic Surgeon at Bukit Tinggi Medical Centre, specializing in natural aesthetic results and reconstructive surgery.">
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <style>
-        html { scroll-behavior: smooth; }
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            background: #F4F7FA;
-            color: #333;
-            line-height: 1.6;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr Agnes Yeo | Consultant Plastic Surgeon</title>
 
-        /* HEADER */
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 999;
-            background: #0F203C;
-            padding: 10px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+<style>
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background: #F4F7FA;
+    color: #333;
+}
 
-        /* ✅ SVG LOGO FIX */
-        .logo img {
-            height: 80px;
-            width: auto;
-            filter: brightness(0) invert(1);
-        }
+/* HEADER */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: #0F203C;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        nav a {
-            margin-left: 24px;
-            text-decoration: none;
-            color: white;
-            font-size: 14px;
-            font-weight: 500;
-        }
+/* ✅ SVG LOGO */
+.logo img {
+    height: 80px;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
 
-        nav a:hover {
-            color: #8EACCD;
-        }
+/* NAV */
+nav a {
+    margin-left: 28px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 
-        /* HERO */
-        .hero {
-            position: relative;
-            height: 85vh;
-            display: flex;
-            align-items: center;
-            overflow: hidden;
-        }
+/* HERO */
+.hero {
+    position: relative;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
 
-        .hero-bg {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+.hero-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 70% center;
+    z-index: 1;
+}
 
-        .hero-overlay {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(
-                to right,
-                rgba(15, 32, 60, 0.9),
-                rgba(15, 32, 60, 0.7),
-                rgba(15, 32, 60, 0.3)
-            );
-        }
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(15,32,60,0.9), rgba(15,32,60,0.3));
+    z-index: 2;
+}
 
-        .hero-text {
-            position: relative;
-            margin-left: 8%;
-            margin-right: auto;
-            max-width: 480px;
-            padding: 40px;
-            border: 1px solid rgba(255,255,255,0.2);
-            color: white;
-            backdrop-filter: blur(6px);
-            background: rgba(255,255,255,0.05);
-        }
+/* HERO TEXT LEFT */
+.hero-text {
+    position: relative;
+    z-index: 3;
+    margin-left: 8%;
+    max-width: 480px;
+    padding: 40px;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    backdrop-filter: blur(6px);
+    background: rgba(255,255,255,0.05);
+}
 
-        .hero-text h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(32px, 5vw, 56px);
-            line-height: 1.1;
-            margin-bottom: 20px;
-        }
+.hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 56px;
+}
 
-        .hero-text p {
-            font-size: clamp(16px, 2vw, 20px);
-            margin-bottom: 30px;
-            opacity: 0.9;
-        }
+.hero-text p {
+    font-size: 18px;
+    color: #f1f1f1;
+}
 
-        .button {
-            display: inline-block;
-            padding: 14px 32px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-        }
+/* BUTTON */
+.button {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-weight: 500;
+    text-decoration: none;
+}
 
-        .hero-text .button {
-            border: 1px solid white;
-            color: white;
-            background: transparent;
-        }
+.hero-text .button {
+    border: 1px solid white;
+    color: white;
+}
 
-        .hero-text .button:hover {
-            background: white;
-            color: #2F4F6F;
-        }
+.hero-text .button:hover {
+    background: white;
+    color: #2F4F6F;
+}
 
-        .section {
-            max-width: 1100px;
-            margin: auto;
-            padding: 80px 20px;
-        }
+/* TRUST */
+.trust-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    text-align: center;
+}
 
-        .card {
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.03);
-        }
+.trust-item {
+    background: #EAF1F5;
+    padding: 18px;
+    border-radius: 12px;
+}
 
-        h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 32px;
-            margin-bottom: 25px;
-            color: #2F4F6F;
-        }
+/* SERVICES */
+.service-box {
+    background: #EAF1F5;
+    padding: 18px;
+    border-radius: 12px;
+    text-align: center;
+}
 
-        .trust-box {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
+/* DOCTOR */
+.doctor-card {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
 
-        .trust-item {
-            background: #EAF1F5;
-            padding: 20px;
-            border-radius: 12px;
-            text-align: center;
-            font-weight: 500;
-            color: #4A6A8A;
-        }
+.doctor-image img {
+    width: 260px;
+    border-radius: 12px;
+}
 
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
+/* SECTIONS */
+.section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 70px 20px;
+}
 
-        .service-box {
-            background: #F8FAFC;
-            padding: 25px;
-            border-radius: 15px;
-            text-align: center;
-            text-decoration: none;
-            color: #333;
-            border: 1px solid #EAF1F5;
-            transition: all 0.3s ease;
-        }
+.card {
+    background: white;
+    padding: 35px;
+    border-radius: 16px;
+}
 
-        .service-box:hover {
-            background: white;
-            border-color: #8EACCD;
-            transform: translateY(-5px);
-        }
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 15px;
+}
 
-        .doctor-card {
-            display: flex;
-            gap: 40px;
-            align-items: center;
-        }
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 40px;
+    background: white;
+    color: #777;
+}
 
-        .doctor-image img {
-            width: 300px;
-            border-radius: 15px;
-        }
+/* WHATSAPP */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 26px;
+    text-decoration: none;
+    z-index: 9999;
+}
 
-        .footer {
-            text-align: center;
-            padding: 60px 20px;
-            font-size: 14px;
-            color: #777;
-        }
+.whatsapp-float::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: rgba(37, 211, 102, 0.4);
+    border-radius: 50%;
+    animation: pulse 1.8s infinite;
+    z-index: -1;
+}
 
-        .whatsapp-float {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: #25D366;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 50px;
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-        }
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 0.7; }
+    70% { transform: scale(1.6); opacity: 0; }
+    100% { transform: scale(1); opacity: 0; }
+}
 
-        @media (max-width: 768px) {
-            header { padding: 10px 20px; }
+/* MOBILE */
+@media (max-width: 768px) {
 
-            .hero { height: 70vh; }
+header { padding: 8px 16px; }
 
-            .hero-text {
-                margin: 20px;
-                padding: 20px;
-            }
+.logo img { height: 55px; }
 
-            .doctor-card {
-                flex-direction: column;
-                text-align: center;
-            }
+nav { display: none; }
 
-            .doctor-image img {
-                width: 100%;
-                max-width: 280px;
-            }
+.hero {
+    height: auto;
+    padding: 100px 20px 60px;
+}
 
-            .whatsapp-float span { display: none; }
-            .whatsapp-float { padding: 15px; border-radius: 50%; }
-        }
-    </style>
+.hero-text {
+    margin: 20px;
+    padding: 20px;
+}
+
+.doctor-card {
+    flex-direction: column;
+    text-align: center;
+}
+
+.doctor-image img {
+    width: 180px;
+}
+
+}
+</style>
+
 </head>
 
 <body>
 
 <header>
-    <div class="logo">
-        <!-- ✅ SVG LOGO -->
-        <img src="IMG_3288.svg" alt="Dr Agnes Yeo Logo">
-    </div>
+<div class="logo">
+<!-- ✅ SVG LOGO -->
+<img src="IMG_3288.svg">
+</div>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-    <img class="hero-bg" src="https://raw.githubusercontent.com/agnesyeosiekying-wq/dragnesyeo-website/main/hero.png">
-    <div class="hero-overlay"></div>
+<img class="hero-bg" src="https://raw.githubusercontent.com/agnesyeosiekying-wq/dragnesyeo-website/main/hero.png">
+<div class="hero-overlay"></div>
 
-    <div class="hero-text">
-
-        <small style="letter-spacing:2px; opacity:0.7;">
-            CONSULTANT PLASTIC SURGEON
-        </small>
-
-        <h1>Enhancing Natural Beauty.<br>Not Changing Who You Are.</h1>
-
-        <p>
-            Personalized aesthetic and reconstructive care focused on harmony and natural-looking results.
-        </p>
-
-        <a class="button" href="https://wa.me/60189657735">
-            WhatsApp Consultation
-        </a>
-
-    </div>
+<div class="hero-text">
+<h1>Enhancing Natural Beauty.<br>Not Changing Who You Are.</h1>
+<p>Personalised aesthetic and reconstructive care focused on harmony and natural results.</p>
+<a class="button" href="https://wa.me/60189657735">WhatsApp Consultation</a>
+</div>
 </section>
+
+<!-- KEEP YOUR EXISTING SECTIONS BELOW (UNCHANGED) -->
+
+<div class="footer">© 2026 Dr Agnes Yeo</div>
+
+<a href="https://wa.me/60189657735" class="whatsapp-float">💬</a>
 
 </body>
 </html>
