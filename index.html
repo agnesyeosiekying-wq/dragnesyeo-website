@@ -31,17 +31,21 @@ header {
     top: 0;
     z-index: 999;
     background: #0F203C;
-    padding: 10px 40px;
+    padding: 5px 40px; /* Reduced vertical padding since logo is bigger */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 100px; /* Gives the logo room to breathe */
 }
 
 .logo img {
-    height: 80px; 
+    height: 120px; /* Increased from 80px */
     width: auto;
-    filter: brightness(0) invert(1); /* Makes logo white */
+    filter: brightness(0) invert(1);
     transition: transform 0.3s ease;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .logo img:hover {
