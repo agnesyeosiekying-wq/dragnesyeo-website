@@ -19,36 +19,19 @@ body {
 /* HEADER */
 header {
     background: white;
-    padding: 20px 40px;
+    padding: 18px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #eee;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-/* NEW LOGO STYLE */
-.logo-text {
-    font-family: 'Playfair Display', serif;
-    font-size: 22px;
-    color: #2F4F6F;
-    line-height: 1.2;
-}
-
-.logo-text span {
-    display: block;
-    font-family: 'Inter', sans-serif;
-    font-size: 12px;
-    color: #888;
-    letter-spacing: 1px;
+.logo img {
+    height: 65px; /* Bigger & premium */
 }
 
 nav a {
-    margin-left: 20px;
+    margin-left: 25px;
     text-decoration: none;
     color: #2F4F6F;
     font-weight: 500;
@@ -60,7 +43,7 @@ nav a {
     height: 90vh;
     display: flex;
     align-items: center;
-    padding: 0 40px;
+    padding: 0 60px;
     overflow: hidden;
 }
 
@@ -70,7 +53,7 @@ nav a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 70% center;
+    object-position: center;
     z-index: 1;
 }
 
@@ -78,7 +61,7 @@ nav a {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.1));
+    background: linear-gradient(to right, rgba(0,0,0,0.55), rgba(0,0,0,0.05));
     z-index: 2;
 }
 
@@ -165,11 +148,9 @@ nav a {
 
 <header>
 
+<!-- ✅ CLEAN LOGO ONLY -->
 <div class="logo">
-    <div class="logo-text">
-        Dr Agnes Yeo
-        <span>Plastic Surgeon</span>
-    </div>
+<img src="https://raw.githubusercontent.com/agnesyeosiekying-wq/dragnesyeo-website/main/1D70E359-F89D-444B-9A61-22F98D9767C1.png">
 </div>
 
 <nav>
@@ -185,7 +166,8 @@ nav a {
 <!-- HERO -->
 <section class="hero">
 
-<img class="hero-bg" src="https://raw.githubusercontent.com/agnesyeosiekying-wq/dragnesyeo-website/main/hero.png">
+<!-- ✅ YOUR NEW HERO IMAGE -->
+<img class="hero-bg" src="https://raw.githubusercontent.com/agnesyeosiekying-wq/dragnesyeo-website/main/Untitled%20design.png">
 
 <div class="hero-overlay"></div>
 
