@@ -26,26 +26,23 @@ body {
 }
 
 /* 2. HEADER */
-/* Updated Header to accommodate a larger logo */
 header {
     position: sticky;
     top: 0;
     z-index: 999;
     background: #0F203C;
-    padding: 15px 40px; /* Vertical padding increased slightly */
+    padding: 8px 40px;          /* reduced from 15px */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 100px; /* Ensures the header stays tall enough */
+    height: 90px;               /* fixed height */
 }
 
-/* Enlarged Logo */
 .logo img {
-    height: 140px; /* Increased from 80px to 140px */
+    height: 110px;              /* bigger but controlled */
     width: auto;
-    filter: brightness(0) invert(1); /* Keeps it white */
-    transition: transform 0.3s ease;
-    display: block;
+    filter: brightness(0) invert(1);
+    transform: translateY(2px); /* subtle vertical alignment fix */
 }
 
 /* Keeps the logo proportional on mobile */
@@ -60,11 +57,10 @@ header {
 }
 
 nav a {
-    margin-left: 24px;
-    text-decoration: none;
+    margin-left: 28px;
     color: white;
     font-size: 14px;
-    font-weight: 500;
+    letter-spacing: 0.5px;
 }
 
 /* 3. HERO SECTION (Cinematic/Director Style) */
