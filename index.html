@@ -141,8 +141,10 @@ nav a {
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 20px; /* ✅ move to bottom right */
+    left: auto;
+    transform: none;
+
     background: linear-gradient(135deg, #25D366, #1ebe5d);
     color: white;
     padding: 16px 26px;
@@ -156,7 +158,7 @@ nav a {
 }
 
 .whatsapp-float:hover {
-    transform: translateX(-50%) scale(1.05);
+    transform: scale(1.05);
 }
 
 /* MOBILE */
@@ -209,9 +211,11 @@ nav {
 
 /* WhatsApp mobile */
 .whatsapp-float {
-    width: 90%;
-    padding: 16px;
-    font-size: 16px;
+    right: 16px;
+    bottom: 16px;
+    width: auto;
+    padding: 14px 20px;
+    font-size: 14px;
 }
 
 }
