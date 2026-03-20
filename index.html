@@ -16,39 +16,41 @@ body {
     color: #333;
 }
 
-/* HEADER */
+/* HEADER (Premium) */
 header {
     position: sticky;
     top: 0;
     z-index: 999;
-    background: white;
-    padding: 18px 60px;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(8px);
+    padding: 18px 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
 .logo img {
-    height: 70px;
+    height: 85px;
 }
 
 /* NAV */
 nav a {
-    margin-left: 25px;
+    margin-left: 28px;
     text-decoration: none;
     color: #2F4F6F;
     font-weight: 500;
     font-size: 14px;
+    letter-spacing: 0.5px;
 }
 
 /* HERO */
 .hero {
     position: relative;
-    height: 90vh;
+    height: 92vh;
     display: flex;
     align-items: center;
-    padding: 0 80px;
+    padding: 0 90px;
     overflow: hidden;
 }
 
@@ -58,7 +60,7 @@ nav a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: right center; /* ensures your face shows nicely */
+    object-position: right center;
     z-index: 1;
 }
 
@@ -66,7 +68,7 @@ nav a {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(0,0,0,0.55), rgba(0,0,0,0.05));
+    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.1));
     z-index: 2;
 }
 
@@ -75,13 +77,14 @@ nav a {
     position: relative;
     z-index: 3;
     color: white;
-    max-width: 600px;
+    max-width: 620px;
 }
 
 .hero-text h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 52px;
+    font-size: 56px;
     margin-bottom: 20px;
+    line-height: 1.2;
 }
 
 .hero-text p {
@@ -92,13 +95,14 @@ nav a {
 /* BUTTON */
 .button {
     display: inline-block;
-    margin-top: 25px;
-    padding: 14px 28px;
-    background: rgba(255,255,255,0.95);
+    margin-top: 28px;
+    padding: 14px 30px;
+    background: white;
     color: #2F4F6F;
     text-decoration: none;
     border-radius: 30px;
     font-weight: 500;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
 /* SECTIONS */
@@ -125,8 +129,8 @@ nav a {
 
 .service-box {
     background: #EAF1F5;
-    padding: 15px;
-    border-radius: 10px;
+    padding: 18px;
+    border-radius: 12px;
     text-align: center;
 }
 
@@ -153,8 +157,6 @@ nav a {
 <nav>
 <a href="#about">About</a>
 <a href="#services">Services</a>
-<a href="#why">Why Choose Me</a>
-<a href="#education">Education</a>
 <a href="#contact">Contact</a>
 </nav>
 
@@ -163,13 +165,13 @@ nav a {
 <!-- HERO -->
 <section class="hero">
 
-<!-- ✅ FIXED IMAGE LINK -->
-<img class="hero-bg" src="https://raw.githubusercontent.com/agnesyeosiekying-wq/dragnesyeo-website/main/hero.png">
+<!-- ✅ WORKING IMAGE -->
+<img class="hero-bg" src="https://raw.githubusercontent.com/agnesyeosiekying-wq/dragnesyeo-website/main/Untitled%20design.png">
 
 <div class="hero-overlay"></div>
 
 <div class="hero-text">
-<h1>Trusted Expertise. Natural Results.</h1>
+<h1>Trusted Expertise.<br>Natural Results.</h1>
 
 <p>
 Consultant Plastic Surgeon at Bukit Tinggi Medical Centre, specialising in reconstructive and aesthetic procedures with a focus on safety, precision, and natural outcomes.
