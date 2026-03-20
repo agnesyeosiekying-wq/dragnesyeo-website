@@ -27,29 +27,24 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
 
-.logo img { height: 120px; }
+.logo img { height: 110px; }
 
-/* NAV */
 nav a {
-    margin-left: 28px;
+    margin-left: 24px;
     text-decoration: none;
     color: #2F4F6F;
     font-size: 14px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
 }
 
 /* HERO */
 .hero {
     position: relative;
-    height: 92vh;
+    height: 90vh;
     display: flex;
     align-items: center;
-    padding: 0 90px;
-    overflow: hidden;
+    padding: 0 80px;
 }
 
 .hero-bg {
@@ -57,107 +52,87 @@ nav a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 70% center;
-    z-index: 1;
 }
 
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.1));
-    z-index: 2;
+    background: rgba(0,0,0,0.5);
 }
 
 .hero-text {
     position: relative;
-    z-index: 3;
     color: white;
-    max-width: 620px;
+    max-width: 600px;
 }
 
 .hero-text h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 56px;
+    font-family: 'Playfair Display';
+    font-size: 52px;
 }
 
-.hero-text p {
-    font-size: 18px;
-    color: #f1f1f1;
-}
-
-/* BUTTON */
 .button {
     display: inline-block;
-    margin-top: 28px;
-    padding: 14px 30px;
+    margin-top: 20px;
+    padding: 14px 28px;
     background: white;
     color: #2F4F6F;
-    text-decoration: none;
     border-radius: 30px;
-    font-weight: 500;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    text-decoration: none;
 }
 
-/* TRUST */
-.trust-box {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 15px;
-    text-align: center;
-}
-
-.trust-item {
-    background: #EAF1F5;
-    padding: 18px;
-    border-radius: 12px;
-}
-
-/* SERVICE */
-.service-box {
-    background: #EAF1F5;
-    padding: 18px;
-    border-radius: 12px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.service-box:hover {
-    transform: translateY(-5px);
-}
-
-/* DOCTOR */
-.doctor-card {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    background: linear-gradient(135deg, #f8f9fb, #eef3f7);
-    padding: 40px;
-    border-radius: 20px;
-}
-
-.doctor-image img {
-    width: 260px;
-    border-radius: 12px;
-}
-
-/* SECTIONS */
+/* SECTION */
 .section {
     max-width: 1000px;
     margin: auto;
     padding: 70px 20px;
 }
 
-.card {
-    background: white;
-    padding: 35px;
-    border-radius: 16px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+/* TRUST */
+.trust-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 15px;
 }
 
+.trust-item {
+    background: #EAF1F5;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* SERVICES */
 .services {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
     gap: 15px;
+}
+
+.service-box {
+    background: #EAF1F5;
+    padding: 18px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+}
+
+/* DOCTOR */
+.doctor-card {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.doctor-image img {
+    width: 250px;
+    border-radius: 10px;
 }
 
 /* FOOTER */
@@ -171,43 +146,24 @@ nav a {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    background: #25D366;
+    color: white;
     width: 60px;
     height: 60px;
-    background: #25D366;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 26px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
 /* MOBILE */
-@media (max-width: 768px) {
-header { padding: 8px 16px; }
-.logo img { height: 55px; }
-nav { display: none; }
-
-.hero {
-    height: auto;
-    padding: 100px 20px 60px;
-}
-
-.hero-text {
-    background: rgba(0,0,0,0.3);
-    padding: 20px;
-    border-radius: 12px;
-}
-
-.hero-text h1 { font-size: 28px; }
+@media(max-width:768px){
+.hero { padding:20px; height:auto; }
+.hero-text h1 { font-size:28px; }
 
 .doctor-card {
     flex-direction: column;
     text-align: center;
-}
-
-.doctor-image img {
-    width: 180px;
 }
 }
 </style>
@@ -243,10 +199,10 @@ nav { display: none; }
 <!-- TRUST -->
 <section class="section">
 <div class="trust-box">
-<div class="trust-item">✔ Patient-centred care</div>
-<div class="trust-item">✔ Natural results</div>
-<div class="trust-item">✔ Safe techniques</div>
-<div class="trust-item">✔ Personalised plans</div>
+<div class="trust-item">Patient-centred care</div>
+<div class="trust-item">Natural results</div>
+<div class="trust-item">Safe techniques</div>
+<div class="trust-item">Personalised plans</div>
 </div>
 </section>
 
@@ -257,13 +213,8 @@ nav { display: none; }
 <h2>Featured Treatments</h2>
 
 <div class="services">
-<a href="breast.html" class="service-box">
-<strong>Breast Augmentation</strong>
-</a>
-
-<a href="tummy.html" class="service-box">
-<strong>Tummy Tuck</strong>
-</a>
+<a href="breast.html" class="service-box">Breast Augmentation</a>
+<a href="tummy.html" class="service-box">Tummy Tuck</a>
 </div>
 
 </div>
@@ -271,7 +222,7 @@ nav { display: none; }
 
 <!-- ABOUT -->
 <section id="about" class="section">
-<div class="doctor-card">
+<div class="card doctor-card">
 
 <div class="doctor-image">
 <img src="https://raw.githubusercontent.com/agnesyeosiekying-wq/dragnesyeo-website/main/hero.png">
@@ -279,8 +230,16 @@ nav { display: none; }
 
 <div>
 <h2>Dr Agnes Yeo</h2>
-<p>MRCS · MBBS · MS (Plastic Surgery)</p>
-<p>Consultant Plastic Surgeon at Bukit Tinggi Medical Centre</p>
+<p>
+MRCS (Edinburgh) · MBBS (IMU) · MS (Plastic Surgery, USM)<br>
+NSR Registered · LCP Certified<br>
+Member, MSPRS · MAA
+</p>
+
+<p>
+Consultant Plastic Surgeon at Bukit Tinggi Medical Centre with experience in reconstructive and aesthetic procedures, focusing on safe, natural and harmonious outcomes.
+</p>
+
 <a href="https://wa.me/60189657735" class="button">Book Consultation</a>
 </div>
 
@@ -293,14 +252,14 @@ nav { display: none; }
 
 <h2>Services</h2>
 
-<h3>Aesthetic</h3>
+<h3>Aesthetic Treatments</h3>
 <div class="services">
+<div class="service-box">Facial Aesthetics</div>
 <a href="breast.html" class="service-box">Breast Augmentation</a>
 <a href="tummy.html" class="service-box">Tummy Tuck</a>
-<div class="service-box">Facial Aesthetics</div>
 </div>
 
-<h3 style="margin-top:30px;">Reconstructive</h3>
+<h3 style="margin-top:30px;">Reconstructive Care</h3>
 <div class="services">
 <div class="service-box">Scar Management</div>
 <div class="service-box">Burn Care</div>
@@ -310,10 +269,32 @@ nav { display: none; }
 </div>
 </section>
 
+<!-- EDUCATION -->
+<section class="section">
+<div class="card">
+
+<h2>Patient Education</h2>
+
+<div class="services">
+<div class="service-box">
+Scars improvement<br><br>
+<a href="https://instagram.com/dragnesyeo" class="button">Learn More</a>
+</div>
+
+<div class="service-box">
+Burn care tips<br><br>
+<a href="https://tiktok.com/@dragnesyeo" class="button">Watch Video</a>
+</div>
+</div>
+
+</div>
+</section>
+
 <!-- CONTACT -->
 <section id="contact" class="section">
 <div class="card">
 <h2>Contact</h2>
+<p>Bukit Tinggi Medical Centre</p>
 <a class="button" href="https://wa.me/60189657735">WhatsApp</a>
 </div>
 </section>
