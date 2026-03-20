@@ -88,6 +88,60 @@ nav a {
     color: #f1f1f1;
 }
 
+/* TRUST SECTION */
+.trust-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    text-align: center;
+}
+
+.trust-item {
+    background: #EAF1F5;
+    padding: 18px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+/* DOCTOR CARD */
+.doctor-card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: #f8f9fb;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.doctor-image img {
+    width: 260px;
+    border-radius: 12px;
+}
+
+.doctor-content h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 5px;
+}
+
+.doctor-content h4 {
+    color: #2F4F6F;
+    margin-bottom: 15px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+.doctor-card {
+    flex-direction: column;
+    text-align: center;
+}
+
+.doctor-image img {
+    width: 180px;
+}
+
+}
+
 /* BUTTON */
 .button {
     display: inline-block;
@@ -271,7 +325,42 @@ WhatsApp Consultation
 </a>
 </div>
 </section>
+</section>  <!-- HERO ends -->
 
+<!-- WHY CHOOSE ME -->
+<section class="section">
+    <div class="trust-box">
+        <div class="trust-item">✔ Patient-centred and ethical care</div>
+        <div class="trust-item">✔ Focus on natural, balanced results</div>
+        <div class="trust-item">✔ Evidence-based and safe techniques</div>
+        <div class="trust-item">✔ Personalised treatment plans</div>
+    </div>
+</section>
+
+<!-- ABOUT DOCTOR -->
+<section class="section">
+    <div class="doctor-card">
+
+        <div class="doctor-image">
+            <img src="YOUR_IMAGE_LINK_HERE">
+        </div>
+
+        <div class="doctor-content">
+            <h2>Dr Agnes Yeo</h2>
+            <h4>Aesthetic Plastic & Reconstructive Surgeon</h4>
+
+            <p>
+            Delivering personalised aesthetic and reconstructive care with a focus on natural harmony, precision, and patient safety. Every treatment is tailored to enhance your features — not change who you are.
+            </p>
+
+            <a href="https://wa.me/60189657735" class="button">
+                Book Consultation
+            </a>
+        </div>
+
+    </div>
+</section>
+    
 <section id="about" class="section">
 <div class="card">
 <h2>About Dr Agnes Yeo</h2>
