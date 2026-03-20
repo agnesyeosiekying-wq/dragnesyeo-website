@@ -30,9 +30,7 @@ header {
     box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
 
-.logo img {
-    height: 120px;
-}
+.logo img { height: 120px; }
 
 /* NAV */
 nav a {
@@ -80,7 +78,6 @@ nav a {
 .hero-text h1 {
     font-family: 'Playfair Display', serif;
     font-size: 56px;
-    line-height: 1.2;
 }
 
 .hero-text p {
@@ -107,7 +104,6 @@ nav a {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 15px;
     text-align: center;
-    margin-bottom: 40px;
 }
 
 .trust-item {
@@ -117,7 +113,7 @@ nav a {
     font-weight: 500;
 }
 
-/* DOCTOR CARD */
+/* DOCTOR */
 .doctor-card {
     display: flex;
     align-items: center;
@@ -134,12 +130,10 @@ nav a {
 
 .doctor-content h2 {
     font-family: 'Playfair Display', serif;
-    margin-bottom: 5px;
 }
 
 .doctor-content h4 {
     color: #2F4F6F;
-    margin-bottom: 15px;
 }
 
 /* SECTIONS */
@@ -178,7 +172,7 @@ nav a {
     color: #777;
 }
 
-/* WHATSAPP BUTTON */
+/* WHATSAPP FLOAT */
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
@@ -195,10 +189,6 @@ nav a {
     text-decoration: none;
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
     z-index: 9999;
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.1);
 }
 
 .whatsapp-float::before {
@@ -236,7 +226,6 @@ nav { display: none; }
 .hero-bg { object-position: 70% 110%; }
 
 .hero-text {
-    max-width: 100%;
     background: rgba(0,0,0,0.30);
     padding: 20px;
     border-radius: 12px;
@@ -251,7 +240,6 @@ nav { display: none; }
     width: 100%;
     text-align: center;
     padding: 16px;
-    margin-top: 15px;
 }
 
 .doctor-card {
@@ -264,8 +252,6 @@ nav { display: none; }
 }
 
 .whatsapp-float {
-    right: 16px;
-    bottom: 16px;
     width: 56px;
     height: 56px;
 }
@@ -283,6 +269,7 @@ nav { display: none; }
 </div>
 
 <nav>
+<a href="#about">About</a>
 <a href="#services">Services</a>
 <a href="#contact">Contact</a>
 </nav>
@@ -317,7 +304,7 @@ WhatsApp Consultation
 </section>
 
 <!-- DOCTOR -->
-<section class="section">
+<section id="about" class="section">
 <div class="doctor-card">
 
 <div class="doctor-image">
@@ -327,10 +314,8 @@ WhatsApp Consultation
 <div class="doctor-content">
 
 <h2>Dr Agnes Yeo</h2>
-
 <h4>Aesthetic Plastic & Reconstructive Surgeon</h4>
 
-<!-- CREDENTIALS -->
 <div style="margin-top:15px; line-height:1.7; color:#555; font-size:14px;">
 MRCS (Edinburgh) · MBBS (IMU) · MS (Plastic Surgery, USM)<br>
 NSR Registered · LCP Certified<br>
@@ -338,23 +323,15 @@ Member, Malaysian Society of Plastic & Reconstructive Surgery (MSPRS)<br>
 Member, Malaysian Association of Aesthetic (MAA)
 </div>
 
-<!-- EXPERIENCE -->
 <p style="margin-top:15px; color:#555; line-height:1.6;">
-With training across leading institutions including Hospital Kuala Lumpur and Hospital Sungai Buloh, Dr Agnes Yeo combines strong reconstructive expertise with aesthetic precision. She has experience in burn care, scar management, wound reconstruction, and aesthetic procedures, with a focus on delivering safe, natural and harmonious results tailored to each individual.
+With training across leading institutions including Hospital Kuala Lumpur and Hospital Sungai Buloh, Dr Agnes Yeo combines strong reconstructive expertise with aesthetic precision. She has experience in burn care, scar management, wound reconstruction, and aesthetic procedures, focusing on safe, natural and harmonious results.
 </p>
 
-<!-- BUTTON -->
 <a href="https://wa.me/60189657735" class="button">
 Book Consultation
 </a>
 
 </div>
-
-<a href="https://wa.me/60189657735" class="button">
-Book Consultation
-</a>
-</div>
-
 </div>
 </section>
 
