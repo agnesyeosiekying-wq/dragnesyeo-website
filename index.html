@@ -113,6 +113,20 @@ nav a {
     font-weight: 500;
 }
 
+/* SERVICES HOVER */
+.service-box {
+    background: #EAF1F5;
+    padding: 18px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
 /* DOCTOR */
 .doctor-card {
     display: flex;
@@ -150,18 +164,11 @@ nav a {
     box-shadow: 0 15px 40px rgba(0,0,0,0.06);
 }
 
-/* SERVICES */
+/* SERVICES GRID */
 .services {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
     gap: 15px;
-}
-
-.service-box {
-    background: #EAF1F5;
-    padding: 18px;
-    border-radius: 12px;
-    text-align: center;
 }
 
 /* FOOTER */
@@ -172,7 +179,7 @@ nav a {
     color: #777;
 }
 
-/* WHATSAPP FLOAT */
+/* WHATSAPP */
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
@@ -210,11 +217,8 @@ nav a {
 
 /* MOBILE */
 @media (max-width: 768px) {
-
 header { padding: 8px 16px; }
-
 .logo img { height: 55px; }
-
 nav { display: none; }
 
 .hero {
@@ -233,7 +237,6 @@ nav { display: none; }
 }
 
 .hero-text h1 { font-size: 28px; }
-
 .hero-text p { font-size: 14px; }
 
 .button {
@@ -250,12 +253,6 @@ nav { display: none; }
 .doctor-image img {
     width: 180px;
 }
-
-.whatsapp-float {
-    width: 56px;
-    height: 56px;
-}
-
 }
 </style>
 
@@ -282,14 +279,8 @@ nav { display: none; }
 
 <div class="hero-text">
 <h1>Enhancing Natural Beauty.<br>Not Changing Who You Are.</h1>
-
-<p>
-Personalised aesthetic and reconstructive care focused on harmony, authenticity, and natural-looking results.
-</p>
-
-<a class="button" href="https://wa.me/60189657735">
-WhatsApp Consultation
-</a>
+<p>Personalised aesthetic and reconstructive care focused on harmony and natural results.</p>
+<a class="button" href="https://wa.me/60189657735">WhatsApp Consultation</a>
 </div>
 </section>
 
@@ -303,37 +294,24 @@ WhatsApp Consultation
 </div>
 </section>
 
-    <!-- FEATURED SERVICES -->
+<!-- FEATURED -->
 <section class="section">
 <div class="card">
 
-<h2 style="margin-bottom:10px;">Featured Treatments</h2>
+<h2>Featured Treatments</h2>
 <p style="color:#666; margin-bottom:30px;">
-Focused procedures designed to enhance natural beauty with balanced, refined results.
+Focused procedures designed for refined, natural outcomes.
 </p>
 
 <div class="services">
-
-<a href="#" class="service-box">
-<strong>Breast Augmentation</strong><br>
-<span style="font-size:14px; color:#666;">
-Enhance volume and shape with natural-looking outcomes.
-</span>
-</a>
-
-<a href="#" class="service-box">
-<strong>Tummy Tuck</strong><br>
-<span style="font-size:14px; color:#666;">
-Restore a flatter, more contoured abdomen with improved definition.
-</span>
-</a>
-
+<div class="service-box"><strong>Breast Augmentation</strong><br><span style="font-size:14px; color:#666;">Natural enhancement</span></div>
+<div class="service-box"><strong>Tummy Tuck</strong><br><span style="font-size:14px; color:#666;">Contoured abdomen</span></div>
 </div>
 
 </div>
-    
 </section>
-<!-- DOCTOR -->
+
+<!-- ABOUT -->
 <section id="about" class="section">
 <div class="doctor-card">
 
@@ -342,100 +320,43 @@ Restore a flatter, more contoured abdomen with improved definition.
 </div>
 
 <div class="doctor-content">
-
 <h2>Dr Agnes Yeo</h2>
 <h4>Aesthetic Plastic & Reconstructive Surgeon</h4>
 
-<div style="margin-top:15px; line-height:1.7; color:#555; font-size:14px;">
+<p style="margin-top:15px; color:#555;">
 MRCS (Edinburgh) · MBBS (IMU) · MS (Plastic Surgery, USM)<br>
 NSR Registered · LCP Certified<br>
-Member, Malaysian Society of Plastic & Reconstructive Surgery (MSPRS)<br>
-Member, Malaysian Association of Aesthetic (MAA)
-</div>
-
-<p style="margin-top:15px; color:#555; line-height:1.6;">
-With training across leading institutions including Hospital Kuala Lumpur and Hospital Sungai Buloh, Dr Agnes Yeo combines strong reconstructive expertise with aesthetic precision. She has experience in burn care, scar management, wound reconstruction, and aesthetic procedures, focusing on safe, natural and harmonious results.
+Member, MSPRS · MAA
 </p>
 
-<a href="https://wa.me/60189657735" class="button">
-Book Consultation
-</a>
+<p style="margin-top:15px; color:#555;">
+Experienced in reconstructive and aesthetic surgery with a focus on safe, natural and harmonious outcomes.
+</p>
 
+<a href="https://wa.me/60189657735" class="button">Book Consultation</a>
 </div>
+
 </div>
 </section>
 
 <!-- SERVICES -->
-<!-- SERVICES -->
 <section id="services" class="section">
 <div class="card">
 
-<h2 style="margin-bottom:10px;">Services</h2>
-<p style="color:#666; margin-bottom:40px;">
-Comprehensive plastic and reconstructive care tailored to individual needs.
-</p>
+<h2>Services</h2>
 
-<!-- AESTHETIC -->
-<h3 style="margin-bottom:15px;">Aesthetic Treatments</h3>
-
+<h3>Aesthetic Treatments</h3>
 <div class="services">
-
-<div class="service-box">
-<strong>Facial Aesthetics</strong><br>
-<span style="font-size:14px; color:#666;">
-Blepharoplasty, facelift, lasers and facial rejuvenation.
-</span>
+<div class="service-box">Facial Aesthetics</div>
+<div class="service-box">Breast Procedures</div>
+<div class="service-box">Body Contouring</div>
 </div>
 
-<div class="service-box">
-<strong>Breast Procedures</strong><br>
-<span style="font-size:14px; color:#666;">
-Augmentation, shaping and enhancement procedures.
-</span>
-</div>
-
-<div class="service-box">
-<strong>Body Contouring</strong><br>
-<span style="font-size:14px; color:#666;">
-Fat grafting, tummy tuck and body refinement treatments.
-</span>
-</div>
-
-</div>
-
-<!-- RECONSTRUCTIVE -->
-<h3 style="margin:40px 0 15px;">Reconstructive Care</h3>
-
+<h3 style="margin-top:30px;">Reconstructive Care</h3>
 <div class="services">
-
-<div class="service-box">
-<strong>Scar Management</strong><br>
-<span style="font-size:14px; color:#666;">
-Improving scar appearance and function.
-</span>
-</div>
-
-<div class="service-box">
-<strong>Burn & Wound Care</strong><br>
-<span style="font-size:14px; color:#666;">
-Comprehensive burn and wound management.
-</span>
-</div>
-
-<div class="service-box">
-<strong>Cleft & Congenital</strong><br>
-<span style="font-size:14px; color:#666;">
-Correction of cleft and congenital conditions.
-</span>
-</div>
-
-<div class="service-box">
-<strong>Reconstructive Surgery</strong><br>
-<span style="font-size:14px; color:#666;">
-Flap reconstruction, AVF and restorative procedures.
-</span>
-</div>
-
+<div class="service-box">Scar Management</div>
+<div class="service-box">Burn & Wound Care</div>
+<div class="service-box">Reconstruction</div>
 </div>
 
 </div>
@@ -450,14 +371,9 @@ Flap reconstruction, AVF and restorative procedures.
 </div>
 </section>
 
-<div class="footer">
-© 2026 Dr Agnes Yeo. All rights reserved.
-</div>
+<div class="footer">© 2026 Dr Agnes Yeo</div>
 
-<!-- FLOAT BUTTON -->
-<a href="https://wa.me/60189657735" class="whatsapp-float">
-💬
-</a>
+<a href="https://wa.me/60189657735" class="whatsapp-float">💬</a>
 
 </body>
 </html>
