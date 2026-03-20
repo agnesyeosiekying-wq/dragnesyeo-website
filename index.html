@@ -33,10 +33,14 @@ header {
 }
 
 .logo img {
-    height: 120px;
-    transform: scale(1.2);
-    transform-origin: left center;
+    height: 80px; /* Standardize height */
+    width: auto;
     filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05); /* Subtle interactive feel */
 }
 
 nav a {
@@ -77,11 +81,12 @@ nav a {
     position: relative;
     margin-left: 8%;
     max-width: 480px;
-    padding: 40px;
+    padding: 60px 40px; /* Increased top/bottom padding */
     color: white;
-    backdrop-filter: blur(6px);
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(8px);
+    background: rgba(255,255,255,0.03); /* Lighter background */
+    border: 1px solid rgba(255,255,255,0.3); /* This creates the 'Frame' look */
+    border-radius: 2px; /* Sharper corners look more 'minimalist' */
 }
 
 .hero-text h1 {
@@ -196,6 +201,10 @@ h2 {
 }
 
 </style>
+    :target {
+    scroll-margin-top: 100px; /* Prevents sticky header from covering titles */
+}
+
 </head>
 
 <body>
