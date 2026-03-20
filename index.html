@@ -178,16 +178,25 @@ h3 {
 /* 7. TRUST BOX */
 .trust-box {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);  /* force 2 columns */
+    gap: 16px;
+    max-width: 420px;                       /* control width */
 }
 
 .trust-item {
     background: white;
     border: 1px solid #EAF1F5;
-    padding: 18px;
+    padding: 16px 18px;
     border-radius: 12px;
     font-size: 14px;
+    color: #0F203C;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.trust-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
 
 /* 8. DOCTOR PROFILE */
