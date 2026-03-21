@@ -159,6 +159,62 @@ nav a {
     .text-container h1 { font-size: 36px; }
     .scroll-arrow { display: none; }
 }
+    /* PROCEDURE SECTION */
+.procedure-section {
+    padding: 80px 20px;
+}
+
+.procedure-card {
+    background: white;
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px;
+    border-radius: 40px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    align-items: center;
+    box-shadow: 20px 20px 60px rgba(15, 32, 60, 0.05);
+}
+
+.procedure-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: var(--primary-navy);
+}
+
+.procedure-step {
+    margin-bottom: 25px;
+}
+
+.procedure-step strong {
+    display: block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--primary-navy);
+    margin-bottom: 8px;
+}
+
+.procedure-step p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.7;
+}
+
+.procedure-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .procedure-card {
+        grid-template-columns: 1fr;
+        padding: 40px 25px;
+        text-align: center;
+    }
+}
 </style>
 </head>
 
@@ -198,6 +254,49 @@ nav a {
 
         <div class="scroll-arrow">↓</div>
     </section>
+    <section class="procedure-section">
+
+    <div class="procedure-card">
+
+        <!-- LEFT CONTENT -->
+        <div class="procedure-text">
+            <p class="label-caps">The Procedure</p>
+            <h2>What to Expect</h2>
+
+            <div class="procedure-step">
+                <strong>01 — Consultation</strong>
+                <p>
+                    A detailed discussion to understand your goals, body proportions, and expectations. 
+                    Implant size, shape, and placement are carefully planned to suit your anatomy.
+                </p>
+            </div>
+
+            <div class="procedure-step">
+                <strong>02 — Surgery</strong>
+                <p>
+                    The procedure is performed under general anaesthesia. 
+                    Implants are placed either above or below the muscle through carefully selected incision sites.
+                </p>
+            </div>
+
+            <div class="procedure-step">
+                <strong>03 — Recovery</strong>
+                <p>
+                    Most patients return to light activities within a few days. 
+                    Swelling gradually subsides over weeks, with final results becoming more natural over time.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="procedure-image">
+            <img src="IMG_3322.webp" alt="Breast silhouette illustration">
+        </div>
+
+    </div>
+
+</section>
 </main>
 
 <footer style="text-align: center; padding: 60px; color: #8E6E6E; font-size: 12px; font-weight: 500;">
