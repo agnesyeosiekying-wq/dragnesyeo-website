@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dr Agnes Yeo | Consultant Plastic Surgeon | Breast Augmentation</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-/* 1. PINK THEME & GLOBAL SETTINGS */
+/* 1. PINK & NAVY THEME SETTINGS */
 :root {
     --bg-pink: #FDF2F2;        /* Soft blush background */
-    --primary-navy: #0F203C;   /* Your navy branding */
-    --text-navy: #0F203C;     /* Text color */
+    --primary-navy: #0F203C;   /* Your branding navy */
+    --accent-rose: #8E6E6E;    /* Subtle rose for subtitles */
 }
 
 html { scroll-behavior: smooth; }
@@ -21,10 +21,10 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     background-color: var(--bg-pink);
-    color: #444;
+    color: #333;
 }
 
-/* 2. SHARED HEADER (Matches previous design) */
+/* 2. FIXED HEADER */
 header {
     position: sticky;
     top: 0;
@@ -49,123 +49,143 @@ nav a {
     color: white;
     font-size: 14px;
     font-weight: 500;
+    letter-spacing: 1px;
 }
 
-/* 3. THE "CANVA-STYLE" INTRO CARD (floating white box) */
+/* 3. THE FLOATING CANVA CARD */
 .canva-card-intro {
     background-color: white;
     max-width: 1200px;
-    margin: 60px auto;
-    padding: 60px 80px;
+    margin: 80px auto;
+    padding: 80px;
     border-radius: 40px;
-    box-shadow: 20px 20px 60px rgba(15, 32, 60, 0.05); /* Soft, natural shadow */
+    box-shadow: 20px 20px 60px rgba(15, 32, 60, 0.05);
     display: grid;
-    grid-template-columns: 1fr 1.5fr; /* Matches the layout ratio */
+    grid-template-columns: 1fr 1.5fr;
     gap: 80px;
     align-items: center;
+    position: relative; /* For the scroll arrow */
 }
 
-/* 4. THE ASYMMETRIC IMAGE FRAME (The key design element) */
+/* 4. ASYMMETRIC IMAGE FRAME */
 .image-container {
     width: 100%;
-    position: relative;
 }
 
 .curved-image {
     width: 100%;
     height: auto;
     display: block;
-    /* Custom organic asymmetric shape: straight left, curved others */
+    /* Custom organic shape: straight left, curved others to match Canva */
     border-radius: 120px 120px 40px 120px; 
     object-fit: cover;
-    aspect-ratio: 4 / 5; /* Professional portrait ratio */
+    aspect-ratio: 4 / 5;
 }
 
-/* 5. TEXT & CONTENT */
+/* 5. TEXT CONTENT & DIRECTOR STYLE */
 .text-container {
-    color: var(--text-navy);
+    color: var(--primary-navy);
+}
+
+.label-caps {
+    letter-spacing: 3px; 
+    font-size: 11px; 
+    text-transform: uppercase; 
+    margin-bottom: 10px; 
+    opacity: 0.7;
+    font-weight: 700;
 }
 
 .text-container h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 52px;
+    font-size: 56px;
     font-weight: 700;
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 0;
+    line-height: 1.1;
 }
 
 .text-container .subtitle {
-    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
     font-weight: 600;
-    margin-bottom: 20px;
+    font-style: italic; /* Matches the Orthodontist example */
+    color: var(--accent-rose);
+    margin-bottom: 30px;
     display: block;
 }
 
 .text-container p {
     font-size: 16px;
     line-height: 1.8;
-    color: #666;
-    margin-bottom: 30px;
-    max-width: 500px; /* Prevents long, unreadable lines */
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 500px;
 }
 
-/* 6. THE NAVY BUTTON */
+/* 6. BUTTON STYLE */
 .consult-btn {
     background-color: var(--primary-navy);
     color: white;
-    padding: 14px 30px;
-    border-radius: 8px; /* Square edges like example */
+    padding: 16px 35px;
+    border-radius: 8px; /* Clean rectangular corners like Canva */
     text-decoration: none;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 15px;
     display: inline-block;
     transition: 0.3s ease;
 }
 
 .consult-btn:hover {
-    background-color: #1A3A69; /* Lighter hover navy */
+    background-color: #1A3A69;
     transform: translateY(-2px);
 }
 
-/* 7. RECREATING THE "BLURRED BOTTOM SECTION" VIBE */
+/* 7. SCROLL ARROW (Patty Moore Style) */
+.scroll-arrow {
+    font-size: 32px;
+    color: var(--primary-navy);
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    opacity: 0.3;
+}
+
+/* 8. BLURRED BACKGROUND EFFECT */
 .consultation-blur-section {
     background-image: url('https://raw.githubusercontent.com/agnesyeosiekying-wq/dragnesyeo-website/main/hero.png');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    height: 300px;
+    height: 400px;
     width: 100%;
-    margin-top: -150px; /* Pulls the white card OVER this section */
+    margin-top: -200px; /* Pulls card over image */
     position: relative;
     z-index: -1;
-    filter: blur(10px) brightness(1.2); /* Creates the background fade effect */
+    filter: blur(8px) brightness(1.1);
+    opacity: 0.4;
 }
 
-/* MOBILE RESPONSIVE TWEAKS */
+/* MOBILE RESPONSIVE */
+@media (max-width: 1024px) {
+    .canva-card-intro { margin: 40px 20px; padding: 40px; gap: 40px; }
+}
+
 @media (max-width: 768px) {
     header { padding: 10px 20px; min-height: 80px; }
     .logo img { height: 80px; }
-    nav { display: none; } /* Standard hidden mobile menu */
+    nav { display: none; }
     
     .canva-card-intro {
         grid-template-columns: 1fr;
-        padding: 40px 20px;
-        margin: 40px 15px;
-        border-radius: 30px;
-        gap: 40px;
-    }
-
-    .curved-image {
-        max-width: 320px;
-        margin: 0 auto; /* Centers the image */
-    }
-
-    .text-container {
+        padding: 40px 25px;
         text-align: center;
     }
 
-    .text-container h1 { font-size: 36px; }
+    .curved-image { max-width: 300px; margin: 0 auto; }
+    .text-container h1 { font-size: 40px; }
+    .text-container p { margin: 20px auto 40px; }
+    .scroll-arrow { display: none; }
 }
-
 </style>
 </head>
 
@@ -173,11 +193,11 @@ nav a {
 
 <header>
     <div class="logo">
-        <img src="IMG_3288.svg" alt="Dr Agnes Yeo Logo">
+        <a href="index.html"><img src="IMG_3288.svg" alt="Dr Agnes Yeo Logo"></a>
     </div>
     <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
         <a href="https://wa.me/60189657735">Contact</a>
     </nav>
 </header>
@@ -191,6 +211,7 @@ nav a {
         </div>
         
         <div class="text-container">
+            <p class="label-caps">Specialized Care</p>
             <h1>Dr. Agnes Yeo</h1>
             <span class="subtitle">Consultant Plastic & Reconstructive Surgeon</span>
             
@@ -198,18 +219,20 @@ nav a {
                 Dr. Agnes Yeo utilizes advanced techniques and premium implants to ensure 
                 safe, harmonious outcomes. Our approach to Breast Augmentation is a personalized 
                 journey focused on symmetry, restored contour, and enhancing your 
-                confidence with natural, long-lasting results.
+                confidence with natural results.
             </p>
             
             <a href="https://wa.me/60189657735" class="consult-btn">WhatsApp Consultation</a>
         </div>
+
+        <div class="scroll-arrow">↓</div>
     </section>
 
     <div class="consultation-blur-section"></div>
 
 </main>
 
-<footer style="text-align: center; padding: 60px; color: #4A6A8A; font-size: 12px; border-top: 1px solid #EAF1F5;">
+<footer style="text-align: center; padding: 60px; color: #8E6E6E; font-size: 12px; font-weight: 500;">
     © 2026 Dr Agnes Yeo · MS (Plastic Surgery, USM) · Bukit Tinggi Medical Centre
 </footer>
 
