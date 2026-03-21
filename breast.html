@@ -1,163 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Breast Augmentation | Dr Agnes Yeo</title>
+<title>Dr Agnes Yeo | Consultant Plastic Surgeon | Breast Augmentation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
+/* 1. PINK THEME & GLOBAL SETTINGS */
+:root {
+    --bg-pink: #FDF2F2;        /* Soft blush background */
+    --primary-navy: #0F203C;   /* Your navy branding */
+    --text-navy: #0F203C;     /* Text color */
+}
+
+html { scroll-behavior: smooth; }
+
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
-    background: #F4F7FA;
+    background-color: var(--bg-pink);
+    color: #444;
 }
 
-/* HEADER */
+/* 2. SHARED HEADER (Matches previous design) */
 header {
-    padding: 15px 60px;
-    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: var(--primary-navy);
+    padding: 15px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 100px;
 }
 
-.logo img { height: 80px; }
-
-/* HERO */
-.hero {
-    padding: 100px 60px;
-    background: #2F4F6F;
-    color: white;
+.logo img {
+    height: 140px; 
+    width: auto;
+    filter: brightness(0) invert(1); /* Makes logo white */
 }
 
-.hero h1 {
-    font-family: 'Playfair Display';
-    font-size: 48px;
-}
-
-.hero p {
-    max-width: 600px;
-}
-
-/* SECTION */
-.section {
-    max-width: 900px;
-    margin: auto;
-    padding: 60px 20px;
-}
-
-/* CARD */
-.card {
-    background: white;
-    padding: 30px;
-    border-radius: 14px;
-    margin-bottom: 25px;
-}
-
-/* BUTTON */
-.button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 14px 28px;
-    background: #2F4F6F;
-    color: white;
+nav a {
+    margin-left: 24px;
     text-decoration: none;
-    border-radius: 30px;
-}
-
-/* LIST */
-.list {
-    line-height: 1.8;
-}
-
-/* WHATSAPP FLOAT */
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
     color: white;
-    padding: 15px;
-    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 500;
 }
-</style>
 
+/* 3. THE "CANVA-STYLE" INTRO CARD (floating white box) */
+.canva-card-intro {
+    background-color: white;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 60px 80px;
+    border-radius: 40px;
+    box-shadow: 20px 20px 60px rgba(15, 32, 60, 0.05); /* Soft, natural shadow */
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* Matches the layout ratio */
+    gap: 80px;
+    align-items: center;
+}
+
+/* 4. THE ASYMMETRIC IMAGE FRAME (The key design element) */
+.image-container {
+    width: 100%;
+    position: relative;
+}
+
+.curved-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Custom organic asymmetric shape: straight left, curved others */
+    border-radius: 120px 120px 40px 120px; 
+    object-fit: cover;
+    aspect-ratio: 4 / 5; /* Professional portrait ratio */
+}
+
+/* 5. TEXT & CONTENT */
+.text-container {
+    color: var(--text-navy);
+}
+
+.text-container h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.text-container .subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.text-container p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 500px; /* Prevents long, unreadable lines */
+}
+
+/* 6. THE NAVY BUTTON */
+.consult-btn {
+    background-color: var(--primary-navy);
+    color: white;
+    padding: 14px 30px;
+    border-radius: 8px; /* Square edges like example */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.consult-btn:hover {
+    background-color: #1A3A69; /* Lighter hover navy */
+    transform: translateY(-2px);
+}
+
+/* 7. RECREATING THE "BLURRED BOTTOM SECTION" VIBE */
+.consultation-blur-section {
+    background-image: url('https://raw.githubusercontent.com/agnesyeosiekying-wq/dragnesyeo-website/main/hero.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    margin-top: -150px; /* Pulls the white card OVER this section */
+    position: relative;
+    z-index: -1;
+    filter: blur(10px) brightness(1.2); /* Creates the background fade effect */
+}
+
+/* MOBILE RESPONSIVE TWEAKS */
+@media (max-width: 768px) {
+    header { padding: 10px 20px; min-height: 80px; }
+    .logo img { height: 80px; }
+    nav { display: none; } /* Standard hidden mobile menu */
+    
+    .canva-card-intro {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+        margin: 40px 15px;
+        border-radius: 30px;
+        gap: 40px;
+    }
+
+    .curved-image {
+        max-width: 320px;
+        margin: 0 auto; /* Centers the image */
+    }
+
+    .text-container {
+        text-align: center;
+    }
+
+    .text-container h1 { font-size: 36px; }
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-<div class="logo">
-<a href="index.html">
-<img src="https://raw.githubusercontent.com/agnesyeosiekying-wq/dragnesyeo-website/main/Herowhite.png">
-</a>
-</div>
+    <div class="logo">
+        <img src="IMG_3288.svg" alt="Dr Agnes Yeo Logo">
+    </div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="https://wa.me/60189657735">Contact</a>
+    </nav>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-<h1>Breast Augmentation</h1>
-<p>
-Enhancing volume and shape with a focus on natural, proportionate results.
-</p>
-</section>
+<main>
 
-<section class="section">
+    <section class="canva-card-intro">
+        
+        <div class="image-container">
+            <img src="breast-profile.webp" class="curved-image" alt="Artistic Breast Silhouette Profile">
+        </div>
+        
+        <div class="text-container">
+            <h1>Dr. Agnes Yeo</h1>
+            <span class="subtitle">Consultant Plastic & Reconstructive Surgeon</span>
+            
+            <p>
+                Dr. Agnes Yeo utilizes advanced techniques and premium implants to ensure 
+                safe, harmonious outcomes. Our approach to Breast Augmentation is a personalized 
+                journey focused on symmetry, restored contour, and enhancing your 
+                confidence with natural, long-lasting results.
+            </p>
+            
+            <a href="https://wa.me/60189657735" class="consult-btn">WhatsApp Consultation</a>
+        </div>
+    </section>
 
-<div class="card">
-<h2>Common Concerns</h2>
-<div class="list">
-• Will it look unnatural?<br>
-• Will it feel too obvious?<br>
-• What is the recovery like?<br>
-• Is it safe long term?
-</div>
-</div>
+    <div class="consultation-blur-section"></div>
 
-<div class="card">
-<h2>My Approach</h2>
-<p>
-The goal is not to create an artificial look, but to enhance your natural proportions.  
-Careful selection of implant size, shape and placement ensures results that are balanced and harmonious.
-</p>
-</div>
+</main>
 
-<div class="card">
-<h2>Benefits</h2>
-<div class="list">
-• Improved body proportion<br>
-• Enhanced confidence<br>
-• Natural-looking volume<br>
-• Long-lasting results
-</div>
-</div>
-
-<div class="card">
-<h2>Procedure Overview</h2>
-<p>
-The surgery is performed under appropriate anaesthesia.  
-Incisions are carefully planned to minimise visible scarring.  
-Most patients can return to light activities within 1–2 weeks.
-</p>
-</div>
-
-<div class="card">
-<h2>Consultation</h2>
-<p>
-Every patient is unique. A consultation allows us to understand your goals and determine the safest and most suitable approach for you.
-</p>
-
-<a href="https://wa.me/60189657735" class="button">
-WhatsApp Consultation
-</a>
-</div>
-
-</section>
-
-<a href="https://wa.me/60189657735" class="whatsapp">💬</a>
+<footer style="text-align: center; padding: 60px; color: #4A6A8A; font-size: 12px; border-top: 1px solid #EAF1F5;">
+    © 2026 Dr Agnes Yeo · MS (Plastic Surgery, USM) · Bukit Tinggi Medical Centre
+</footer>
 
 </body>
 </html>
