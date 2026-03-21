@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr Agnes Yeo | Consultant Plastic Surgeon | Breast Augmentation</title>
+<title>Breast Augmentation | Dr Agnes Yeo</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -12,8 +12,8 @@
 :root {
     --bg-pink: #FDF2F2;        /* Soft blush background */
     --header-pink: #F9E8E8;    /* Slightly deeper pink for the header */
-    --primary-navy: #0F203C;   /* Your branding navy for text/logo */
-    --accent-rose: #8E6E6E;    /* Subtle rose for subtitles */
+    --primary-navy: #0F203C;   /* Your branding navy */
+    --accent-rose: #8E6E6E;    /* Subtle rose for the italics */
 }
 
 html { scroll-behavior: smooth; }
@@ -25,38 +25,35 @@ body {
     color: #333;
 }
 
-/* 2. UPDATED PINK HEADER */
+/* 2. PINK HEADER (Matches latest request) */
 header {
     position: sticky;
     top: 0;
     z-index: 999;
-    background: var(--header-pink); /* CHANGED FROM NAVY TO PINK */
+    background: var(--header-pink);
     padding: 15px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 100px;
-    /* Subtle border to define the header area */
     border-bottom: 1px solid rgba(15, 32, 60, 0.05); 
 }
 
 .logo img {
     height: 140px; 
     width: auto;
-    /* Removed the 'invert' filter so the logo shows in its original navy color */
-    filter: none; 
 }
 
 nav a {
     margin-left: 24px;
     text-decoration: none;
-    color: var(--primary-navy); /* Navigation text now Navy for contrast */
+    color: var(--primary-navy);
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
-/* 3. THE FLOATING CANVA CARD */
+/* 3. THE FLOATING CANVA-STYLE CARD */
 .canva-card-intro {
     background-color: white;
     max-width: 1200px;
@@ -71,7 +68,7 @@ nav a {
     position: relative;
 }
 
-/* 4. ASYMMETRIC IMAGE FRAME */
+/* 4. ASYMMETRIC IMAGE FRAME (From Canva Layout) */
 .image-container {
     width: 100%;
 }
@@ -85,7 +82,7 @@ nav a {
     aspect-ratio: 4 / 5;
 }
 
-/* 5. TEXT CONTENT & DIRECTOR STYLE */
+/* 5. TEXT CONTENT - UPDATED WITH YOUR QUOTE */
 .text-container {
     color: var(--primary-navy);
 }
@@ -101,20 +98,21 @@ nav a {
 
 .text-container h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 56px;
+    font-size: 48px;
     font-weight: 700;
     margin: 0 0 5px 0;
     line-height: 1.1;
 }
 
-.text-container .subtitle {
+.text-container .quote {
     font-family: 'Playfair Display', serif;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 600;
     font-style: italic; 
     color: var(--accent-rose);
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     display: block;
+    line-height: 1.4;
 }
 
 .text-container p {
@@ -135,12 +133,6 @@ nav a {
     font-weight: 600;
     font-size: 15px;
     display: inline-block;
-    transition: 0.3s ease;
-}
-
-.consult-btn:hover {
-    background-color: #1A3A69;
-    transform: translateY(-2px);
 }
 
 /* 7. SCROLL ARROW */
@@ -151,21 +143,6 @@ nav a {
     bottom: 50px;
     right: 50px;
     opacity: 0.3;
-}
-
-/* 8. BLURRED BACKGROUND EFFECT */
-.consultation-blur-section {
-    background-image: url('https://raw.githubusercontent.com/agnesyeosiekying-wq/dragnesyeo-website/main/hero.png');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    width: 100%;
-    margin-top: -200px;
-    position: relative;
-    z-index: -1;
-    filter: blur(8px) brightness(1.1);
-    opacity: 0.4;
 }
 
 /* MOBILE RESPONSIVE */
@@ -179,7 +156,7 @@ nav a {
         text-align: center;
     }
     .curved-image { max-width: 300px; margin: 0 auto; }
-    .text-container h1 { font-size: 40px; }
+    .text-container h1 { font-size: 36px; }
     .scroll-arrow { display: none; }
 }
 </style>
@@ -189,9 +166,7 @@ nav a {
 
 <header>
     <div class="logo">
-        <a href="index.html">
-            <img src="IMG_3288.svg" alt="Dr Agnes Yeo Logo">
-        </a>
+        <a href="index.html"><img src="IMG_3288.svg" alt="Dr Agnes Yeo Logo"></a>
     </div>
     <nav>
         <a href="index.html">Home</a>
@@ -207,15 +182,15 @@ nav a {
         </div>
         
         <div class="text-container">
-            <p class="label-caps">Specialized Care</p>
-            <h1>Dr. Agnes Yeo</h1>
-            <span class="subtitle">Consultant Plastic & Reconstructive Surgeon</span>
+            <p class="label-caps">Surgical Philosophy</p>
+            <h1>Breast Augmentation</h1>
+            
+            <span class="quote">
+                “Every woman’s body is unique. Breast augmentation is not about perfection, but about achieving harmony that feels natural to you.”
+            </span>
             
             <p>
-                Dr. Agnes Yeo utilizes advanced techniques and premium implants to ensure 
-                safe, harmonious outcomes. Our approach to Breast Augmentation is a personalized 
-                journey focused on symmetry, restored contour, and enhancing your 
-                confidence with natural results.
+                Whether you are looking to restore volume lost after pregnancy or weight changes, or simply seeking better symmetry, Dr. Agnes focuses on techniques that respect your natural anatomy for a balanced, personalized result.
             </p>
             
             <a href="https://wa.me/60189657735" class="consult-btn">WhatsApp Consultation</a>
@@ -223,8 +198,6 @@ nav a {
 
         <div class="scroll-arrow">↓</div>
     </section>
-
-    <div class="consultation-blur-section"></div>
 </main>
 
 <footer style="text-align: center; padding: 60px; color: #8E6E6E; font-size: 12px; font-weight: 500;">
