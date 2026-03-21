@@ -12,7 +12,7 @@
 :root {
     --bg-pink: #FDF2F2;        /* Soft blush background */
     --header-pink: #F9E8E8;    /* Slightly deeper pink for the header */
-    --primary-navy: #0F203C;   /* Your branding navy */
+    --primary-navy: #0F203C;   /* Your branding navy for text/logo */
     --accent-rose: #8E6E6E;    /* Subtle rose for subtitles */
 }
 
@@ -30,26 +30,27 @@ header {
     position: sticky;
     top: 0;
     z-index: 999;
-    background: var(--header-pink); /* NEW PINK COLOUR */
+    background: var(--header-pink); /* CHANGED FROM NAVY TO PINK */
     padding: 15px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 100px;
-    border-bottom: 1px solid rgba(15, 32, 60, 0.05); /* Subtle separation */
+    /* Subtle border to define the header area */
+    border-bottom: 1px solid rgba(15, 32, 60, 0.05); 
 }
 
 .logo img {
     height: 140px; 
     width: auto;
-    /* REMOVED the white filter so the logo stays its original navy/dark colour */
+    /* Removed the 'invert' filter so the logo shows in its original navy color */
     filter: none; 
 }
 
 nav a {
     margin-left: 24px;
     text-decoration: none;
-    color: var(--primary-navy); /* Changed text to Navy for readability on pink */
+    color: var(--primary-navy); /* Navigation text now Navy for contrast */
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
