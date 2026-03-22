@@ -1,333 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tummy Tuck | Dr Agnes Yeo</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <style>
+:root {
+    --bg-pink: #FDF2F2;
+    --header-pink: #F9E8E8;
+    --primary-navy: #0F203C;
+    --accent-rose: #8E6E6E;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
-    background: #F4F7FA;
+    background: var(--bg-pink);
 }
 
 /* HEADER */
 header {
-    padding: 15px 60px;
-    background: white;
-    display: flex;
-    align-items: center;
+    background: var(--header-pink);
+    padding: 15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
-.logo img { height: 80px; }
-
-/* HERO */
-.hero {
-    padding: 100px 60px;
-    background: #2F4F6F;
-    color: white;
+nav a {
+    margin-left:20px;
+    text-decoration:none;
+    color:var(--primary-navy);
+    font-weight:600;
 }
 
-.hero h1 {
-    font-family: 'Playfair Display';
-    font-size: 48px;
+/* CARD STYLE */
+.section-card {
+    background:white;
+    max-width:1100px;
+    margin:60px auto;
+    padding:70px;
+    border-radius:40px;
+    display:grid;
+    grid-template-columns:1fr 1.2fr;
+    gap:60px;
+    align-items:center;
+    box-shadow:20px 20px 60px rgba(0,0,0,0.05);
 }
 
-.hero p {
-    max-width: 600px;
+/* TEXT */
+h1, h2, h3 {
+    font-family:'Playfair Display', serif;
+    color:var(--primary-navy);
 }
 
-/* SECTION */
-.section {
-    max-width: 900px;
-    margin: auto;
-    padding: 60px 20px;
+h1 { font-size:44px; }
+h2 { font-size:34px; }
+h3 { font-size:22px; }
+
+.label {
+    font-size:11px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    opacity:0.6;
 }
 
-/* CARD */
+.quote {
+    font-style:italic;
+    color:var(--accent-rose);
+    margin:20px 0;
+}
+
+p {
+    color:#555;
+    line-height:1.7;
+}
+
+/* IMAGE */
+img {
+    width:100%;
+    border-radius:25px;
+}
+
+/* GRID CARDS */
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    max-width:1100px;
+    margin:auto;
+}
+
 .card {
-    background: white;
-    padding: 30px;
-    border-radius: 14px;
-    margin-bottom: 25px;
+    background:white;
+    padding:30px;
+    border-radius:25px;
 }
 
-/* BUTTON */
-.button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 14px 28px;
-    background: #2F4F6F;
-    color: white;
-    text-decoration: none;
-    border-radius: 30px;
+/* CTA */
+.cta {
+    text-align:center;
+    padding:90px 20px;
+    background:#F7E6E6;
 }
 
-/* LIST */
-.list {
-    line-height: 1.8;
+.btn {
+    background:var(--primary-navy);
+    color:white;
+    padding:15px 35px;
+    border-radius:10px;
+    text-decoration:none;
+    display:inline-block;
+    margin-top:30px;
 }
 
-/* WHATSAPP */
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    padding: 15px;
-    border-radius: 50%;
+/* MOBILE */
+@media(max-width:768px){
+    .section-card{
+        grid-template-columns:1fr;
+        padding:40px;
+    }
 }
 </style>
-
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
-<div class="logo">
-<a href="index.html">
-<img src="https://raw.githubusercontent.com/agnesyeosiekying-wq/dragnesyeo-website/main/Herowhite.png">
-</a>
-</div>
+    <h3>Dr Agnes Yeo</h3>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-<h1>Tummy Tuck (Abdominoplasty)</h1>
-<p>
-Restoring a flatter, firmer abdomen with improved contour and definition.
-</p>
+<!-- INTRO -->
+<section class="section-card">
+    <img src="YOUR-IMAGE.jpg">
+    <div>
+        <p class="label">Surgical Philosophy</p>
+        <h1>Tummy Tuck (Abdominoplasty)</h1>
+        <p class="quote">
+        “A toned abdomen is not just about appearance — it’s about restoring strength, balance, and confidence.”
+        </p>
+        <p>
+        A tummy tuck removes excess skin and tightens weakened abdominal muscles, 
+        helping restore a flatter and firmer contour after pregnancy or weight loss.
+        </p>
+        <a href="#" class="btn">WhatsApp Consultation</a>
+    </div>
 </section>
 
-<!-- CONTENT -->
-<section class="section">
+<!-- PROCEDURE -->
+<section class="section-card">
+    <div>
+        <p class="label">The Procedure</p>
+        <h2>What to Expect</h2>
 
-<div class="card">
-<h2>Common Concerns</h2>
-<div class="list">
-• Loose skin after pregnancy or weight loss<br>
-• Stubborn lower abdominal bulge<br>
-• Stretch marks and skin laxity<br>
-• Weak abdominal muscles
-</div>
-</div>
+        <p><strong>01 — Consultation</strong><br>
+        Assessment of skin and muscle condition with personalised planning.
+        </p>
 
-<div class="card">
-<h2>My Approach</h2>
-<p>
-A tummy tuck is not just about removing excess skin.  
-The procedure also restores abdominal wall support and improves overall contour.  
-The goal is a natural, proportionate silhouette that complements your body.
-</p>
-</div>
+        <p><strong>02 — Surgery</strong><br>
+        Removal of excess skin and tightening of abdominal muscles.
+        </p>
 
-<div class="card">
-<h2>Benefits</h2>
-<div class="list">
-• Flatter and firmer abdomen<br>
-• Improved waistline contour<br>
-• Better core support<br>
-• Removal of excess skin and stretch marks
-</div>
-</div>
+        <p><strong>03 — Recovery</strong><br>
+        Return to light activity in 1–2 weeks, full results over time.
+        </p>
+    </div>
 
-<div class="card">
-<h2>Procedure Overview</h2>
-<p>
-The procedure involves removal of excess skin and tightening of abdominal muscles.  
-Scars are placed strategically to be concealed within undergarments.  
-Recovery typically takes a few weeks, with gradual return to normal activities.
-</p>
-</div>
-
-<div class="card">
-<h2>Consultation</h2>
-<p>
-Each treatment is tailored to your body and goals.  
-A consultation helps determine the safest and most suitable approach for you.
-</p>
-
-<a href="https://wa.me/60189657735" class="button">
-WhatsApp Consultation
-</a>
-</div>
-
+    <img src="YOUR-IMAGE.jpg">
 </section>
 
-<!-- FLOAT BUTTON -->
-<a href="https://wa.me/60189657735" class="whatsapp">💬</a>
+<!-- TYPES -->
+<section style="padding:80px 20px;">
+    <h2 style="text-align:center;">Types of Tummy Tuck</h2>
 
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
+    <div class="grid">
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+        <div class="card">
+            <img src="YOUR-IMAGE.jpg">
+            <h3>Full Tummy Tuck</h3>
+            <p>
+            Removes excess skin and tightens muscles for significant contour improvement.
+            </p>
+        </div>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tummy Tuck | Dr Agnes Yeo</title>
+        <div class="card">
+            <img src="YOUR-IMAGE.jpg">
+            <h3>Mini Tummy Tuck</h3>
+            <p>
+            Targets lower abdomen with smaller incision for mild skin laxity.
+            </p>
+        </div>
 
-<style>
-body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    background: #F4F7FA;
-}
-
-/* HEADER */
-header {
-    padding: 15px 60px;
-    background: white;
-    display: flex;
-    align-items: center;
-}
-
-.logo img { height: 80px; }
-
-/* HERO */
-.hero {
-    padding: 100px 60px;
-    background: #2F4F6F;
-    color: white;
-}
-
-.hero h1 {
-    font-family: 'Playfair Display';
-    font-size: 48px;
-}
-
-.hero p {
-    max-width: 600px;
-}
-
-/* SECTION */
-.section {
-    max-width: 900px;
-    margin: auto;
-    padding: 60px 20px;
-}
-
-/* CARD */
-.card {
-    background: white;
-    padding: 30px;
-    border-radius: 14px;
-    margin-bottom: 25px;
-}
-
-/* BUTTON */
-.button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 14px 28px;
-    background: #2F4F6F;
-    color: white;
-    text-decoration: none;
-    border-radius: 30px;
-}
-
-/* LIST */
-.list {
-    line-height: 1.8;
-}
-
-/* WHATSAPP */
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    padding: 15px;
-    border-radius: 50%;
-}
-</style>
-
-</head>
-
-<body>
-
-<!-- HEADER -->
-<header>
-<div class="logo">
-<a href="index.html">
-<img src="https://raw.githubusercontent.com/agnesyeosiekying-wq/dragnesyeo-website/main/Herowhite.png">
-</a>
-</div>
-</header>
-
-<!-- HERO -->
-<section class="hero">
-<h1>Tummy Tuck (Abdominoplasty)</h1>
-<p>
-Restoring a flatter, firmer abdomen with improved contour and definition.
-</p>
+    </div>
 </section>
 
-<!-- CONTENT -->
-<section class="section">
+<!-- SUITABILITY -->
+<section style="padding:80px 20px; background:#FFF9F9;">
+    <h2 style="text-align:center;">Is This Right for You?</h2>
 
-<div class="card">
-<h2>Common Concerns</h2>
-<div class="list">
-• Loose skin after pregnancy or weight loss<br>
-• Stubborn lower abdominal bulge<br>
-• Stretch marks and skin laxity<br>
-• Weak abdominal muscles
-</div>
-</div>
+    <div class="grid">
 
-<div class="card">
-<h2>My Approach</h2>
-<p>
-A tummy tuck is not just about removing excess skin.  
-The procedure also restores abdominal wall support and improves overall contour.  
-The goal is a natural, proportionate silhouette that complements your body.
-</p>
-</div>
+        <div class="card">
+            <h3>Suitable for You If</h3>
+            <ul>
+                <li>Loose skin after pregnancy</li>
+                <li>Abdominal muscle separation</li>
+                <li>Stable body weight</li>
+            </ul>
+        </div>
 
-<div class="card">
-<h2>Benefits</h2>
-<div class="list">
-• Flatter and firmer abdomen<br>
-• Improved waistline contour<br>
-• Better core support<br>
-• Removal of excess skin and stretch marks
-</div>
-</div>
+        <div class="card">
+            <h3>Important Considerations</h3>
+            <ul>
+                <li>Permanent scar</li>
+                <li>Recovery required</li>
+                <li>Not for weight loss</li>
+            </ul>
+        </div>
 
-<div class="card">
-<h2>Procedure Overview</h2>
-<p>
-The procedure involves removal of excess skin and tightening of abdominal muscles.  
-Scars are placed strategically to be concealed within undergarments.  
-Recovery typically takes a few weeks, with gradual return to normal activities.
-</p>
-</div>
-
-<div class="card">
-<h2>Consultation</h2>
-<p>
-Each treatment is tailored to your body and goals.  
-A consultation helps determine the safest and most suitable approach for you.
-</p>
-
-<a href="https://wa.me/60189657735" class="button">
-WhatsApp Consultation
-</a>
-</div>
-
+    </div>
 </section>
 
-<!-- FLOAT BUTTON -->
-<a href="https://wa.me/60189657735" class="whatsapp">💬</a>
+<!-- FAQ -->
+<section style="padding:80px 20px;">
+    <h2 style="text-align:center;">Frequently Asked Questions</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Recovery time?</h3>
+            <p>Typically 2–6 weeks depending on extent.</p>
+        </div>
+
+        <div class="card">
+            <h3>Will there be a scar?</h3>
+            <p>Yes, placed low and fades over time.</p>
+        </div>
+
+        <div class="card">
+            <h3>Can it fix muscle separation?</h3>
+            <p>Yes, abdominal muscles are repaired.</p>
+        </div>
+
+        <div class="card">
+            <h3>Is liposuction included?</h3>
+            <p>Often combined for better contour.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Considering a Tummy Tuck?</h2>
+    <p>A personalised consultation helps determine the best approach for you.</p>
+    <a href="#" class="btn">Book a Consultation</a>
+</section>
+
+<footer style="text-align:center; padding:40px; font-size:12px;">
+© 2026 Dr Agnes Yeo · Bukit Tinggi Medical Centre
+</footer>
 
 </body>
 </html>
