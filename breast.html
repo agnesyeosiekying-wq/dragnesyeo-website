@@ -215,6 +215,18 @@ nav a {
         text-align: center;
     }
 }
+    .tech-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    text-align: left;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+}
 </style>
 </head>
 
@@ -305,19 +317,19 @@ nav a {
     <div style="
         display:grid;
         grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-        gap:60px;
-        align-items:center;
+        gap:50px;
         max-width:1100px;
         margin:auto;
     ">
 
         <!-- IMPLANT -->
-        <div>
+        <div class="tech-card">
+        <div style="text-align:left;">
             <img src="8B193150-9341-4A27-9038-85E11AD27AF2.webp.png" 
                  alt="Breast implant types"
-                 style="width:100%; max-width:420px; border-radius:20px; display:block; margin:auto;">
+                 style="width:100%; max-width:420px; border-radius:20px; display:block; margin-bottom:20px;">
 
-            <h3 style="margin-top:20px;">Breast Implants</h3>
+            </h3>Breast Implants</h3>
             <p style="color:#555; line-height:1.7;">
                 Silicone implants provide a reliable and predictable way to enhance 
                 breast volume and projection. Different shapes and profiles are selected 
@@ -326,11 +338,11 @@ nav a {
         </div>
 
         <!-- FAT GRAFT -->
-        <div style="text-align:center;">
-
-        <img src="IMG_3333.png" 
-         alt="Fat grafting illustration"
-         style="width:100%; max-width:420px; border-radius:20px; display:block; margin:auto;">
+        <div class="tech-card">
+        <div style="text-align:left;">
+             <img src="IMG_3333.png" 
+              alt="Fat grafting illustration"
+              style="width:100%; max-width:420px; border-radius:20px; display:block; margin-bottom:20px;">
 
     <h3>Fat Grafting</h3>
     <p style="color:#555; line-height:1.7;">
