@@ -185,6 +185,54 @@ nav a {
 .stat-box h3 { font-size: 18px; margin-bottom: 5px; }
 .stat-box p { font-size: 13px; margin: 0; }
 
+    /* WHY CHOOSE SECTION STYLING */
+.why-choose-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.why-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(15, 32, 60, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-5px);
+}
+
+.why-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--header-pink);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: var(--navy);
+    font-size: 24px;
+}
+
+.why-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: var(--navy);
+}
+
+.why-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.7;
+}
+
 /* 6. DARK CALL TO ACTION */
 .dark-cta {
     background: var(--navy);
@@ -297,6 +345,51 @@ footer {
         <div class="stat-box"><h3>MMA</h3><p>Malaysian Medical Assoc.</p></div>
     </div>
 </section>
+    <section style="padding: 100px 20px; background: var(--bg);">
+    <div style="text-align: center; max-width: 800px; margin: 0 auto 60px;">
+        <h2 style="font-size: 42px; margin-bottom: 10px;">Why Choose Dr Agnes Yeo</h2>
+        <div style="width: 80px; height: 3px; background: var(--accent-rose); margin: 20px auto;"></div>
+    </div>
+
+    <div class="why-choose-grid">
+        <div class="why-card">
+            <div class="why-icon">🏅</div>
+            <h3>Expertise</h3>
+            <p>Specialised training and years of experience in cosmetic and reconstructive surgery.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">👤</div>
+            <h3>Personalised Care</h3>
+            <p>Every consultation is tailored to understand your unique goals and expectations.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">🛡️</div>
+            <h3>Safety First</h3>
+            <p>Highest standards of surgical care, patient safety, and realistic outcome expectations.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">✨</div>
+            <h3>Natural Results</h3>
+            <p>Focused on enhancement that looks natural and complements your unique features.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">🤝</div>
+            <h3>Patient Support</h3>
+            <p>Comprehensive aftercare and ongoing support throughout your recovery journey.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">⚡</div>
+            <h3>Modern Techniques</h3>
+            <p>Latest advancements in surgical techniques for optimal results and minimal downtime.</p>
+        </div>
+    </div>
+</section>
+
 
 <section class="dark-cta">
     <h2>Start Your Transformation</h2>
