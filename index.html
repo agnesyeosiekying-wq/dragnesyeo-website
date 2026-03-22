@@ -278,9 +278,55 @@ footer {
 <body>
 
 <header>
-    <div class="logo">
-        <a href="index.html"><img src="IMG_3288.svg" alt="Dr Agnes Yeo Logo"></a>
-    </div>
+    <style>
+/* TEXT-BASED LOGO WITH ITALIC SIGNATURE STYLE */
+.logo-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    line-height: 1.1;
+}
+
+.logo-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px; 
+    font-weight: 600; /* Slightly lighter weight looks better in italic */
+    font-style: italic; /* The requested italic touch */
+    color: var(--navy);
+    letter-spacing: -0.5px; /* Tighter spacing for italics feels more premium */
+}
+
+.logo-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    color: var(--accent-rose);
+    text-transform: uppercase;
+    letter-spacing: 2.5px; /* Increased tracking for a "luxury label" look */
+    margin-top: 2px;
+}
+
+header {
+    background: var(--header-pink);
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(15, 32, 60, 0.05);
+}
+
+@media (max-width: 768px) {
+    header { padding: 20px; }
+    .logo-name { font-size: 24px; }
+    .logo-subtitle { font-size: 7.5px; letter-spacing: 1.5px; }
+}
+</style>
+
+<header>
+    <a href="index.html" class="logo-text-wrapper">
+        <span class="logo-name">Dr Agnes Yeo</span>
+        <span class="logo-subtitle">Aesthetic Plastic & Reconstructive Surgeon</span>
+    </a>
     <nav>
         <a href="breast.html">Breast Surgery</a>
         <a href="tummy.html">Body Contouring</a>
