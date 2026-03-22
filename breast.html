@@ -25,7 +25,7 @@ body {
     color: #333;
 }
 
-/* 2. PINK HEADER (Matches latest request) */
+/* 2. PINK HEADER */
 header {
     position: sticky;
     top: 0;
@@ -53,11 +53,11 @@ nav a {
     letter-spacing: 1px;
 }
 
-/* 3. THE FLOATING CANVA-STYLE CARD */
-.canva-card-intro {
+/* 3. THE FLOATING CARD STYLE */
+.canva-card-intro, .procedure-card {
     background-color: white;
     max-width: 1200px;
-    margin: 80px auto;
+    margin: 60px auto;
     padding: 80px;
     border-radius: 40px;
     box-shadow: 20px 20px 60px rgba(15, 32, 60, 0.05);
@@ -68,7 +68,12 @@ nav a {
     position: relative;
 }
 
-/* 4. ASYMMETRIC IMAGE FRAME (From Canva Layout) */
+.procedure-card {
+    grid-template-columns: 1.2fr 1fr;
+    margin-bottom: 80px;
+}
+
+/* 4. IMAGE FRAMES */
 .image-container {
     width: 100%;
 }
@@ -82,8 +87,13 @@ nav a {
     aspect-ratio: 4 / 5;
 }
 
-/* 5. TEXT CONTENT - UPDATED WITH YOUR QUOTE */
-.text-container {
+.procedure-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* 5. TEXT CONTENT */
+.text-container, .procedure-text {
     color: var(--primary-navy);
 }
 
@@ -96,7 +106,7 @@ nav a {
     font-weight: 700;
 }
 
-.text-container h1 {
+h1 {
     font-family: 'Playfair Display', serif;
     font-size: 48px;
     font-weight: 700;
@@ -104,7 +114,13 @@ nav a {
     line-height: 1.1;
 }
 
-.text-container .quote {
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: var(--primary-navy);
+}
+
+.quote {
     font-family: 'Playfair Display', serif;
     font-size: 19px;
     font-weight: 600;
@@ -115,15 +131,31 @@ nav a {
     line-height: 1.4;
 }
 
-.text-container p {
+p {
     font-size: 16px;
     line-height: 1.8;
     color: #555;
-    margin-bottom: 40px;
-    max-width: 500px;
 }
 
-/* 6. BUTTON STYLE */
+/* 6. TECH CARDS */
+.tech-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    transition: 0.3s;
+}
+
+.tech-card:hover { transform: translateY(-5px); }
+
+.tech-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: var(--primary-navy);
+    margin: 20px 0 10px 0;
+}
+
+/* 7. UI ELEMENTS */
 .consult-btn {
     background-color: var(--primary-navy);
     color: white;
@@ -133,9 +165,9 @@ nav a {
     font-weight: 600;
     font-size: 15px;
     display: inline-block;
+    margin-top: 20px;
 }
 
-/* 7. SCROLL ARROW */
 .scroll-arrow {
     font-size: 32px;
     color: var(--primary-navy);
@@ -145,95 +177,18 @@ nav a {
     opacity: 0.3;
 }
 
-/* MOBILE RESPONSIVE */
+/* MOBILE */
 @media (max-width: 768px) {
     header { padding: 10px 20px; min-height: 80px; }
     .logo img { height: 80px; }
     nav { display: none; }
-    .canva-card-intro {
+    .canva-card-intro, .procedure-card {
         grid-template-columns: 1fr;
         padding: 40px 25px;
         text-align: center;
+        margin: 20px;
     }
     .curved-image { max-width: 300px; margin: 0 auto; }
-    .text-container h1 { font-size: 36px; }
-    .scroll-arrow { display: none; }
-}
-    /* PROCEDURE SECTION */
-.procedure-section {
-    padding: 80px 20px;
-}
-
-.procedure-card {
-    background: white;
-    max-width: 1200px;
-    margin: auto;
-    padding: 70px;
-    border-radius: 40px;
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 60px;
-    align-items: center;
-    box-shadow: 20px 20px 60px rgba(15, 32, 60, 0.05);
-}
-
-.procedure-text h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 36px;
-    margin-bottom: 30px;
-    color: var(--primary-navy);
-}
-
-.procedure-step {
-    margin-bottom: 25px;
-}
-
-.procedure-step strong {
-    display: block;
-    font-size: 14px;
-    letter-spacing: 1px;
-    color: var(--primary-navy);
-    margin-bottom: 8px;
-}
-
-.procedure-step p {
-    font-size: 15px;
-    color: #555;
-    line-height: 1.7;
-}
-
-.procedure-image img {
-    width: 100%;
-    border-radius: 20px;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-    .procedure-card {
-        grid-template-columns: 1fr;
-        padding: 40px 25px;
-        text-align: center;
-    }
-}
-    .tech-card {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 25px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    transition: 0.3s;
-    text-align: left;
-}
-    .tech-card h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 22px;
-    font-weight: 600; /* or 700 if you want stronger */
-    color: #0F203C;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.tech-card:hover {
-    transform: translateY(-5px);
 }
 </style>
 </head>
@@ -256,170 +211,72 @@ nav a {
         <div class="image-container">
             <img src="IMG_3322.webp" class="curved-image" alt="Artistic Breast Silhouette Profile">
         </div>
-        
         <div class="text-container">
             <p class="label-caps">Surgical Philosophy</p>
             <h1>Breast Augmentation</h1>
-            
-            <span class="quote">
-                “Every woman’s body is unique. Breast augmentation is not about perfection, but about achieving harmony that feels natural to you.”
-            </span>
-            
-            <p>
-                Whether you are looking to restore volume lost after pregnancy or weight changes, or simply seeking better symmetry, Dr. Agnes focuses on techniques that respect your natural anatomy for a balanced, personalized result.
-            </p>
-            
+            <span class="quote">“Every woman’s body is unique. Breast augmentation is not about perfection, but about achieving harmony that feels natural to you.”</span>
+            <p>Whether you are looking to restore volume lost after pregnancy or weight changes, or simply seeking better symmetry, Dr. Agnes focuses on techniques that respect your natural anatomy.</p>
             <a href="https://wa.me/60189657735" class="consult-btn">WhatsApp Consultation</a>
         </div>
-
         <div class="scroll-arrow">↓</div>
     </section>
-    <section class="procedure-section">
 
-    <div class="procedure-card">
-
-        <!-- LEFT CONTENT -->
+    <section class="procedure-card">
         <div class="procedure-text">
             <p class="label-caps">The Procedure</p>
             <h2>What to Expect</h2>
-
-            <div class="procedure-step">
-                <strong>01 — Consultation</strong>
-                <p>
-                    A detailed discussion to understand your goals, body proportions, and expectations. 
-                    Implant size, shape, and placement are carefully planned to suit your anatomy.
-                </p>
+            <div style="margin-top:30px;">
+                <p><strong>01 — Consultation</strong><br>A detailed discussion to understand your goals. Implant size and placement are planned to suit your anatomy.</p>
+                <p><strong>02 — Surgery</strong><br>Performed under general anaesthesia. Implants are placed through carefully selected incision sites.</p>
+                <p><strong>03 — Recovery</strong><br>Most return to light activities in a few days. Swelling subsides over weeks for natural results.</p>
             </div>
-
-            <div class="procedure-step">
-                <strong>02 — Surgery</strong>
-                <p>
-                    The procedure is performed under general anaesthesia. 
-                    Implants are placed either above or below the muscle through carefully selected incision sites.
-                </p>
-            </div>
-
-            <div class="procedure-step">
-                <strong>03 — Recovery</strong>
-                <p>
-                    Most patients return to light activities within a few days. 
-                    Swelling gradually subsides over weeks, with final results becoming more natural over time.
-                </p>
-            </div>
-
         </div>
-
-        <!-- RIGHT IMAGE -->
         <div class="procedure-image">
             <img src="IMG_3327.webp" alt="Breast silhouette illustration">
         </div>
+    </section>
 
-    </div>
-        
-</section>
-    
-<section style="background:#ffffff; padding:80px 20px;">
-
-    <h2 style="text-align:center; margin-bottom:60px;">
-        Understanding the Techniques
-    </h2>
-
-    <div style="
-        display:grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
-        gap:40px;
-        max-width:1100px;
-        margin:auto;
-    ">
-
-        <!-- IMPLANT -->
-        <div class="tech-card">
-            <img src="8B193150-9341-4A27-9038-85E11AD27AF2.webp.png" 
-                 alt="Breast implant types"
-                 style="width:100%; max-width:420px; border-radius:20px; display:block; margin-bottom:20px;">
-
-            <h3>Breast Implants</h3>
-            <p style="color:#555; line-height:1.7;">
-                Silicone implants provide a reliable and predictable way to enhance 
-                breast volume and projection. Different shapes and profiles are selected 
-                based on your body proportions and desired outcome.
-            </p>
+    <section style="background:var(--bg-pink); padding:100px 20px;">
+        <h2 style="text-align:center; margin-bottom:60px;">Understanding the Techniques</h2>
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px,1fr)); gap:40px; max-width:1100px; margin:auto;">
+            <div class="tech-card">
+                <img src="8B193150-9341-4A27-9038-85E11AD27AF2.webp.png" style="width:100%; border-radius:20px;">
+                <h3>Breast Implants</h3>
+                <p>Silicone implants provide a reliable and predictable way to enhance breast volume and projection based on your body proportions.</p>
+            </div>
+            <div class="tech-card">
+                <img src="IMG_3333.png" style="width:100%; border-radius:20px;">
+                <h3>Fat Grafting</h3>
+                <p>Fat is gently harvested and processed to enhance breast shape. This technique offers a softer, more natural enhancement.</p>
+            </div>
         </div>
+    </section>
 
-        <!-- FAT GRAFT -->
-        <div class="tech-card">
-             <img src="IMG_3333.png" 
-              alt="Fat grafting illustration"
-              style="width:100%; max-width:420px; border-radius:20px; display:block; margin-bottom:20px;">
-
-    <h3>Fat Grafting</h3>
-    <p style="color:#555; line-height:1.7;">
-        Fat is gently harvested from areas such as the abdomen or thighs, 
-        processed, and carefully injected to enhance breast shape. This technique 
-        offers a softer, more natural enhancement.
-    </p>
-
+    <section style="background:#FFF9F9; padding:100px 20px;">
+        <div style="max-width:900px; margin:auto; text-align:center;">
+            <p class="label-caps">Suitability</p>
+            <h2>Is Breast Augmentation Right for You?</h2>
+            <p style="margin-bottom:50px;">The most suitable approach depends on your goals, anatomy, and expectations.</p>
         </div>
-
-    </div>
-    
-<section style="background:#FFF9F9; padding:80px 20px;">
-
-    <div style="max-width:900px; margin:auto; text-align:center;">
-
-        <p class="label-caps">Suitability</p>
-
-        <h2 style="
-            font-family:'Playfair Display', serif;
-            font-size:36px;
-            color:#0F203C;
-            margin-bottom:20px;
-        ">
-            Is Breast Augmentation Right for You?
-        </h2>
-
-        <p style="color:#555; line-height:1.8; margin-bottom:50px;">
-            Breast augmentation is a highly individual decision. 
-            The most suitable approach depends on your goals, anatomy, and expectations.
-        </p>
-
-    </div>
-
-    <div style="
-        display:grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
-        gap:40px;
-        max-width:1000px;
-        margin:auto;
-    ">
-
-        <!-- SUITABLE -->
-        <div class="tech-card">
-            <h3>Suitable for You If</h3>
-
-            <ul style="padding-left:18px; color:#555; line-height:1.8;">
-                <li>You would like fuller volume or improved shape</li>
-                <li>You have lost volume after pregnancy or weight loss</li>
-                <li>You desire better symmetry</li>
-                <li>You are seeking natural, balanced enhancement</li>
-            </ul>
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap:40px; max-width:1000px; margin:auto;">
+            <div class="tech-card">
+                <h3>Suitable for You If</h3>
+                <ul style="padding-left:18px; color:#555; line-height:1.8;">
+                    <li>You would like fuller volume or improved shape</li>
+                    <li>You have lost volume after pregnancy</li>
+                    <li>You desire better symmetry</li>
+                </ul>
+            </div>
+            <div class="tech-card">
+                <h3>Important Considerations</h3>
+                <ul style="padding-left:18px; color:#555; line-height:1.8;">
+                    <li>Results vary based on individual anatomy</li>
+                    <li>Implants are not lifetime devices</li>
+                    <li>Recovery time is required for healing</li>
+                </ul>
+            </div>
         </div>
-
-        <!-- CONSIDERATIONS -->
-        <div class="tech-card">
-            <h3>Important Considerations</h3>
-
-            <ul style="padding-left:18px; color:#555; line-height:1.8;">
-                <li>Results vary based on individual anatomy</li>
-                <li>Implants are not lifetime devices</li>
-                <li>Recovery time is required for optimal healing</li>
-                <li>A consultation is essential to determine suitability</li>
-            </ul>
-        </div>
-
-    </div>
-
-</section>
+    </section>
 </main>
 
 <footer style="text-align: center; padding: 60px; color: #8E6E6E; font-size: 12px; font-weight: 500;">
