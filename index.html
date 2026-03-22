@@ -187,6 +187,41 @@ footer {
     .dark {flex-direction:column; text-align:center;}
 }
 
+    .feature-list {
+    margin-top:15px;
+    padding-left:0;
+    list-style:none;
+}
+
+.feature-list li {
+    margin-bottom:10px;
+    color:#555;
+    font-size:15px;
+    position:relative;
+    padding-left:22px;
+}
+
+/* custom tick */
+.feature-list li::before {
+    content: "✓";
+    position:absolute;
+    left:0;
+    color:#B87333;
+    font-weight:bold;
+}
+
+.learn-more {
+    display:inline-block;
+    margin-top:15px;
+    color:#B87333;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.learn-more:hover {
+    letter-spacing:0.5px;
+}
 </style>
 </head>
 
@@ -212,19 +247,52 @@ footer {
 </section>
 
 <section class="services">
-    <h2>Our Services</h2>
+    <h2 style="margin-bottom:50px;">Our Services</h2>
+
     <div class="service-grid">
 
+        <!-- BREAST -->
         <div class="card">
             <img src="IMG_3348.webp">
+
             <h3>Breast Augmentation</h3>
-            <p>Customised implant selection tailored to your body.</p>
+
+            <p>
+                Enhance your silhouette with customised implant selection 
+                designed specifically for your body proportions and aesthetic goals.
+            </p>
+
+            <ul class="feature-list">
+                <li>Customised implant selection</li>
+                <li>Natural-looking outcomes</li>
+                <li>Balanced proportions</li>
+            </ul>
+
+            <a href="breast.html" class="learn-more">
+                Learn More →
+            </a>
         </div>
 
+        <!-- BODY -->
         <div class="card">
             <img src="IMG_3344.webp">
+
             <h3>Body Contouring</h3>
-            <p>Refine your silhouette with tummy tuck and contouring.</p>
+
+            <p>
+                Refine your silhouette through tummy tucks and strategic contouring 
+                procedures tailored to your unique body shape.
+            </p>
+
+            <ul class="feature-list">
+                <li>Flatter abdominal profile</li>
+                <li>Improved body contour</li>
+                <li>Personalised approach</li>
+            </ul>
+
+            <a href="tummy.html" class="learn-more">
+                Learn More →
+            </a>
         </div>
 
     </div>
