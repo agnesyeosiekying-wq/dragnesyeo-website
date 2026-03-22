@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr Agnes Yeo | Consultant Plastic Surgeon</title>
+<title>Dr Agnes Yeo | Plastic Surgeon</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-/* 1. CONSISTENT BRAND COLORS */
+/* BRAND COLORS */
 :root {
     --bg: #FDF7F7;
     --header-pink: #F9E8E8;
     --navy: #0F203C;
     --text: #555;
-    --accent-rose: #8E6E6E; /* Matches your breast page accent */
+    --accent-rose: #8E6E6E;
 }
 
 html { scroll-behavior: smooth; }
@@ -29,26 +29,45 @@ body {
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
     color: var(--navy);
-    font-weight: 700;
 }
 
-/* 2. REFINED PINK HEADER (Matches Breast Page) */
+/* HEADER & SIGNATURE LOGO */
 header {
     position: sticky;
     top: 0;
     z-index: 999;
     background: var(--header-pink);
-    padding: 15px 40px;
+    padding: 30px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 100px;
     border-bottom: 1px solid rgba(15, 32, 60, 0.05);
 }
 
-.logo img {
-    height: 140px; 
-    width: auto;
+.logo-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    line-height: 1.1;
+}
+
+.logo-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px; 
+    font-weight: 600;
+    font-style: italic; 
+    color: var(--navy);
+    letter-spacing: -0.5px;
+}
+
+.logo-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    color: var(--accent-rose);
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-top: 2px;
 }
 
 nav a {
@@ -57,49 +76,31 @@ nav a {
     color: var(--navy);
     font-weight: 600;
     font-size: 14px;
-    letter-spacing: 1px;
 }
 
-/* 3. HERO SECTION */
+/* HERO */
 .hero {
     text-align: center;
-    padding: 140px 20px;
-    background: white; /* Clean break from header */
+    padding: 120px 20px;
+    background: white;
 }
 
-.hero h1 {
-    font-size: 64px;
-    margin-bottom: 20px;
-    line-height: 1.1;
-}
-
-.hero p {
-    max-width: 600px;
-    margin: auto;
-    font-size: 18px;
-    line-height: 1.8;
-}
+.hero h1 { font-size: 64px; margin-bottom: 20px; }
+.hero p { max-width: 700px; margin: auto; line-height: 1.8; font-size: 18px; }
 
 .btn {
     display: inline-block;
-    margin-top: 40px;
-    padding: 18px 40px;
-    border-radius: 8px;
+    margin-top: 30px;
+    padding: 15px 30px;
+    border-radius: 10px;
     background: var(--navy);
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-    transition: 0.3s;
 }
 
-.btn:hover { transform: translateY(-3px); opacity: 0.9; }
-
-/* 4. SERVICES SECTION */
-.services {
-    padding: 100px 20px;
-    text-align: center;
-}
-
+/* SERVICES */
+.services { padding: 80px 20px; text-align: center; }
 .service-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -110,82 +111,38 @@ nav a {
 
 .card {
     background: #fff;
-    border-radius: 30px;
-    overflow: hidden;
-    padding: 40px;
-    box-shadow: 10px 10px 40px rgba(15, 32, 60, 0.03);
-    transition: 0.3s;
-    text-align: left;
-}
-
-.card:hover { transform: translateY(-10px); }
-
-.card img {
-    width: 100%;
     border-radius: 20px;
-    margin-bottom: 25px;
+    padding: 30px;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
 }
 
-.feature-list {
-    margin: 20px 0;
-    padding-left: 0;
-    list-style: none;
-}
+.card img { width: 100%; border-radius: 15px; margin-bottom: 20px; }
 
-.feature-list li {
-    margin-bottom: 10px;
-    font-size: 15px;
-    padding-left: 25px;
-    position: relative;
-}
+.feature-list { list-style: none; padding: 0; margin: 20px 0; }
+.feature-list li { margin-bottom: 10px; padding-left: 22px; position: relative; font-size: 15px; }
+.feature-list li::before { content: "✓"; position: absolute; left: 0; color: var(--accent-rose); font-weight: bold; }
 
-.feature-list li::before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: var(--accent-rose);
-    font-weight: bold;
-}
-
-.learn-more {
-    display: inline-block;
-    color: var(--navy);
-    text-decoration: none;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 2px;
-}
-
-/* 5. ABOUT STATS */
+/* ABOUT */
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 40px;
     max-width: 1100px;
-    margin: 100px auto;
+    margin: 80px auto;
     padding: 20px;
-    align-items: center;
-}
-
-.stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
 }
 
 .stat-box {
     background: #fff;
     padding: 25px;
-    border-radius: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
     text-align: center;
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.02);
 }
 
-.stat-box h3 { font-size: 18px; margin-bottom: 5px; }
-.stat-box p { font-size: 13px; margin: 0; }
-
-    /* WHY CHOOSE SECTION STYLING */
+/* WHY CHOOSE */
 .why-choose-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -198,129 +155,30 @@ nav a {
     background: #fff;
     padding: 40px;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(15, 32, 60, 0.05);
     text-align: center;
-    transition: transform 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
 }
 
-.why-card:hover {
-    transform: translateY(-5px);
-}
-
-.why-icon {
-    width: 60px;
-    height: 60px;
-    background: var(--header-pink);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 20px;
-    color: var(--navy);
-    font-size: 24px;
-}
-
-.why-card h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 22px;
-    margin-bottom: 15px;
-    color: var(--navy);
-}
-
-.why-card p {
-    font-size: 15px;
-    color: #555;
-    line-height: 1.7;
-}
-
-/* 6. DARK CALL TO ACTION */
+/* FOOTER & CTA */
 .dark-cta {
     background: var(--navy);
     color: #fff;
     text-align: center;
-    padding: 100px 20px;
-    border-radius: 60px 60px 0 0;
+    padding: 80px 20px;
+    border-radius: 40px 40px 0 0;
 }
 
-.dark-cta h2 { color: #fff; font-size: 42px; }
+footer { background: var(--navy); color: #fff; text-align: center; padding: 40px; font-size: 13px; }
 
-.whatsapp-btn {
-    background: #fff;
-    color: var(--navy);
-    padding: 15px 40px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 700;
-    display: inline-block;
-    margin-top: 20px;
-}
-
-footer {
-    background: var(--navy);
-    color: rgba(255,255,255,0.6);
-    text-align: center;
-    padding: 40px;
-    font-size: 13px;
-    border-top: 1px solid rgba(255,255,255,0.1);
-}
-
-/* MOBILE */
-@media(max-width:768px){
-    header { padding: 10px 20px; min-height: 80px; }
-    .logo img { height: 80px; }
-    .hero h1 { font-size: 40px; }
+@media(max-width: 768px){
+    header { padding: 20px; flex-direction: column; }
     .about { grid-template-columns: 1fr; }
-    nav { display: none; }
+    .hero h1 { font-size: 40px; }
 }
 </style>
 </head>
 
 <body>
-
-<header>
-    <style>
-/* TEXT-BASED LOGO WITH ITALIC SIGNATURE STYLE */
-.logo-text-wrapper {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    line-height: 1.1;
-}
-
-.logo-name {
-    font-family: 'Playfair Display', serif;
-    font-size: 30px; 
-    font-weight: 600; /* Slightly lighter weight looks better in italic */
-    font-style: italic; /* The requested italic touch */
-    color: var(--navy);
-    letter-spacing: -0.5px; /* Tighter spacing for italics feels more premium */
-}
-
-.logo-subtitle {
-    font-family: 'Inter', sans-serif;
-    font-size: 9px;
-    font-weight: 700;
-    color: var(--accent-rose);
-    text-transform: uppercase;
-    letter-spacing: 2.5px; /* Increased tracking for a "luxury label" look */
-    margin-top: 2px;
-}
-
-header {
-    background: var(--header-pink);
-    padding: 30px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid rgba(15, 32, 60, 0.05);
-}
-
-@media (max-width: 768px) {
-    header { padding: 20px; }
-    .logo-name { font-size: 24px; }
-    .logo-subtitle { font-size: 7.5px; letter-spacing: 1.5px; }
-}
-</style>
 
 <header>
     <a href="index.html" class="logo-text-wrapper">
@@ -335,116 +193,76 @@ header {
     </nav>
 </header>
 
-<section class="hero">
-    <p style="letter-spacing: 3px; font-weight: 700; font-size: 12px; text-transform: uppercase; color: var(--accent-rose); margin-bottom: 15px;">Consultant Plastic Surgeon</p>
-    <h1>Refined Beauty,<br>Naturally</h1>
-    <p>
-        Personalised surgical care focused on balance and harmony. 
-        Enhancing your natural proportions with precision and empathy.
-    </p>
-    <a href="https://wa.me/60189657735" class="btn">Schedule Consultation</a>
-</section>
+<main>
+    <section class="hero">
+        <h1>Refined Beauty,<br>Naturally</h1>
+        <p>Expert surgical care in breast augmentation and body contouring. Personalised results designed to enhance your natural proportions.</p>
+        <a href="https://wa.me/60189657735" class="btn">Schedule Consultation</a>
+    </section>
 
-<section class="services">
-    <div class="service-grid">
-        <div class="card">
-            <img src="IMG_3348.webp" alt="Breast Augmentation">
-            <h3>Breast Augmentation</h3>
-            <p>Enhance your silhouette with customised selection designed for your proportions.</p>
-            <ul class="feature-list">
-                <li>Natural-looking outcomes</li>
-                <li>Symmetry & Balance</li>
-                <li>Premium Implant Options</li>
-            </ul>
-            <a href="breast.html" class="learn-more">Explore Procedure →</a>
+    <section class="services">
+        <h2 style="margin-bottom:50px;">Our Services</h2>
+        <div class="service-grid">
+            <div class="card">
+                <img src="IMG_3348.webp" alt="Breast Augmentation">
+                <h3>Breast Augmentation</h3>
+                <p>Enhance your silhouette with customised implant selection designed specifically for your body proportions and aesthetic goals.</p>
+                <ul class="feature-list">
+                    <li>Customised implant selection</li>
+                    <li>Natural-looking outcomes</li>
+                    <li>Balanced proportions</li>
+                </ul>
+                <a href="breast.html" style="color:var(--accent-rose); text-decoration:none; font-weight:600;">Learn More →</a>
+            </div>
+
+            <div class="card">
+                <img src="IMG_3344.webp" alt="Body Contouring">
+                <h3>Body Contouring</h3>
+                <p>Refine your silhouette through tummy tucks and strategic contouring procedures tailored to your unique body shape.</p>
+                <ul class="feature-list">
+                    <li>Flatter abdominal profile</li>
+                    <li>Improved body contour</li>
+                    <li>Personalised approach</li>
+                </ul>
+                <a href="tummy.html" style="color:var(--accent-rose); text-decoration:none; font-weight:600;">Learn More →</a>
+            </div>
         </div>
+    </section>
 
-        <div class="card">
-            <img src="IMG_3344.webp" alt="Body Contouring">
-            <h3>Body Contouring</h3>
-            <p>Refine your silhouette through procedures tailored to your unique body shape.</p>
-            <ul class="feature-list">
-                <li>Abdominal Profiling</li>
-                <li>Post-Pregnancy Restoration</li>
-                <li>Liposculpture</li>
-            </ul>
-            <a href="tummy.html" class="learn-more">Explore Procedure →</a>
+    <section class="about" id="about">
+        <div>
+            <h2>About Dr Agnes Yeo</h2>
+            <p>Specialist in aesthetic and reconstructive surgery focusing on natural results.</p>
         </div>
-    </div>
-</section>
-
-<section class="about" id="about">
-    <div>
-        <p class="label-caps" style="letter-spacing: 3px; font-weight: 700; font-size: 11px; text-transform: uppercase; color: var(--accent-rose);">Clinical Background</p>
-        <h2 style="font-size: 48px; margin-top: 10px;">Expertise in Motion</h2>
-        <p>
-            Dr. Agnes Yeo is a specialist in aesthetic and reconstructive surgery. 
-            Her philosophy centers on the "Art of Subtlety"—achieving results that are significant yet 
-            harmoniously integrated into your existing beauty.
-        </p>
-    </div>
-
-   <div class="stats">
-        <div class="stat-box"><h3>MRCS</h3><p>Royal College of Surgeons (UK)</p></div>
-        <div class="stat-box"><h3>MBBS</h3><p>IMU (Malaysia)</p></div>
-        <div class="stat-box"><h3>MS</h3><p>Plastic Surgery (USM)</p></div>
-        <div class="stat-box"><h3>MMA</h3><p>Malaysian Medical Assoc.</p></div>
-    </div>
-</section>
-    <section style="padding: 100px 20px; background: var(--bg);">
-    <div style="text-align: center; max-width: 800px; margin: 0 auto 60px;">
-        <h2 style="font-size: 42px; margin-bottom: 10px;">Why Choose Dr Agnes Yeo</h2>
-        <div style="width: 80px; height: 3px; background: var(--accent-rose); margin: 20px auto;"></div>
-    </div>
-
-    <div class="why-choose-grid">
-        <div class="why-card">
-            <div class="why-icon">🏅</div>
-            <h3>Expertise</h3>
-            <p>Specialised training and years of experience in cosmetic and reconstructive surgery.</p>
+        <div class="stats">
+            <div class="stat-box"><h3>MRCS (Edinburgh)</h3><p>Member of the Royal College of Surgeons (UK)</p></div>
+            <div class="stat-box"><h3>MBBS (IMU)</h3><p>International Medical University</p></div>
+            <div class="stat-box"><h3>Plastic Surgery (USM)</h3><p>Master of Plastic Surgery</p></div>
+            <div class="stat-box"><h3>MSPRS & MMA</h3><p>Professional Memberships</p></div>
         </div>
+    </section>
 
-        <div class="why-card">
-            <div class="why-icon">👤</div>
-            <h3>Personalised Care</h3>
-            <p>Every consultation is tailored to understand your unique goals and expectations.</p>
+    <section style="padding: 80px 20px;">
+        <h2 style="text-align:center; margin-bottom:40px;">Why Choose Dr Agnes Yeo</h2>
+        <div class="why-choose-grid">
+            <div class="why-card"><h3>Expertise</h3><p>Specialised training and years of experience in cosmetic and reconstructive surgery.</p></div>
+            <div class="why-card"><h3>Personalised Care</h3><p>Every consultation is tailored to understand your unique goals and expectations.</p></div>
+            <div class="why-card"><h3>Safety First</h3><p>Highest standards of surgical care, patient safety, and realistic outcome expectations.</p></div>
+            <div class="why-card"><h3>Natural Results</h3><p>Focused on enhancement that looks natural and complements your unique features.</p></div>
+            <div class="why-card"><h3>Patient Support</h3><p>Comprehensive aftercare and ongoing support throughout your recovery journey.</p></div>
+            <div class="why-card"><h3>Modern Techniques</h3><p>Latest advancements in surgical techniques for optimal results and minimal downtime.</p></div>
         </div>
+    </section>
 
-        <div class="why-card">
-            <div class="why-icon">🛡️</div>
-            <h3>Safety First</h3>
-            <p>Highest standards of surgical care, patient safety, and realistic outcome expectations.</p>
-        </div>
-
-        <div class="why-card">
-            <div class="why-icon">✨</div>
-            <h3>Natural Results</h3>
-            <p>Focused on enhancement that looks natural and complements your unique features.</p>
-        </div>
-
-        <div class="why-card">
-            <div class="why-icon">🤝</div>
-            <h3>Patient Support</h3>
-            <p>Comprehensive aftercare and ongoing support throughout your recovery journey.</p>
-        </div>
-
-        <div class="why-card">
-            <div class="why-icon">⚡</div>
-            <h3>Modern Techniques</h3>
-            <p>Latest advancements in surgical techniques for optimal results and minimal downtime.</p>
-        </div>
-    </div>
-</section>
-
-
-<section class="dark-cta">
-    <h2>Start Your Transformation</h2>
-    <p>Every journey begins with a private, detailed consultation.</p>
-    <a href="https://wa.me/60189657735" class="whatsapp-btn">Message via WhatsApp</a>
-</section>
+    <section class="dark-cta">
+        <h2>Ready to Begin Your Journey?</h2>
+        <p>Schedule a consultation to explore your options.</p>
+        <a href="https://wa.me/60189657735" class="btn" style="background:white; color:var(--navy);">WhatsApp</a>
+    </section>
+</main>
 
 <footer>
-    © 2026 Dr Agnes Yeo · MS (Plastic Surgery, USM) · Bukit Tinggi Medical Centre
+    © 2026 Dr Agnes Yeo · All rights reserved
 </footer>
 
 </body>
