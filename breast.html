@@ -3,380 +3,257 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Breast Augmentation | Dr Agnes Yeo</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-
-/* COLORS */
+/* BRAND VARIABLES */
 :root {
-    --bg:#FDF7F7;
-    --navy:#0F203C;
-    --text:#555;
-    --accent:#B87333;
-    --pink:#FFF3F3;
+    --bg: #FDF7F7;
+    --header-pink: #F9E8E8;
+    --navy: #0F203C;
+    --text: #555;
+    --accent-rose: #8E6E6E;
 }
 
-/* BASE */
+html { scroll-behavior: smooth; }
+
 body {
-    margin:0;
-    font-family:'Inter', sans-serif;
-    background:var(--bg);
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
 }
 
-h1,h2,h3 {
-    font-family:'Playfair Display', serif;
-    color:var(--navy);
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--navy);
 }
 
-/* HEADER */
+/* SIGNATURE HEADER */
 header {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 40px;
-    background:#fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: var(--header-pink);
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(15, 32, 60, 0.05);
+}
+
+.logo-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    line-height: 1.1;
+}
+
+.logo-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px; 
+    font-weight: 600;
+    font-style: italic; 
+    color: var(--navy);
+}
+
+.logo-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    color: var(--accent-rose);
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
 }
 
 nav a {
-    margin-left:25px;
-    text-decoration:none;
-    color:var(--navy);
+    margin-left: 25px;
+    text-decoration: none;
+    color: var(--navy);
+    font-weight: 600;
+    font-size: 14px;
 }
 
 /* HERO */
 .hero {
-    padding:80px 20px;
-    max-width:1000px;
-    margin:auto;
+    padding: 100px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
 }
 
-.hero h1 {
-    font-size:48px;
-}
+.hero h1 { font-size: 56px; margin-bottom: 20px; }
+.hero p { font-size: 18px; line-height: 1.8; }
 
-.hero p {
-    color:var(--text);
-    font-size:18px;
-    line-height:1.7;
-}
-
-/* SECTION */
-.section {
-    max-width:1100px;
-    margin:80px auto;
-    padding:20px;
-}
-/* INFO SECTION (BREAST PAGE IMAGE + TEXT) */
+/* INFO SECTION */
 .info-section {
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
-    align-items:center;
-    max-width:1100px;
-    margin:80px auto;
-    padding:20px;
-}
-
-.info-image {
-    width:100%;
-    height:350px;
-    border-radius:30px;
-    overflow:hidden;
-    box-shadow:0 20px 40px rgba(0,0,0,0.06);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 20px;
 }
 
 .info-image img {
-    width:100%;
-    height:100%;
-    object-fit:cover;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.06);
 }
 
-/* mobile */
-@media(max-width:768px){
-    .info-section {
-        grid-template-columns:1fr;
-    }
+.feature-list { list-style: none; padding: 0; margin: 25px 0; }
+.feature-list li { margin-bottom: 12px; padding-left: 25px; position: relative; }
+.feature-list li::before { content: "✓"; position: absolute; left: 0; color: var(--accent-rose); font-weight: bold; }
 
-    .info-image {
-        height:250px;
-    }
-}
-/* GRID */
-.grid {
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
+/* METHODS */
+.method-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 40px auto;
 }
 
-/* IMAGE BOX */
-.image-box {
-    background:linear-gradient(135deg,#ffe9ec,#fdd6de);
-    border-radius:25px;
-    height:300px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#eaa;
-    font-size:40px;
-}
-
-/* LIST */
-.feature-list {
-    list-style:none;
-    padding:0;
-}
-
-.feature-list li {
-    margin-bottom:12px;
-    padding-left:22px;
-    position:relative;
-    color:#555;
-}
-
-.feature-list li::before {
-    content:"✓";
-    position:absolute;
-    left:0;
-    color:var(--accent);
-}
-
-/* METHOD CARDS */
 .method-card {
-    background:#fff;
-    border-radius:25px;
-    padding:35px;
-    box-shadow:0 15px 40px rgba(0,0,0,0.05);
-    transition:0.3s;
+    background: #fff;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.03);
 }
 
-.method-card:hover {
-    transform:translateY(-5px);
-}
-    .method-grid {
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:30px;
-    max-width:1100px;
-    margin:40px auto;
-}
-
-/* BENEFITS */
+/* BENEFITS & STEPS */
 .benefits {
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
-    text-align:center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
 }
 
-.benefit {
-    padding:20px;
-}
-
-/* PROCEDURE */
-.step {
-    display:flex;
-    margin-bottom:30px;
-}
-
+.step { display: flex; margin-bottom: 40px; text-align: left; }
 .step-number {
-    width:40px;
-    height:40px;
-    border-radius:50%;
-    background:var(--accent);
-    color:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin-right:20px;
+    min-width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
 }
 
 /* CTA */
-.cta {
-    text-align:center;
-    margin:100px 0;
-}
-
+.cta { text-align: center; margin: 100px 0; }
 .btn {
-    padding:15px 30px;
-    border-radius:10px;
-    text-decoration:none;
-    margin:10px;
+    display: inline-block;
+    padding: 18px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
 }
+.primary { background: var(--navy); color: #fff; }
 
-.primary {
-    background:linear-gradient(135deg,#2d1b3d,#0f203c);
-    color:#fff;
+@media(max-width: 768px){
+    header { padding: 20px; flex-direction: column; gap: 20px; }
+    .info-section, .method-grid, .benefits { grid-template-columns: 1fr; }
 }
-
-.secondary {
-    border:1px solid #000;
-    color:#000;
-}
-
-/* MOBILE */
-@media(max-width:768px){
-    .grid,.method-grid,.benefits {
-        grid-template-columns:1fr;
-    }
-}
-
 </style>
 </head>
 
 <body>
 
 <header>
-    <div><strong>Dr Agnes Yeo</strong></div>
+    <a href="index.html" class="logo-text-wrapper">
+        <span class="logo-name">Dr Agnes Yeo</span>
+        <span class="logo-subtitle">Aesthetic Plastic & Reconstructive Surgeon</span>
+    </a>
     <nav>
         <a href="index.html">Home</a>
-        <a href="index.html#services">Services</a>
+        <a href="tummy.html">Body Contouring</a>
         <a href="index.html#about">About</a>
     </nav>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-    <h1>Breast Augmentation Surgery</h1>
-    <p>
-        Enhance your natural beauty with personalized breast augmentation 
-        that complements your unique body proportions.
-    </p>
-</section>
+<main>
+    <section class="hero">
+        <h1>Breast Augmentation Surgery</h1>
+        <p>Enhance your natural beauty with personalized breast augmentation that complements your unique body proportions.</p>
+    </section>
 
-<!-- WHAT IS -->
-<section class="info-section">
-
-    <div class="info-text">
-        <h2>What is Breast Augmentation?</h2>
-        <p>
-            Breast augmentation is a surgical procedure designed to enhance 
-            the size and shape of your breasts. We offer two advanced options include premium-quality silicone implants 
-            or natural fat grafting for a completely organic approach.
-            The procedure is customized to your specific goals, 
-            whether you're looking for cubtle enhancement or more noticeable results
-        </p>
-        <ul class="feature-list">
-            <li>Personalised implant or fat grafting selection</li>
-            <li>Advanced surgical techniques</li>
-            <li>Natural-looking outcomes</li>
-        </ul>
-    </div>
-
-    <div class="info-image">
-        <img src="IMG_3322.webp" alt="Breast augmentation">
-    </div>
-
-</section>
-
-<!-- METHODS -->
-<section class="section">
-    <h2 style="text-align:center;">Augmentation Methods</h2>
-
-    <div class="method-grid">
-
-        <div class="method-card">
-            <h3>Breast Implants</h3>
+    <section class="info-section">
+        <div class="info-text">
+            <h2>What is Breast Augmentation?</h2>
             <p>
-                Premium silicone implants designed for optimal safety and aesthetics. 
-                offers significant volume enhancement with predictable, long-lasting results.
+                Breast augmentation is a surgical procedure designed to enhance the size and shape of your breasts. 
+                We offer two advanced options include premium-quality silicone implants or natural fat grafting for a completely organic approach. 
+                The procedure is customized to your specific goals, whether you're looking for cubtle enhancement or more noticeable results.
             </p>
-
             <ul class="feature-list">
-                <li>Significant volume increase</li>
-                <li>Wide range of sizes</li>
-                <li>Long-lasting results</li>
-                <li>Predictable outcome</li>
+                <li>Personalised implant or fat grafting selection</li>
+                <li>Advanced surgical techniques</li>
+                <li>Natural-looking outcomes</li>
             </ul>
         </div>
-
-        <div class="method-card">
-            <h3>Fat Grafting</h3>
-            <p>
-                Natural autologous fat transfer harvested from your own body. Creates beautifully soft, natural-feeling results 
-                with added body contouring benefits.
-            </p>
-
-            <ul class="feature-list">
-                <li>100% natural results</li>
-                <li>Soft, natural texture</li>
-                <li>No foreign material</li>
-                <li>Body contouring benefit</li>
-            </ul>
+        <div class="info-image">
+            <img src="IMG_3322.webp" alt="Breast augmentation">
         </div>
+    </section>
 
-    </div>
-</section>
-
-<!-- BENEFITS -->
-<section class="section">
-    <h2 style="text-align:center;">Benefits of Breast Augmentation</h2>
-
-    <div class="benefits">
-        <div class="benefit">
-            <h3>Increased Confidence</h3>
-            <p>Feel more confident in everyday life and clothing.</p>
+    <section style="padding: 80px 20px;">
+        <h2 style="text-align:center; margin-bottom: 40px;">Augmentation Methods</h2>
+        <div class="method-grid">
+            <div class="method-card">
+                <h3>Breast Implants</h3>
+                <p>Premium silicone implants designed for optimal safety and aesthetics. Offers significant volume enhancement with predictable, long-lasting results.</p>
+                <ul class="feature-list">
+                    <li>Significant volume increase</li>
+                    <li>Wide range of sizes</li>
+                    <li>Long-lasting results</li>
+                    <li>Predictable outcome</li>
+                </ul>
+            </div>
+            <div class="method-card">
+                <h3>Fat Grafting</h3>
+                <p>Natural autologous fat transfer harvested from your own body. Creates beautifully soft, natural-feeling results with added body contouring benefits.</p>
+                <ul class="feature-list">
+                    <li>100% natural results</li>
+                    <li>Soft, natural texture</li>
+                    <li>No foreign material</li>
+                    <li>Body contouring benefit</li>
+                </ul>
+            </div>
         </div>
+    </section>
 
-        <div class="benefit">
-            <h3>Improved Proportions</h3>
-            <p>Achieve better body balance and silhouette.</p>
+    <section style="padding: 80px 20px; background: white;">
+        <h2 style="text-align:center; margin-bottom: 50px;">Benefits of Breast Augmentation</h2>
+        <div class="benefits" style="max-width: 1100px; margin: auto;">
+            <div class="benefit"><h3>Increased Confidence</h3><p>Feel more confident in everyday life and clothing.</p></div>
+            <div class="benefit"><h3>Improved Proportions</h3><p>Achieve better body balance and silhouette.</p></div>
+            <div class="benefit"><h3>Natural Results</h3><p>Modern techniques for refined outcomes.</p></div>
         </div>
+    </section>
 
-        <div class="benefit">
-            <h3>Natural Results</h3>
-            <p>Modern techniques for refined outcomes.</p>
-        </div>
-    </div>
-</section>
+    <section style="max-width: 800px; margin: 80px auto; padding: 20px;">
+        <h2 style="text-align:center; margin-bottom: 50px;">The Procedure</h2>
+        <div class="step"><div class="step-number">1</div><div><h3>Consultation</h3><p>Discuss goals and select suitable implant or technique.</p></div></div>
+        <div class="step"><div class="step-number">2</div><div><h3>Surgery</h3><p>Implants placed using precise surgical techniques and through a discreet incisions.</p></div></div>
+        <div class="step"><div class="step-number">3</div><div><h3>Recovery</h3><p>Resume light activity within a week. Full results are visible after 4-6 weeks as swelling subsides.</p></div></div>
+        <div class="step"><div class="step-number">4</div><div><h3>Results</h3><p>Enjoy your beautifully enhanced silhouette that looks and feels natural, with results that can last many years.</p></div></div>
+    </section>
 
-<!-- PROCEDURE -->
-<section class="section">
-    <h2 style="text-align:center;">The Procedure</h2>
+    <section class="cta">
+        <h2>Ready to schedule your consultation?</h2>
+        <a href="https://wa.me/60189657735" class="btn primary">WhatsApp</a>
+    </section>
+</main>
 
-    <div class="step">
-        <div class="step-number">1</div>
-        <div>
-            <h3>Consultation</h3>
-            <p>Discuss goals and select suitable implant or technique.</p>
-        </div>
-    </div>
-
-    <div class="step">
-        <div class="step-number">2</div>
-        <div>
-            <h3>Surgery</h3>
-            <p>Implants placed using precise surgical techniques and through a discreet incisions.</p>
-        </div>
-    </div>
-
-    <div class="step">
-        <div class="step-number">3</div>
-        <div>
-            <h3>Recovery</h3>
-            <p>Resume light activity within a week. Full results are visible after 4-6 weeks as swelling subsides.</p>
-        </div>
-    </div>
-
-    <div class="step">
-        <div class="step-number">4</div>
-        <div>
-            <h3>Results</h3>
-            <p>Enjoy your beautifully enhanced silhouette that looks and feels natural, with results that can last many years.</p>
-        </div>
-    </div>
-
-</section>
-
-<!-- CTA -->
-<section class="cta">
-    <h2>Ready to schedule your consultation?</h2>
-
-    <a href="https://wa.me/60189657735" class="btn primary">WhatsApp</a>
-    <a href="index.html" class="btn secondary">Back</a>
-</section>
+<footer>
+    © 2026 Dr Agnes Yeo · MS (Plastic Surgery, USM) · Bukit Tinggi Medical Centre
+</footer>
 
 </body>
 </html>
