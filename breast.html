@@ -144,20 +144,16 @@ nav a {
 }
 
 /* METHOD CARDS */
-.method-grid {
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:30px;
-}
-
-.method {
+.method-card {
     background:#fff;
-    padding:30px;
-    border-radius:20px;
+    border-radius:25px;
+    padding:35px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.05);
+    transition:0.3s;
 }
 
-.method.highlight {
-    border:1px solid #f2c2d0;
+.method-card:hover {
+    transform:translateY(-5px);
 }
 
 /* BENEFITS */
@@ -274,7 +270,7 @@ nav a {
 
     <div class="method-grid">
 
-        <div class="method">
+        <div class="method-card">
             <h3>Breast Implants</h3>
             <p>
                 Premium silicone implants designed for optimal safety and aesthetics. 
@@ -289,7 +285,7 @@ nav a {
             </ul>
         </div>
 
-        <div class="method highlight">
+        <div class="method-card">
             <h3>Fat Grafting</h3>
             <p>
                 Natural autologous fat transfer harvested from your own body. Creates beautifully soft, natural-feeling results 
