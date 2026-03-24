@@ -69,7 +69,41 @@ nav a {
     margin:80px auto;
     padding:20px;
 }
+/* INFO SECTION (BREAST PAGE IMAGE + TEXT) */
+.info-section {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+    max-width:1100px;
+    margin:80px auto;
+    padding:20px;
+}
 
+.info-image {
+    width:100%;
+    height:350px;
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:0 20px 40px rgba(0,0,0,0.06);
+}
+
+.info-image img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* mobile */
+@media(max-width:768px){
+    .info-section {
+        grid-template-columns:1fr;
+    }
+
+    .info-image {
+        height:250px;
+    }
+}
 /* GRID */
 .grid {
     display:grid;
@@ -210,18 +244,16 @@ nav a {
 </section>
 
 <!-- WHAT IS -->
-<section class="section grid">
+<section class="info-section">
 
-    <div>
+    <div class="info-text">
         <h2>What is Breast Augmentation?</h2>
         <p>
             Breast augmentation is a surgical procedure designed to enhance 
             the size and shape of your breasts. We offer two advanced options include premium-quality silicone implants 
             or natural fat grafting for a completely organic approach.
-        </p>
-         <p>
-           The procedure is customized to your specific goals, 
-           whether you're looking for cubtle enhancement or more noticeable results
+            The procedure is customized to your specific goals, 
+            whether you're looking for cubtle enhancement or more noticeable results
         </p>
         <ul class="feature-list">
             <li>Personalised implant or fat grafting selection</li>
@@ -230,9 +262,10 @@ nav a {
         </ul>
     </div>
 
- <div class="image-box">
-    <img src="IMG_3322.webp" alt="Breast augmentation illustration">
-</div>
+    <div class="info-image">
+        <img src="IMG_3322.webp" alt="Breast augmentation">
+    </div>
+
 </section>
 
 <!-- METHODS -->
