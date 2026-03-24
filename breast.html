@@ -3,369 +3,340 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Breast Augmentation | Dr Agnes Yeo</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
-/* 1. PINK & NAVY THEME SETTINGS */
+
+/* COLORS */
 :root {
-    --bg-pink: #FDF2F2;        /* Soft blush background */
-    --header-pink: #F9E8E8;    /* Slightly deeper pink for the header */
-    --primary-navy: #0F203C;   /* Your branding navy */
-    --accent-rose: #8E6E6E;    /* Subtle rose for the italics */
+    --bg:#FDF7F7;
+    --navy:#0F203C;
+    --text:#555;
+    --accent:#B87333;
+    --pink:#FFF3F3;
 }
 
-html { scroll-behavior: smooth; }
-
+/* BASE */
 body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    background-color: var(--bg-pink);
-    color: #333;
+    margin:0;
+    font-family:'Inter', sans-serif;
+    background:var(--bg);
 }
 
-/* 2. PINK HEADER */
+h1,h2,h3 {
+    font-family:'Playfair Display', serif;
+    color:var(--navy);
+}
+
+/* HEADER */
 header {
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    background: var(--header-pink);
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 100px;
-    border-bottom: 1px solid rgba(15, 32, 60, 0.05); 
-}
-
-.logo img {
-    height: 140px; 
-    width: auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    background:#fff;
 }
 
 nav a {
-    margin-left: 24px;
-    text-decoration: none;
-    color: var(--primary-navy);
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
+    margin-left:25px;
+    text-decoration:none;
+    color:var(--navy);
 }
 
-/* 3. THE FLOATING CARD STYLE */
-.canva-card-intro, .procedure-card {
-    background-color: white;
-    max-width: 1200px;
-    margin: 60px auto;
-    padding: 80px;
-    border-radius: 40px;
-    box-shadow: 20px 20px 60px rgba(15, 32, 60, 0.05);
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 80px;
-    align-items: center;
-    position: relative;
+/* HERO */
+.hero {
+    padding:80px 20px;
+    max-width:1000px;
+    margin:auto;
 }
 
-.procedure-card {
-    grid-template-columns: 1.2fr 1fr;
-    margin-bottom: 80px;
+.hero h1 {
+    font-size:48px;
 }
 
-/* 4. IMAGE FRAMES */
-.image-container {
-    width: 100%;
+.hero p {
+    color:var(--text);
+    font-size:18px;
+    line-height:1.7;
 }
 
-.curved-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 120px 120px 40px 120px; 
-    object-fit: cover;
-    aspect-ratio: 4 / 5;
+/* SECTION */
+.section {
+    max-width:1100px;
+    margin:80px auto;
+    padding:20px;
 }
 
-.procedure-image img {
-    width: 100%;
-    border-radius: 20px;
+/* GRID */
+.grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
 }
 
-/* 5. TEXT CONTENT */
-.text-container, .procedure-text {
-    color: var(--primary-navy);
+/* IMAGE BOX */
+.image-box {
+    background:linear-gradient(135deg,#ffe9ec,#fdd6de);
+    border-radius:25px;
+    height:300px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#eaa;
+    font-size:40px;
 }
 
-.label-caps {
-    letter-spacing: 3px; 
-    font-size: 11px; 
-    text-transform: uppercase; 
-    margin-bottom: 10px; 
-    opacity: 0.7;
-    font-weight: 700;
+/* LIST */
+.feature-list {
+    list-style:none;
+    padding:0;
 }
 
-h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 48px;
-    font-weight: 700;
-    margin: 0 0 5px 0;
-    line-height: 1.1;
+.feature-list li {
+    margin-bottom:12px;
+    padding-left:22px;
+    position:relative;
+    color:#555;
 }
 
-h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 36px;
-    color: var(--primary-navy);
+.feature-list li::before {
+    content:"✓";
+    position:absolute;
+    left:0;
+    color:var(--accent);
 }
 
-.quote {
-    font-family: 'Playfair Display', serif;
-    font-size: 19px;
-    font-weight: 600;
-    font-style: italic; 
-    color: var(--accent-rose);
-    margin-bottom: 25px;
-    display: block;
-    line-height: 1.4;
+/* METHOD CARDS */
+.method-grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
 }
 
-p {
-    font-size: 15px;
-    line-height: 1.8;
-    color: #555;
+.method {
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
 }
 
-/* 6. TECH CARDS */
-.tech-card {
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 25px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.04);
-    transition: 0.3s;
+.method.highlight {
+    border:1px solid #f2c2d0;
 }
 
-.tech-card:hover { transform: translateY(-5px); }
-
-.tech-card h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 22px;
-    color: var(--primary-navy);
-    margin: 20px 0 10px 0;
+/* BENEFITS */
+.benefits {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    text-align:center;
 }
 
-/* 7. UI ELEMENTS */
-.consult-btn {
-    background-color: var(--primary-navy);
-    color: white;
-    padding: 16px 35px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 15px;
-    display: inline-block;
-    margin-top: 20px;
+.benefit {
+    padding:20px;
 }
 
-.scroll-arrow {
-    font-size: 32px;
-    color: var(--primary-navy);
-    position: absolute;
-    bottom: 50px;
-    right: 50px;
-    opacity: 0.3;
+/* PROCEDURE */
+.step {
+    display:flex;
+    margin-bottom:30px;
+}
+
+.step-number {
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:var(--accent);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-right:20px;
+}
+
+/* CTA */
+.cta {
+    text-align:center;
+    margin:100px 0;
+}
+
+.btn {
+    padding:15px 30px;
+    border-radius:10px;
+    text-decoration:none;
+    margin:10px;
+}
+
+.primary {
+    background:linear-gradient(135deg,#2d1b3d,#0f203c);
+    color:#fff;
+}
+
+.secondary {
+    border:1px solid #000;
+    color:#000;
 }
 
 /* MOBILE */
-@media (max-width: 768px) {
-    header { padding: 10px 20px; min-height: 80px; }
-    .logo img { height: 80px; }
-    nav { display: none; }
-    .canva-card-intro, .procedure-card {
-        grid-template-columns: 1fr;
-        padding: 40px 25px;
-        text-align: center;
-        margin: 20px;
+@media(max-width:768px){
+    .grid,.method-grid,.benefits {
+        grid-template-columns:1fr;
     }
-    .curved-image { max-width: 300px; margin: 0 auto; }
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
-    <div class="logo">
-        <a href="index.html"><img src="IMG_3288.svg" alt="Dr Agnes Yeo Logo"></a>
-    </div>
+    <div><strong>Dr Agnes Yeo</strong></div>
     <nav>
         <a href="index.html">Home</a>
         <a href="index.html#services">Services</a>
-        <a href="https://wa.me/60189657735">Contact</a>
+        <a href="index.html#about">About</a>
     </nav>
 </header>
 
-<main>
-    <section class="canva-card-intro">
-        <div class="image-container">
-            <img src="IMG_3322.webp" class="curved-image" alt="Artistic Breast Silhouette Profile">
+<!-- HERO -->
+<section class="hero">
+    <h1>Breast Augmentation Surgery</h1>
+    <p>
+        Enhance your natural beauty with personalized breast augmentation 
+        that complements your unique body proportions.
+    </p>
+</section>
+
+<!-- WHAT IS -->
+<section class="section grid">
+
+    <div>
+        <h2>What is Breast Augmentation?</h2>
+        <p>
+            Breast augmentation is a surgical procedure designed to enhance 
+            the size and shape of your breasts. Options include silicone implants 
+            or natural fat grafting for a softer, more organic result.
+        </p>
+
+        <ul class="feature-list">
+            <li>Personalised implant or fat grafting selection</li>
+            <li>Advanced surgical techniques</li>
+            <li>Natural-looking outcomes</li>
+        </ul>
+    </div>
+
+    <div class="image-box">♡</div>
+
+</section>
+
+<!-- METHODS -->
+<section class="section">
+    <h2 style="text-align:center;">Augmentation Methods</h2>
+
+    <div class="method-grid">
+
+        <div class="method">
+            <h3>Breast Implants</h3>
+            <p>
+                Silicone or saline implants provide reliable volume enhancement 
+                with predictable, long-lasting results.
+            </p>
+
+            <ul class="feature-list">
+                <li>Significant volume increase</li>
+                <li>Wide range of sizes</li>
+                <li>Long-lasting results</li>
+                <li>Predictable outcome</li>
+            </ul>
         </div>
-        <div class="text-container">
-            <p class="label-caps">Surgical Philosophy</p>
-            <h1>Breast Augmentation</h1>
-            <span class="quote">“Every woman’s body is unique. Breast augmentation is not about perfection, but about achieving harmony that feels natural to you.”</span>
-            <p>Whether you are looking to restore volume lost after pregnancy or weight changes, or simply seeking better symmetry, Dr. Agnes focuses on techniques that respect your natural anatomy.</p>
-            <a href="https://wa.me/60189657735" class="consult-btn">WhatsApp Consultation</a>
+
+        <div class="method highlight">
+            <h3>Fat Grafting</h3>
+            <p>
+                Uses your own fat to create soft, natural-looking results 
+                with added body contouring benefits.
+            </p>
+
+            <ul class="feature-list">
+                <li>100% natural results</li>
+                <li>Soft texture</li>
+                <li>No foreign material</li>
+                <li>Subtle enhancement</li>
+            </ul>
         </div>
-        <div class="scroll-arrow">↓</div>
-    </section>
 
-    <section class="procedure-card">
-        <div class="procedure-text">
-            <p class="label-caps">The Procedure</p>
-            <h2>What to Expect</h2>
-            <div style="margin-top:30px;">
-                <p><strong>01 — Consultation</strong><br>A detailed discussion to understand your goals. Implant size and placement are planned to suit your anatomy.</p>
-                <p><strong>02 — Surgery</strong><br>Performed under general anaesthesia. Implants are placed through carefully selected incision sites.</p>
-                <p><strong>03 — Recovery</strong><br>Most return to light activities in a few days. Swelling subsides over weeks for natural results.</p>
-            </div>
+    </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="section">
+    <h2 style="text-align:center;">Benefits of Breast Augmentation</h2>
+
+    <div class="benefits">
+        <div class="benefit">
+            <h3>Increased Confidence</h3>
+            <p>Feel more confident in everyday life and clothing.</p>
         </div>
-        <div class="procedure-image">
-            <img src="IMG_3327.webp" alt="Breast silhouette illustration">
+
+        <div class="benefit">
+            <h3>Improved Proportions</h3>
+            <p>Better balance and silhouette.</p>
         </div>
-    </section>
 
-    <section style="background:var(--bg-pink); padding:100px 20px;">
-        <h2 style="text-align:center; margin-bottom:60px;">Understanding the Techniques</h2>
-        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px,1fr)); gap:40px; max-width:1100px; margin:auto;">
-            <div class="tech-card">
-                <img src="8B193150-9341-4A27-9038-85E11AD27AF2.webp.png" style="width:100%; border-radius:20px;">
-                <h3>Breast Implants</h3>
-                <p>Silicone implants provide a reliable and predictable way to enhance breast volume and projection based on your body proportions.</p>
-            </div>
-            <div class="tech-card">
-                <img src="IMG_3333.png" style="width:100%; border-radius:20px;">
-                <h3>Fat Grafting</h3>
-                <p>Fat is gently harvested and processed to enhance breast shape. This technique offers a softer, more natural enhancement.</p>
-            </div>
-        </div>
-    </section>
-
-    <section style="background:#FFF9F9; padding:100px 20px;">
-        <div style="max-width:900px; margin:auto; text-align:center;">
-            <p class="label-caps">Suitability</p>
-            <h2>Is Breast Augmentation Right for You?</h2>
-            <p style="margin-bottom:50px;">The most suitable approach depends on your goals, anatomy, and expectations.</p>
-        </div>
-        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap:40px; max-width:1000px; margin:auto;">
-            <div class="tech-card">
-                <h3>Suitable for You If</h3>
-                <ul style="padding-left:18px; color:#555; line-height:1.8;">
-                    <li>You would like fuller volume or improved shape</li>
-                    <li>You have lost volume after pregnancy</li>
-                    <li>You desire better symmetry</li>
-                </ul>
-            </div>
-            <div class="tech-card">
-                <h3>Important Considerations</h3>
-                <ul style="padding-left:18px; color:#555; line-height:1.8;">
-                    <li>Results vary based on individual anatomy</li>
-                    <li>Implants are not lifetime devices</li>
-                    <li>Recovery time is required for healing</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section style="background:var(--bg-pink); padding:80px 20px; border-top: 1px solid rgba(15, 32, 60, 0.05);">
-    <div style="max-width:900px; margin:auto;">
-        <p class="label-caps" style="text-align:center;">Common Questions</p>
-        <h2 style="text-align:center; font-family:'Playfair Display', serif; font-size:36px; color:var(--primary-navy); margin-bottom:50px;">
-            Frequently Asked Questions
-        </h2>
-
-        <div style="display:grid; gap:20px;">
-            
-            <div class="tech-card" style="padding:30px;">
-                <h3 style="font-size:18px; margin-top:0;">How long is the recovery period?</h3>
-                <p style="margin-bottom:0; font-size:15px;">Most patients can return to sedentary work within 5–7 days. Strenuous exercise and heavy lifting should be avoided for at least 4–6 weeks to ensure proper healing.</p>
-            </div>
-
-            <div class="tech-card" style="padding:30px;">
-                <h3 style="font-size:18px; margin-top:0;">Will the results look natural?</h3>
-                <p style="margin-bottom:0; font-size:15px;">Dr. Agnes focuses on achieving harmony rather than just "perfection". By selecting the right implant profile or using fat grafting, the goal is a silhouette that feels natural to your unique body.</p>
-            </div>
-
-            <div class="tech-card" style="padding:30px;">
-                <h3 style="font-size:18px; margin-top:0;">Do breast implants need to be replaced?</h3>
-                <p style="margin-bottom:0; font-size:15px;">Breast implants are not considered lifetime devices. While they are highly durable, they may need to be replaced or removed in the future due to normal wear or changes in personal preference.</p>
-            </div>
-
-            <div class="tech-card" style="padding:30px;">
-                <h3 style="font-size:18px; margin-top:0;">Where will the incisions be located?</h3>
-                <p style="margin-bottom:0; font-size:15px;">Incision sites are carefully selected during consultation to minimize visible scarring. Common options include the crease under the breast (inframammary) or around the nipple (periareolar).</p>
-            </div>
-
-        </div>
-        
-        <div style="text-align:center; margin-top:50px;">
-            <p style="font-size:14px; color:var(--accent-rose); font-style:italic;">Have a more specific question?</p>
-            <a href="https://wa.me/60189657735" class="consult-btn" style="margin-top:10px;">Ask Dr. Agnes on WhatsApp</a>
+        <div class="benefit">
+            <h3>Natural Results</h3>
+            <p>Modern techniques for refined outcomes.</p>
         </div>
     </div>
 </section>
 
-</main>
-    
-<section style="
-    background:#F7E6E6;
-    padding:90px 20px;
-    text-align:center;
-">
+<!-- PROCEDURE -->
+<section class="section">
+    <h2 style="text-align:center;">The Procedure</h2>
 
-    <h2 style="
-        font-family:'Playfair Display', serif;
-        font-size:42px;
-        color:#0F203C;
-        margin-bottom:20px;
-    ">
-        Considering Breast Augmentation?
-    </h2>
+    <div class="step">
+        <div class="step-number">1</div>
+        <div>
+            <h3>Consultation</h3>
+            <p>Discuss goals and select suitable implant or technique.</p>
+        </div>
+    </div>
 
-    <p style="
-        color:#6E5C5C;
-        font-size:16px;
-        max-width:600px;
-        margin:auto;
-        line-height:1.8;
-    ">
-        A personalised consultation will help you understand the most suitable approach for your body and goals.
-    </p>
+    <div class="step">
+        <div class="step-number">2</div>
+        <div>
+            <h3>Surgery</h3>
+            <p>Implants placed using precise surgical techniques.</p>
+        </div>
+    </div>
 
-    <a href="https://wa.me/60189657735"
-       style="
-        display:inline-block;
-        margin-top:40px;
-        background:#0F203C;
-        color:white;
-        padding:16px 36px;
-        border-radius:10px;
-        font-weight:600;
-        text-decoration:none;
-        transition:0.3s;
-       "
-       onmouseover="this.style.transform='translateY(-2px)'"
-       onmouseout="this.style.transform='translateY(0)'"
-    >
-        Book a Consultation
-    </a>
+    <div class="step">
+        <div class="step-number">3</div>
+        <div>
+            <h3>Recovery</h3>
+            <p>Resume light activity within a week.</p>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-number">4</div>
+        <div>
+            <h3>Results</h3>
+            <p>Natural-looking enhancement over time.</p>
+        </div>
+    </div>
 
 </section>
 
-<footer style="text-align: center; padding: 60px; color: #8E6E6E; font-size: 12px; font-weight: 500;">
-    © 2026 Dr Agnes Yeo · MS (Plastic Surgery, USM) · Bukit Tinggi Medical Centre
-</footer>
+<!-- CTA -->
+<section class="cta">
+    <h2>Ready to schedule your consultation?</h2>
+
+    <a href="https://wa.me/60189657735" class="btn primary">WhatsApp</a>
+    <a href="index.html" class="btn secondary">Back</a>
+</section>
 
 </body>
 </html>
