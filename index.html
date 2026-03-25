@@ -123,6 +123,17 @@ nav a {
 .feature-list li { margin-bottom: 10px; padding-left: 22px; position: relative; font-size: 15px; }
 .feature-list li::before { content: "✓"; position: absolute; left: 0; color: var(--accent-rose); font-weight: bold; }
 
+.other-services-preview {
+    text-align:center;
+    padding:80px 20px;
+}
+
+.other-services-preview p {
+    max-width:600px;
+    margin:auto;
+    color:#555;
+}
+
 /* ABOUT */
 .about {
     display: grid;
@@ -188,6 +199,7 @@ footer { background: var(--navy); color: #fff; text-align: center; padding: 40px
     <nav>
         <a href="breast.html">Breast Surgery</a>
         <a href="tummy.html">Body Contouring</a>
+        <a href="services.html">Other Services</a>
         <a href="#about">About</a>
         <a href="https://wa.me/60189657735">Contact</a>
     </nav>
@@ -228,6 +240,48 @@ footer { background: var(--navy); color: #fff; text-align: center; padding: 40px
             </div>
         </div>
     </section>
+   
+    <section class="other-services-preview">
+    <h2>Other Services</h2>
+    <p>
+        In addition to breast and body procedures, Dr Agnes Yeo provides 
+        reconstructive surgery and facial aesthetic treatments tailored to your needs.
+    </p>
+
+    <a href="services.html" class="btn">View All Services</a>
+</section>
+
+    <section class="services-page">
+
+    <h2>Reconstructive Surgery</h2>
+
+    <div class="service-grid">
+        <div class="card">
+            <h3>Skin Cancer Reconstruction</h3>
+            <p>Restore form and function following removal of skin cancers.</p>
+        </div>
+
+        <div class="card">
+            <h3>Scar Revision</h3>
+            <p>Improve the appearance of scars with surgical techniques.</p>
+        </div>
+    </div>
+
+    <h2>Facial Aesthetics</h2>
+
+    <div class="service-grid">
+        <div class="card">
+            <h3>Botox & Fillers</h3>
+            <p>Non-surgical treatments for facial rejuvenation.</p>
+        </div>
+
+        <div class="card">
+            <h3>Skin Treatments</h3>
+            <p>Enhance skin quality and overall radiance.</p>
+        </div>
+    </div>
+
+</section>
 
     <section class="about" id="about">
         <div>
