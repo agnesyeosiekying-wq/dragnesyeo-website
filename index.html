@@ -83,26 +83,28 @@ nav a {
 </section>
 .hero {
   position: relative;
-  height: 100vh;
-  background: url('your-image.jpg') center center / cover no-repeat;
+  height: 90vh;
+  background: url('IMG_3344.webp') center center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #2b2b2b;
+  color: #0F203C;
 }
 
+/* softer, more premium overlay */
 .hero::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.5); /* soft overlay for readability */
-  backdrop-filter: blur(2px);
+  inset: 0;
+  background: linear-gradient(
+    rgba(255,255,255,0.65),
+    rgba(255,255,255,0.75)
+  );
+  backdrop-filter: blur(3px);
 }
 
+/* content */
 .hero-content {
   position: relative;
   z-index: 1;
@@ -110,31 +112,36 @@ nav a {
   padding: 2rem;
 }
 
+/* headline */
 .hero h1 {
-  font-size: 3rem;
-  font-weight: 400;
-  letter-spacing: 1px;
-  margin-bottom: 1rem;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
 }
 
+/* text */
 .hero p {
-  font-size: 1.2rem;
+  font-size: 18px;
   color: #555;
-  margin-bottom: 2rem;
+  margin-bottom: 30px;
+  line-height: 1.7;
 }
 
+/* button (match your brand) */
 .cta-button {
-  background-color: #d8bfae;
+  background: linear-gradient(135deg,#2d1b3d,#0f203c);
   color: #fff;
-  padding: 0.8rem 2rem;
-  border-radius: 30px;
+  padding: 14px 28px;
+  border-radius: 12px;
   text-decoration: none;
   font-weight: 500;
-  transition: background 0.3s ease;
+  transition: 0.3s;
 }
 
 .cta-button:hover {
-  background-color: #c5a894;
+  opacity: 0.85;
 }
 
 /* BUTTON */
