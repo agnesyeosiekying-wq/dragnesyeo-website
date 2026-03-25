@@ -73,9 +73,28 @@ nav a {
 }
 
 .info-image {
-    height:320px;
+    width:100%;
+    height:350px;
     border-radius:30px;
-    background:linear-gradient(135deg,#dbeafe,#c7d2fe);
+    overflow:hidden;
+    box-shadow:0 20px 40px rgba(0,0,0,0.06);
+    position:relative;
+}
+
+.info-image img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:brightness(0.95) contrast(1.05);
+}
+    .info-image::after {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.3));
 }
 
 /* LIST */
@@ -232,7 +251,9 @@ nav a {
         </ul>
     </div>
 
-    <div class="info-image"></div>
+  <div class="info-image">
+    <img src="IMG_3384.webp" alt="Body contouring">
+</div>
 </section>
 
 <!-- PROCEDURES -->
