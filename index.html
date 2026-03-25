@@ -74,74 +74,15 @@ nav a {
 }
 
 /* HERO */
-<section class="hero">
-  <div class="hero-content">
-    <h1>Refined Beauty, Naturally</h1>
-    <p>Enhancing your natural features with precision and care.</p>
-    <a href="#contact" class="cta-button">Book a Consultation</a>
-  </div>
-</section>
 .hero {
-  position: relative;
-  height: 90vh;
-  background: url('IMG_3344.webp') center center / cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #0F203C;
+    max-width:1000px;
+    margin:auto;
+    padding:100px 20px 60px;
 }
 
-/* softer, more premium overlay */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    rgba(255,255,255,0.65),
-    rgba(255,255,255,0.75)
-  );
-  backdrop-filter: blur(3px);
-}
-
-/* content */
-.hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 700px;
-  padding: 2rem;
-}
-
-/* headline */
-.hero h1 {
-  font-size: 48px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  margin-bottom: 20px;
-  font-family: 'Playfair Display', serif;
-}
-
-/* text */
 .hero p {
-  font-size: 18px;
-  color: #555;
-  margin-bottom: 30px;
-  line-height: 1.7;
-}
-
-/* button (match your brand) */
-.cta-button {
-  background: linear-gradient(135deg,#2d1b3d,#0f203c);
-  color: #fff;
-  padding: 14px 28px;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-.cta-button:hover {
-  opacity: 0.85;
+    font-size:18px;
+    max-width:700px;
 }
 
 /* BUTTON */
