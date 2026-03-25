@@ -3,271 +3,361 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tummy Tuck | Dr Agnes Yeo</title>
+
+<title>Body Contouring | Dr Agnes Yeo</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
+
+/* COLORS */
 :root {
-    --bg-pink: #FDF2F2;
-    --header-pink: #F9E8E8;
-    --primary-navy: #0F203C;
-    --accent-rose: #8E6E6E;
+    --bg:#FDF7F7;
+    --navy:#0F203C;
+    --text:#555;
+    --accent:#3b82f6;
 }
 
+/* BASE */
 body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    background: var(--bg-pink);
+    margin:0;
+    font-family:'Inter', sans-serif;
+    background:var(--bg);
+}
+
+h1,h2,h3 {
+    font-family:'Playfair Display', serif;
+    color:var(--navy);
 }
 
 /* HEADER */
 header {
-    background: var(--header-pink);
-    padding: 15px 40px;
     display:flex;
     justify-content:space-between;
-    align-items:center;
+    padding:20px 40px;
+    background:#fff;
 }
 
 nav a {
-    margin-left:20px;
+    margin-left:25px;
     text-decoration:none;
-    color:var(--primary-navy);
-    font-weight:600;
+    color:var(--navy);
 }
 
-/* CARD STYLE */
-.section-card {
-    background:white;
-    max-width:1100px;
-    margin:60px auto;
-    padding:70px;
-    border-radius:40px;
-    display:grid;
-    grid-template-columns:1fr 1.2fr;
-    gap:60px;
-    align-items:center;
-    box-shadow:20px 20px 60px rgba(0,0,0,0.05);
+/* HERO */
+.hero {
+    max-width:1000px;
+    margin:auto;
+    padding:80px 20px;
 }
 
-/* TEXT */
-h1, h2, h3 {
-    font-family:'Playfair Display', serif;
-    color:var(--primary-navy);
+.hero h1 {
+    font-size:48px;
 }
 
-h1 { font-size:44px; }
-h2 { font-size:34px; }
-h3 { font-size:22px; }
-
-.label {
-    font-size:11px;
-    letter-spacing:2px;
-    text-transform:uppercase;
-    opacity:0.6;
-}
-
-.quote {
-    font-style:italic;
-    color:var(--accent-rose);
-    margin:20px 0;
-}
-
-p {
-    color:#555;
+.hero p {
+    color:var(--text);
+    font-size:18px;
     line-height:1.7;
 }
 
-/* IMAGE */
-img {
-    width:100%;
-    border-radius:25px;
-}
-
-/* GRID CARDS */
-.grid {
+/* INFO SECTION */
+.info {
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
     max-width:1100px;
-    margin:auto;
+    margin:80px auto;
+    padding:20px;
+    align-items:center;
 }
 
-.card {
-    background:white;
-    padding:30px;
+.info-image {
+    height:320px;
+    border-radius:30px;
+    background:linear-gradient(135deg,#dbeafe,#c7d2fe);
+}
+
+/* LIST */
+.feature-list {
+    list-style:none;
+    padding:0;
+}
+
+.feature-list li {
+    margin-bottom:12px;
+    position:relative;
+    padding-left:25px;
+}
+
+.feature-list li::before {
+    content:"✓";
+    position:absolute;
+    left:0;
+    color:#3b82f6;
+}
+
+/* PROCEDURES */
+.procedures {
+    max-width:1100px;
+    margin:80px auto;
+    padding:20px;
+}
+
+.proc-grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.proc-card {
+    background:#fff;
+    padding:35px;
     border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.05);
+}
+
+.proc-card h3 {
+    margin-bottom:10px;
+}
+
+/* BENEFITS */
+.benefits {
+    text-align:center;
+    max-width:1100px;
+    margin:80px auto;
+}
+
+.benefit-grid {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.benefit {
+    padding:20px;
+}
+
+/* STEPS */
+.steps {
+    max-width:900px;
+    margin:80px auto;
+}
+
+.step {
+    display:flex;
+    margin-bottom:30px;
+}
+
+.step-number {
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#2563eb;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-right:20px;
 }
 
 /* CTA */
 .cta {
     text-align:center;
-    padding:90px 20px;
-    background:#F7E6E6;
+    margin:80px 0;
 }
 
 .btn {
-    background:var(--primary-navy);
-    color:white;
-    padding:15px 35px;
+    padding:15px 30px;
     border-radius:10px;
     text-decoration:none;
-    display:inline-block;
-    margin-top:30px;
+    margin:10px;
+}
+
+.primary {
+    background:linear-gradient(135deg,#2d1b3d,#0f203c);
+    color:#fff;
+}
+
+.secondary {
+    border:1px solid #000;
+    color:#000;
 }
 
 /* MOBILE */
 @media(max-width:768px){
-    .section-card{
+    .info,
+    .proc-grid,
+    .benefit-grid {
         grid-template-columns:1fr;
-        padding:40px;
     }
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
-    <h3>Dr Agnes Yeo</h3>
+    <div><strong>Dr Agnes Yeo</strong></div>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
     </nav>
 </header>
 
-<!-- INTRO -->
-<section class="section-card">
-    <img src="YOUR-IMAGE.jpg">
+<!-- HERO -->
+<section class="hero">
+    <h1>Body Contouring Surgery</h1>
+    <p>
+        Sculpt and refine your silhouette with personalized body contouring procedures designed to enhance your natural curves and proportions.
+    </p>
+</section>
+
+<!-- WHAT IS -->
+<section class="info">
     <div>
-        <p class="label">Surgical Philosophy</p>
-        <h1>Tummy Tuck (Abdominoplasty)</h1>
-        <p class="quote">
-        “A toned abdomen is not just about appearance — it’s about restoring strength, balance, and confidence.”
+        <h2>What is Body Contouring?</h2>
+        <p>
+            Body contouring encompasses a range of surgical procedures designed to reshape and refine your body. Whether you're looking to flatten your abdomen, remove excess fat, or tighten loose skin, we offer comprehensive solutions tailored to your specific needs.
         </p>
         <p>
-        A tummy tuck removes excess skin and tightens weakened abdominal muscles, 
-        helping restore a flatter and firmer contour after pregnancy or weight loss.
-        </p>
-        <a href="#" class="btn">WhatsApp Consultation</a>
-    </div>
-</section>
-
-<!-- PROCEDURE -->
-<section class="section-card">
-    <div>
-        <p class="label">The Procedure</p>
-        <h2>What to Expect</h2>
-
-        <p><strong>01 — Consultation</strong><br>
-        Assessment of skin and muscle condition with personalised planning.
+            Each procedure is customized to achieve natural-looking results that complement your body frame and aesthetic goals.
         </p>
 
-        <p><strong>02 — Surgery</strong><br>
-        Removal of excess skin and tightening of abdominal muscles.
-        </p>
-
-        <p><strong>03 — Recovery</strong><br>
-        Return to light activity in 1–2 weeks, full results over time.
-        </p>
+        <ul class="feature-list">
+            <li>Multiple procedure options</li>
+            <li>Customised treatment plans</li>
+            <li>Natural-looking transformation</li>
+        </ul>
     </div>
 
-    <img src="YOUR-IMAGE.jpg">
+    <div class="info-image"></div>
 </section>
 
-<!-- TYPES -->
-<section style="padding:80px 20px;">
-    <h2 style="text-align:center;">Types of Tummy Tuck</h2>
+<!-- PROCEDURES -->
+<section class="procedures">
+    <h2 style="text-align:center;">Contouring Procedures</h2>
 
-    <div class="grid">
+    <div class="proc-grid">
 
-        <div class="card">
-            <img src="YOUR-IMAGE.jpg">
-            <h3>Full Tummy Tuck</h3>
-            <p>
-            Removes excess skin and tightens muscles for significant contour improvement.
-            </p>
-        </div>
+        <div class="proc-card">
+            <h3>Tummy Tuck</h3>
+            <p>Abdominoplasty removes excess skin and fat while tightening abdominal muscles to create a flatter, firmer profile.</p>
 
-        <div class="card">
-            <img src="YOUR-IMAGE.jpg">
-            <h3>Mini Tummy Tuck</h3>
-            <p>
-            Targets lower abdomen with smaller incision for mild skin laxity.
-            </p>
-        </div>
-
-    </div>
-</section>
-
-<!-- SUITABILITY -->
-<section style="padding:80px 20px; background:#FFF9F9;">
-    <h2 style="text-align:center;">Is This Right for You?</h2>
-
-    <div class="grid">
-
-        <div class="card">
-            <h3>Suitable for You If</h3>
-            <ul>
-                <li>Loose skin after pregnancy</li>
-                <li>Abdominal muscle separation</li>
-                <li>Stable body weight</li>
+            <ul class="feature-list">
+                <li>Removes excess skin</li>
+                <li>Tightens abdominal muscles</li>
+                <li>Creates defined waistline</li>
+                <li>Long-lasting results</li>
             </ul>
         </div>
 
-        <div class="card">
-            <h3>Important Considerations</h3>
-            <ul>
-                <li>Permanent scar</li>
-                <li>Recovery required</li>
-                <li>Not for weight loss</li>
+        <div class="proc-card">
+            <h3>Liposuction</h3>
+            <p>Advanced fat removal technique that sculpts and contours problem areas with minimal downtime.</p>
+
+            <ul class="feature-list">
+                <li>Targets stubborn fat deposits</li>
+                <li>Precision body sculpting</li>
+                <li>Minimal scarring</li>
+                <li>Multiple areas treatable</li>
+            </ul>
+        </div>
+
+        <div class="proc-card">
+            <h3>Brachioplasty</h3>
+            <p>Arm lift surgery removes excess skin and fat from the upper arms, creating toned appearance.</p>
+
+            <ul class="feature-list">
+                <li>Tightens loose arm skin</li>
+                <li>Defines arm contours</li>
+                <li>Improved arm proportion</li>
+                <li>Wear sleeveless confidently</li>
+            </ul>
+        </div>
+
+        <div class="proc-card">
+            <h3>Thigh Lift</h3>
+            <p>Removes excess skin and fat from thighs, creating smooth, toned appearance.</p>
+
+            <ul class="feature-list">
+                <li>Removes excess thigh skin</li>
+                <li>Improves thigh contours</li>
+                <li>Enhances leg appearance</li>
+                <li>Boosts lower body confidence</li>
             </ul>
         </div>
 
     </div>
 </section>
 
-<!-- FAQ -->
-<section style="padding:80px 20px;">
-    <h2 style="text-align:center;">Frequently Asked Questions</h2>
+<!-- BENEFITS -->
+<section class="benefits">
+    <h2>Benefits of Body Contouring</h2>
 
-    <div class="grid">
-
-        <div class="card">
-            <h3>Recovery time?</h3>
-            <p>Typically 2–6 weeks depending on extent.</p>
+    <div class="benefit-grid">
+        <div class="benefit">
+            <h3>Enhanced Confidence</h3>
+            <p>Feel comfortable and confident in your body.</p>
         </div>
 
-        <div class="card">
-            <h3>Will there be a scar?</h3>
-            <p>Yes, placed low and fades over time.</p>
+        <div class="benefit">
+            <h3>Defined Silhouette</h3>
+            <p>Create sculpted body lines that enhance your natural frame.</p>
         </div>
 
-        <div class="card">
-            <h3>Can it fix muscle separation?</h3>
-            <p>Yes, abdominal muscles are repaired.</p>
+        <div class="benefit">
+            <h3>Improved Wellness</h3>
+            <p>Enjoy lasting results that complement your lifestyle.</p>
         </div>
+    </div>
+</section>
 
-        <div class="card">
-            <h3>Is liposuction included?</h3>
-            <p>Often combined for better contour.</p>
+<!-- STEPS -->
+<section class="steps">
+    <h2 style="text-align:center;">Your Body Contouring Journey</h2>
+
+    <div class="step">
+        <div class="step-number">1</div>
+        <div>
+            <h3>Personalised Consultation</h3>
+            <p>We’ll assess your body and recommend suitable procedures.</p>
         </div>
+    </div>
 
+    <div class="step">
+        <div class="step-number">2</div>
+        <div>
+            <h3>Surgical Planning</h3>
+            <p>Detailed plan tailored to your goals.</p>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-number">3</div>
+        <div>
+            <h3>Surgery Day</h3>
+            <p>Advanced techniques used for safe, precise contouring.</p>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-number">4</div>
+        <div>
+            <h3>Recovery & Results</h3>
+            <p>Gradual improvement with final results over months.</p>
+        </div>
     </div>
 </section>
 
 <!-- CTA -->
 <section class="cta">
-    <h2>Considering a Tummy Tuck?</h2>
-    <p>A personalised consultation helps determine the best approach for you.</p>
-    <a href="#" class="btn">Book a Consultation</a>
-</section>
+    <h2>Ready to sculpt your ideal silhouette?</h2>
 
-<footer style="text-align:center; padding:40px; font-size:12px;">
-© 2026 Dr Agnes Yeo · Bukit Tinggi Medical Centre
-</footer>
+    <a href="https://wa.me/60189657735" class="btn primary">WhatsApp</a>
+    <a href="index.html" class="btn secondary">Back</a>
+</section>
 
 </body>
 </html>
