@@ -38,7 +38,7 @@ h1,h2,h3 {
 }
 
 /* HEADER */
-.header {
+header {
     position: absolute;
     top: 0;
     width: 100%;
@@ -47,22 +47,29 @@ h1,h2,h3 {
     justify-content: space-between;
     align-items: center;
     z-index: 10;
-    background: transparent;
+
+    background: rgba(15, 32, 60, 0.6); /* FIX */
+    backdrop-filter: blur(6px);        /* premium effect */
 }
 
+    .subheading {
+    color: #d6c4a8; /* gold tone */
+}
+    
+/* LOGO */
 .logo {
     font-family: 'Playfair Display', serif;
-    font-size: 22px;
-    letter-spacing: 2px;
-    color: #e8d8c3;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #fff;
 }
 
+/* NAV */
 nav a {
     margin-left: 30px;
     text-decoration: none;
-    color: #eee;
+    color: #fff; /* FIX: was too light */
     font-size: 14px;
-    letter-spacing: 1px;
 }
 
 /* HERO */
@@ -84,7 +91,7 @@ nav a {
 .hero-lux {
     position: relative;
     height: 100vh;
-    background: url('IMG_3384.webp') center/cover no-repeat;
+    background: linear-gradient(135deg, #0F203C, #1e3a5f);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,6 +99,12 @@ nav a {
     color: #fff;
 }
 
+    .hero-lux h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #fff;   /* IMPORTANT FIX */
+}
+    
 /* DARK LUXURY OVERLAY */
 .hero-overlay {
     position: absolute;
