@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Liposuction Malaysia | Body Sculpting | Dr Agnes Yeo</title>
+
+<meta name="description" content="Liposuction in Malaysia by Dr Agnes Yeo. Remove stubborn fat and achieve a sculpted, natural body contour with personalised treatment.">
+
+<meta property="og:title" content="Liposuction Malaysia | Dr Agnes Yeo">
+<meta property="og:description" content="Refine your body contour with advanced liposuction techniques tailored to your goals.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="IMG_3384.webp">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* COLORS */
+:root {
+    --bg:#FDF7F7;
+    --navy:#0F203C;
+    --text:#555;
+}
+
+/* BASE */
+body {
+    margin:0;
+    font-family:'Inter', sans-serif;
+    background:var(--bg);
+    color:var(--text);
+}
+
+h1,h2,h3 {
+    font-family:'Playfair Display', serif;
+    color:var(--navy);
+}
+
+/* HEADER */
+header {
+    display:flex;
+    justify-content:space-between;
+    padding:20px 40px;
+    background:#fff;
+}
+
+nav a {
+    margin-left:25px;
+    text-decoration:none;
+    color:var(--navy);
+}
+
+/* HERO */
+.hero {
+    max-width:1000px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.hero h1 {
+    font-size:48px;
+}
+
+.hero p {
+    font-size:18px;
+    line-height:1.7;
+}
+
+/* INFO */
+.info {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    max-width:1100px;
+    margin:80px auto;
+    padding:20px;
+    align-items:center;
+}
+
+.info img {
+    width:100%;
+    border-radius:30px;
+}
+
+/* LIST */
+.feature-list {
+    list-style:none;
+    padding:0;
+}
+
+.feature-list li {
+    margin-bottom:12px;
+    padding-left:25px;
+    position:relative;
+}
+
+.feature-list li::before {
+    content:"✓";
+    position:absolute;
+    left:0;
+    color:#3b82f6;
+}
+
+/* BENEFITS */
+.benefits {
+    text-align:center;
+    max-width:1100px;
+    margin:80px auto;
+}
+
+.benefit-grid {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+/* STEPS */
+.steps {
+    max-width:900px;
+    margin:80px auto;
+}
+
+.step {
+    display:flex;
+    margin-bottom:30px;
+}
+
+.step-number {
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#0F203C;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-right:20px;
+}
+
+/* CTA */
+.cta {
+    text-align:center;
+    margin:100px 0;
+}
+
+.btn {
+    padding:15px 30px;
+    border-radius:10px;
+    text-decoration:none;
+}
+
+.primary {
+    background:#0F203C;
+    color:#fff;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .info,
+    .benefit-grid {
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div><strong>Dr Agnes Yeo</strong></div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tummy.html">Body Contouring</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Liposuction</h1>
+    <p>
+        Refine your body contour by removing stubborn fat deposits that do not respond to diet and exercise.
+    </p>
+</section>
+
+<!-- WHAT IS -->
+<section class="info">
+    <div>
+        <h2>What is Liposuction?</h2>
+        <p>
+            Liposuction is a surgical procedure that removes localized fat deposits to sculpt and contour the body. 
+        </p>
+
+        <p>
+            It is not a weight loss procedure, but rather a body contouring technique designed to improve shape and proportion.
+        </p>
+
+        <ul class="feature-list">
+            <li>Targets stubborn fat areas</li>
+            <li>Improves body contour</li>
+            <li>Enhances natural proportions</li>
+        </ul>
+    </div>
+
+    <div>
+        <img src="IMG_3384.webp" alt="Liposuction Malaysia body contouring">
+    </div>
+</section>
+
+<!-- WHO IS IT FOR -->
+<section class="info">
+    <div>
+        <img src="IMG_3384.webp" alt="Body contouring results liposuction">
+    </div>
+
+    <div>
+        <h2>Is Liposuction Right for You?</h2>
+        <ul class="feature-list">
+            <li>You have stubborn fat that does not improve with exercise</li>
+            <li>You are close to your ideal body weight</li>
+            <li>You want more defined body contours</li>
+            <li>You have good skin elasticity</li>
+        </ul>
+    </div>
+</section>
+
+<!-- COMPARISON -->
+<section style="max-width:900px; margin:80px auto; padding:20px;">
+    <h2 style="text-align:center;">Liposuction vs Tummy Tuck</h2>
+
+    <p style="text-align:center;">
+        Liposuction removes fat but does not address loose skin or muscle separation. 
+        A tummy tuck is more suitable when there is excess skin or weakened abdominal muscles.
+    </p>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits">
+    <h2>Benefits of Liposuction</h2>
+
+    <div class="benefit-grid">
+        <div>
+            <h3>Targeted Fat Reduction</h3>
+            <p>Removes stubborn fat from specific areas.</p>
+        </div>
+
+        <div>
+            <h3>Improved Body Shape</h3>
+            <p>Creates smoother and more defined contours.</p>
+        </div>
+
+        <div>
+            <h3>Long-lasting Results</h3>
+            <p>Results can be maintained with a healthy lifestyle.</p>
+        </div>
+    </div>
+</section>
+
+<!-- STEPS -->
+<section class="steps">
+    <h2 style="text-align:center;">Your Liposuction Journey</h2>
+
+    <div class="step">
+        <div class="step-number">1</div>
+        <div>
+            <h3>Consultation</h3>
+            <p>Assessment of your goals and suitable treatment areas.</p>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-number">2</div>
+        <div>
+            <h3>Procedure</h3>
+            <p>Targeted fat removal using precise surgical techniques.</p>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-number">3</div>
+        <div>
+            <h3>Recovery</h3>
+            <p>Gradual improvement in contour over weeks as swelling subsides.</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Ready to refine your body contour?</h2>
+
+    <a href="https://wa.me/60189657735" class="btn primary">
+        WhatsApp Consultation
+    </a>
+</section>
+
+</body>
+</html>
