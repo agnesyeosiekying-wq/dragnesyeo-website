@@ -38,17 +38,31 @@ h1,h2,h3 {
 }
 
 /* HEADER */
-header {
-    display:flex;
-    justify-content:space-between;
-    padding:20px 40px;
-    background:#fff;
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 25px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background: transparent;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: #e8d8c3;
 }
 
 nav a {
-    margin-left:25px;
-    text-decoration:none;
-    color:var(--navy);
+    margin-left: 30px;
+    text-decoration: none;
+    color: #eee;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 /* HERO */
@@ -65,6 +79,72 @@ nav a {
 .hero p {
     font-size:18px;
     line-height:1.7;
+}
+
+.hero-lux {
+    position: relative;
+    height: 100vh;
+    background: url('IMG_3384.webp') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+/* DARK LUXURY OVERLAY */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        rgba(15, 32, 60, 0.85),
+        rgba(15, 32, 60, 0.6)
+    );
+}
+
+/* CONTENT */
+.hero-content {
+    position: relative;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* SUBTEXT */
+.subheading {
+    letter-spacing: 3px;
+    font-size: 12px;
+    color: #d6c4a8;
+    margin-bottom: 20px;
+}
+
+/* TITLE */
+.hero-lux h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+/* DESCRIPTION */
+.hero-desc {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+/* BUTTON */
+.hero-btn {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 30px;
+    background: #d6c4a8;
+    color: #0F203C;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    opacity: 0.85;
 }
 
 /* INFO */
@@ -177,11 +257,23 @@ nav a {
 </header>
 
 <!-- HERO -->
-<section class="hero">
-    <h1>Liposuction</h1>
-    <p>
-        Refine your body contour by removing stubborn fat deposits that do not respond to diet and exercise.
-    </p>
+<section class="hero-lux">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <p class="subheading">BOARD-CERTIFIED PLASTIC SURGERY</p>
+
+        <h1>Sculpt Your Confidence</h1>
+
+        <p class="hero-desc">
+            Precision body contouring tailored to your unique anatomy. 
+            Achieve natural-looking, lasting results with advanced liposuction techniques.
+        </p>
+
+        <a href="https://wa.me/60189657735" class="hero-btn">
+            Book a Consultation
+        </a>
+    </div>
 </section>
 
 <!-- WHAT IS -->
