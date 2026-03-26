@@ -30,7 +30,6 @@ body {
     font-family:'Inter', sans-serif;
     background:var(--bg);
     color:var(--text);
-    overflow-x:hidden;
 }
 
 h1,h2,h3 {
@@ -43,17 +42,19 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    padding: 20px 30px;
+    right: 0;            /* 🔥 prevents overflow */
+    padding: 20px 30px;  /* 🔥 reduce padding */
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 10;
+
     background: rgba(15, 32, 60, 0.6);
     backdrop-filter: blur(6px);
-    box-sizing: border-box;
+    box-sizing: border-box; /* 🔥 important */
 }
-
+    
+/* LOGO */
 .logo {
     font-family: 'Playfair Display', serif;
     font-size: 20px;
@@ -61,14 +62,16 @@ header {
     color: #fff;
 }
 
+/* NAV */
 nav a {
     margin-left: 30px;
     text-decoration: none;
-    color: #fff;
+    color: #fff; /* FIX: was too light */
     font-size: 14px;
 }
 
 /* HERO */
+
 .hero-lux {
     position: relative;
     height: 100vh;
@@ -79,7 +82,8 @@ nav a {
     text-align: center;
     color: #fff;
 }
-
+    
+/* DARK LUXURY OVERLAY */
 .hero-overlay {
     position: absolute;
     inset: 0;
@@ -89,12 +93,14 @@ nav a {
     );
 }
 
+/* CONTENT */
 .hero-content {
     position: relative;
     max-width: 800px;
     padding: 20px;
 }
 
+/* SUBTEXT */
 .subheading {
     letter-spacing: 3px;
     font-size: 12px;
@@ -102,12 +108,14 @@ nav a {
     margin-bottom: 20px;
 }
 
+/* TITLE */
 .hero-lux h1 {
     font-size: 60px;
     margin-bottom: 20px;
     color:#fff;
 }
 
+/* DESCRIPTION */
 .hero-desc {
     font-size: 18px;
     line-height: 1.8;
@@ -115,6 +123,7 @@ nav a {
     margin-bottom: 30px;
 }
 
+/* BUTTON */
 .hero-btn {
     display: inline-block;
     padding: 14px 32px;
@@ -124,7 +133,7 @@ nav a {
     text-decoration: none;
     font-weight: 600;
 }
-
+    
 /* INFO */
 .info {
     display:grid;
@@ -196,7 +205,7 @@ nav a {
     margin-right:20px;
 }
 
-/* TREATMENT AREAS */
+    /* TREATMENT AREAS */
 .treatment-areas {
     max-width:1100px;
     margin:80px auto;
@@ -228,6 +237,7 @@ nav a {
     padding:15px;
     font-weight:500;
 }
+
 
 /* FAQ */
 .faq {
@@ -266,14 +276,14 @@ nav a {
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease;
-    padding: 0 18px;
+    padding:0 18px;
     background:#fafafa;
 }
 
 .faq-item.active .faq-answer {
     padding:18px;
 }
-
+    
 /* CTA */
 .cta {
     text-align:center;
@@ -319,45 +329,207 @@ nav a {
 
     <div class="hero-content">
         <p class="subheading">BOARD-CERTIFIED PLASTIC SURGERY</p>
+
         <h1>Sculpt Your Confidence</h1>
+
         <p class="hero-desc">
             Precision body contouring tailored to your unique anatomy. 
             Achieve natural-looking, lasting results with advanced liposuction techniques.
         </p>
+
         <a href="https://wa.me/60189657735" class="hero-btn">
             Book a Consultation
         </a>
     </div>
 </section>
 
-<!-- FAQ -->
+<!-- WHAT IS -->
+<section class="info">
+    <div>
+        <h2>What is Liposuction?</h2>
+        <p>
+            Liposuction is a surgical procedure that removes localized fat deposits to sculpt and contour the body. 
+        </p>
+
+        <p>
+            It is not a weight loss procedure, but rather a body contouring technique designed to improve shape and proportion.
+        </p>
+
+        <ul class="feature-list">
+            <li>Targets stubborn fat areas</li>
+            <li>Improves body contour</li>
+            <li>Enhances natural proportions</li>
+        </ul>
+    </div>
+
+    <div>
+        <img src="IMG_3430.webp" alt="Liposuction Malaysia body contouring">
+    </div>
+</section>
+
+<!-- WHO IS IT FOR -->
+<section class="info">
+    <div>
+        <img src="IMG_3384.webp" alt="Body contouring results liposuction">
+    </div>
+
+    <div>
+        <h2>Is Liposuction Right for You?</h2>
+        <ul class="feature-list">
+            <li>You have stubborn fat that does not improve with exercise</li>
+            <li>You are close to your ideal body weight</li>
+            <li>You want more defined body contours</li>
+            <li>You have good skin elasticity</li>
+        </ul>
+    </div>
+</section>
+
+<!-- COMPARISON -->
+<section style="max-width:900px; margin:80px auto; padding:20px;">
+    <h2 style="text-align:center;">Liposuction vs Tummy Tuck</h2>
+
+    <p style="text-align:center;">
+        Liposuction removes fat but does not address loose skin or muscle separation. 
+        A tummy tuck is more suitable when there is excess skin or weakened abdominal muscles.
+    </p>
+</section>
+
+    <section class="treatment-areas">
+    <h2>Treatment Areas</h2>
+
+    <div class="area-grid">
+
+        <div class="area-card">
+            <img src="IMG_3420.webp" alt="Liposuction abdomen">
+            <p>Abdomen</p>
+        </div>
+
+        <div class="area-card">
+            <img src="IMG_3418.webp" alt="Liposuction flanks love handles">
+            <p>Flanks & Love Handles</p>
+        </div>
+
+        <div class="area-card">
+            <img src="IMG_3416.webp" alt="Liposuction thighs">
+            <p>Thighs</p>
+        </div>
+
+        <div class="area-card">
+            <img src="IMG_3422.webp" alt="Liposuction arms">
+            <p>Arms</p>
+        </div>
+
+        <div class="area-card">
+            <img src="IMG_3424.webp" alt="Liposuction chin neck">
+            <p>Chin & Neck</p>
+        </div>
+
+        <div class="area-card">
+            <img src="IMG_3414.webp" alt="Liposuction chest male">
+            <p>Chest</p>
+        </div>
+
+    </div>
+</section>
+    
+<!-- BENEFITS -->
+<section class="benefits">
+    <h2>Benefits of Liposuction</h2>
+
+    <div class="benefit-grid">
+        <div>
+            <h3>Targeted Fat Reduction</h3>
+            <p>Removes stubborn fat from specific areas.</p>
+        </div>
+
+        <div>
+            <h3>Improved Body Shape</h3>
+            <p>Creates smoother and more defined contours.</p>
+        </div>
+
+        <div>
+            <h3>Long-lasting Results</h3>
+            <p>Results can be maintained with a healthy lifestyle.</p>
+        </div>
+    </div>
+</section>
+
+<!-- STEPS -->
+<section class="steps">
+    <h2 style="text-align:center;">Your Liposuction Journey</h2>
+
+    <div class="step">
+        <div class="step-number">1</div>
+        <div>
+            <h3>Consultation</h3>
+            <p>Assessment of your goals and suitable treatment areas.</p>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-number">2</div>
+        <div>
+            <h3>Procedure</h3>
+            <p>Targeted fat removal using precise surgical techniques.</p>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-number">3</div>
+        <div>
+            <h3>Recovery</h3>
+            <p>Gradual improvement in contour over weeks as swelling subsides.</p>
+        </div>
+    </div>
+
+</section>
+
 <section class="faq">
     <h2 style="text-align:center;">Frequently Asked Questions</h2>
 
     <div class="faq-item">
         <div class="faq-question">Is liposuction painful?</div>
-        <div class="faq-answer">Most patients experience minimal discomfort. The procedure is performed under anaesthesia, and post-operative soreness is manageable with prescribed medication.</div>
+        <div class="faq-answer">
+            Most patients experience minimal discomfort. The procedure is performed under anaesthesia, and post-operative soreness is manageable with prescribed medication.
+        </div>
     </div>
 
     <div class="faq-item">
         <div class="faq-question">How long do results last?</div>
-        <div class="faq-answer">Results are long-lasting if you maintain a stable weight and healthy lifestyle.</div>
+        <div class="faq-answer">
+            Results are long-lasting if you maintain a stable weight and healthy lifestyle.
+        </div>
     </div>
 
     <div class="faq-item">
         <div class="faq-question">Am I a good candidate?</div>
-        <div class="faq-answer">Ideal candidates are individuals with stubborn fat deposits, good skin elasticity, and realistic expectations.</div>
+        <div class="faq-answer">
+            Ideal candidates are individuals with stubborn fat deposits, good skin elasticity, and realistic expectations.
+        </div>
     </div>
 
     <div class="faq-item">
         <div class="faq-question">What is the recovery time?</div>
-        <div class="faq-answer">Most patients return to light activities within a few days, with gradual improvement over several weeks.</div>
+        <div class="faq-answer">
+            Most patients return to light activities within a few days, with gradual improvement over several weeks.
+        </div>
     </div>
 
     <div class="faq-item">
         <div class="faq-question">Are there visible scars?</div>
-        <div class="faq-answer">Incisions are small and strategically placed, resulting in minimal visible scarring over time.</div>
+        <div class="faq-answer">
+            Incisions are small and strategically placed, resulting in minimal visible scarring over time.
+        </div>
     </div>
+</section>
+    
+<!-- CTA -->
+<section class="cta">
+    <h2>Ready to refine your body contour?</h2>
+
+    <a href="https://wa.me/60189657735" class="btn primary">
+        WhatsApp Consultation
+    </a>
 </section>
 
 <script>
@@ -369,6 +541,7 @@ items.forEach(item => {
 
     question.addEventListener("click", () => {
 
+        // close all others (premium behavior)
         items.forEach(i => {
             if(i !== item){
                 i.classList.remove("active");
@@ -376,6 +549,7 @@ items.forEach(item => {
             }
         });
 
+        // toggle current
         item.classList.toggle("active");
 
         if(item.classList.contains("active")){
@@ -386,6 +560,6 @@ items.forEach(item => {
     });
 });
 </script>
-
+    
 </body>
 </html>
