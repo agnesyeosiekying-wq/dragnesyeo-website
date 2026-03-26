@@ -294,9 +294,24 @@ nav a {
     cursor:pointer;
     background:#fff;
     font-weight:500;
+    position: relative;
+}
+
+.faq-question::after {
+    content: "⌄";
+    position: absolute;
+    right: 20px;
+    transition: 0.3s;
+}
+
+.faq-item.active .faq-question::after {
+    transform: rotate(180deg);
 }
 
 .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
     display:none;
     padding:18px;
     color:#555;
@@ -505,34 +520,43 @@ body {
 
 </section>
 
-    <section class="faq">
+<section class="faq">
     <h2 style="text-align:center;">Frequently Asked Questions</h2>
 
     <div class="faq-item">
         <div class="faq-question">Is liposuction painful?</div>
-        <div class="faq-answer">The procedure is performed under anaesthesia, so you will not feel pain during surgery. Mild discomfort may occur during recovery.</div>
+        <div class="faq-answer">
+            Most patients experience minimal discomfort. The procedure is performed under anaesthesia, and post-operative soreness is manageable with prescribed medication.
+        </div>
     </div>
 
     <div class="faq-item">
         <div class="faq-question">How long do results last?</div>
-        <div class="faq-answer">Results are long-lasting if you maintain a stable weight and healthy lifestyle.</div>
+        <div class="faq-answer">
+            Results are long-lasting if you maintain a stable weight and healthy lifestyle.
+        </div>
     </div>
 
     <div class="faq-item">
         <div class="faq-question">Am I a good candidate?</div>
-        <div class="faq-answer">Ideal candidates are those with stubborn fat deposits and good skin elasticity.</div>
+        <div class="faq-answer">
+            Ideal candidates are individuals with stubborn fat deposits, good skin elasticity, and realistic expectations.
+        </div>
     </div>
 
     <div class="faq-item">
         <div class="faq-question">What is the recovery time?</div>
-        <div class="faq-answer">Most patients return to light activities within a few days, with full recovery over several weeks.</div>
+        <div class="faq-answer">
+            Most patients return to light activities within a few days, with gradual improvement over several weeks.
+        </div>
     </div>
 
     <div class="faq-item">
         <div class="faq-question">Are there visible scars?</div>
-        <div class="faq-answer">Incisions are small and strategically placed, resulting in minimal visible scarring.</div>
+        <div class="faq-answer">
+            Incisions are small and strategically placed, resulting in minimal visible scarring over time.
+        </div>
     </div>
-
 </section>
     
 <!-- CTA -->
@@ -544,5 +568,34 @@ body {
     </a>
 </section>
 
+<script>
+const items = document.querySelectorAll(".faq-item");
+
+items.forEach(item => {
+    const question = item.querySelector(".faq-question");
+    const answer = item.querySelector(".faq-answer");
+
+    question.addEventListener("click", () => {
+
+        // close all others (premium behavior)
+        items.forEach(i => {
+            if(i !== item){
+                i.classList.remove("active");
+                i.querySelector(".faq-answer").style.maxHeight = null;
+            }
+        });
+
+        // toggle current
+        item.classList.toggle("active");
+
+        if(item.classList.contains("active")){
+            answer.style.maxHeight = answer.scrollHeight + "px";
+        } else {
+            answer.style.maxHeight = null;
+        }
+    });
+});
+</script>
+    
 </body>
 </html>
