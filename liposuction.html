@@ -41,15 +41,17 @@ h1,h2,h3 {
 header {
     position: absolute;
     top: 0;
-    width: 100%;
-    padding: 25px 60px;
+    left: 0;
+    right: 0;            /* 🔥 prevents overflow */
+    padding: 20px 30px;  /* 🔥 reduce padding */
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 10;
 
-    background: rgba(15, 32, 60, 0.6); /* FIX */
-    backdrop-filter: blur(6px);        /* premium effect */
+    background: rgba(15, 32, 60, 0.6);
+    backdrop-filter: blur(6px);
+    box-sizing: border-box; /* 🔥 important */
 }
     
 /* LOGO */
@@ -93,12 +95,19 @@ nav a {
     justify-content: center;
     text-align: center;
     color: #fff;
+    width: 100%;
+    overflow: hidden;  /* prevents spill */
 }
 
     .hero-lux h1 {
     font-size: 60px;
     margin-bottom: 20px;
     color: #fff;   /* IMPORTANT FIX */
+}
+
+    .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
     
 /* DARK LUXURY OVERLAY */
@@ -256,7 +265,10 @@ nav a {
 </head>
 
 <body>
-
+body {
+    margin: 0;
+    overflow-x: hidden;   /* 🔥 removes white bar */
+}
 <header>
     <div><strong>Dr Agnes Yeo</strong></div>
     <nav>
