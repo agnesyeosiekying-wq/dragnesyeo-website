@@ -138,16 +138,24 @@ nav a {
 }
 
 /* CTA */
-.cta { text-align: center; margin: 100px 0; }
-.btn {
-    display: inline-block;
-    padding: 18px 40px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: 600;
+.cta {
+    text-align:center;
+    margin:100px 0;
 }
-.primary { background: var(--navy); color: #fff; }
 
+.btn-primary {
+    background:linear-gradient(135deg,#2d1b3d,#0f203c);
+    color:#fff;
+    padding:14px 30px;
+    border-radius:12px;
+}
+
+.btn-secondary {
+    background:#d6c4a8;
+    color:#0F203C;
+    border-radius:30px;
+}
+    
 @media(max-width: 768px){
     header { padding: 20px; flex-direction: column; gap: 20px; }
     .info-section, .method-grid, .benefits { grid-template-columns: 1fr; }
