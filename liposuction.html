@@ -39,19 +39,16 @@ h1,h2,h3 {
 
 /* HEADER */
 header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;            /* 🔥 prevents overflow */
-    padding: 20px 30px;  /* 🔥 reduce padding */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10;
-
-    background: rgba(15, 32, 60, 0.6);
-    backdrop-filter: blur(6px);
-    box-sizing: border-box; /* 🔥 important */
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    background:#fff;
+}
+nav a {
+    margin-left:25px;
+    color:var(--navy);
+    text-decoration:none;
 }
     
 /* LOGO */
@@ -60,14 +57,6 @@ header {
     font-size: 20px;
     letter-spacing: 1px;
     color: #fff;
-}
-
-/* NAV */
-nav a {
-    margin-left: 30px;
-    text-decoration: none;
-    color: #fff; /* FIX: was too light */
-    font-size: 14px;
 }
 
 /* HERO */
