@@ -22,6 +22,14 @@
 }
 
 /* =========================
+   GLOBAL FIX (IMPORTANT)
+========================= */
+a {
+    text-decoration:none;
+    color:inherit;
+}
+
+/* =========================
    BASE
 ========================= */
 body {
@@ -46,6 +54,9 @@ p {
     font-size:16px;
 }
 
+/* =========================
+   SECTION (STANDARD)
+========================= */
 .section {
     max-width:1100px;
     margin:80px auto;
@@ -53,7 +64,7 @@ p {
 }
 
 /* =========================
-   HEADER (STANDARDIZED)
+   HEADER
 ========================= */
 header {
     display:flex;
@@ -83,13 +94,12 @@ header {
 
 nav a {
     margin-left:25px;
-    text-decoration:none;
     color:var(--navy);
     font-weight:500;
 }
 
 /* =========================
-   HERO (UNIFIED)
+   HERO
 ========================= */
 .hero {
     height:70vh;
@@ -102,7 +112,7 @@ nav a {
 }
 
 .hero-content {
-    max-width:800px;
+    max-width:700px;
 }
 
 .hero h1 {
@@ -117,7 +127,7 @@ nav a {
 }
 
 /* =========================
-   BUTTONS
+   BUTTONS (FIXED)
 ========================= */
 .btn-primary {
     display:inline-block;
@@ -125,8 +135,14 @@ nav a {
     border-radius:12px;
     background:linear-gradient(135deg,#2d1b3d,#0f203c);
     color:#fff;
-    text-decoration:none;
     font-weight:500;
+    margin-top:20px;
+    transition:0.3s;
+}
+
+.btn-primary:hover {
+    opacity:0.9;
+    transform:translateY(-2px);
 }
 
 .btn-secondary {
@@ -135,7 +151,6 @@ nav a {
     border-radius:30px;
     background:var(--accent);
     color:#0F203C;
-    text-decoration:none;
     font-weight:500;
 }
 
@@ -267,6 +282,7 @@ footer {
         flex-direction:column;
         gap:10px;
     }
+}
 }
 </style>
 </head>
