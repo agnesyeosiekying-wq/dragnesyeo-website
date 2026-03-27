@@ -69,16 +69,16 @@ nav a {
 
 /* FAQ */
 .faq-item {
-    border:1px solid #eee;
+    border:1px solid #e5dcd3;
     border-radius:12px;
     margin-bottom:15px;
     overflow:hidden;
+    background:#fff;
 }
 
 .faq-question {
     padding:18px;
     cursor:pointer;
-    background:#fff;
     position:relative;
 }
 
@@ -86,20 +86,25 @@ nav a {
     content:"⌄";
     position:absolute;
     right:20px;
+    transition:0.3s;
+}
+
+.faq-item.active .faq-question::after {
+    transform:rotate(180deg);
 }
 
 .faq-answer {
     max-height:0;
     overflow:hidden;
-    transition:0.3s;
+    transition:0.4s ease;
     padding:0 18px;
 }
 
 .faq-item.active .faq-answer {
-    max-height:200px;
+    max-height:500px; /* 🔥 FIX: allow full content */
     padding:18px;
 }
-
+    
 @media(max-width:768px){
     div[style*="grid-template-columns"] {
         grid-template-columns:1fr !important;
@@ -280,34 +285,168 @@ nav a {
 
 </section>
 
-<!-- JOURNEY -->
-<section style="background:#F6F1EB; padding:80px 20px;">
-<div style="max-width:900px; margin:auto;">
-<h2 style="text-align:center;">Your Journey</h2>
+<!-- YOUR JOURNEY -->
+<section style="background:#F6F1EB; padding:100px 20px;">
 
-<p>Consultation → Preparation → Procedure → Recovery</p>
+    <div style="max-width:900px; margin:auto;">
+        
+        <h2 style="text-align:center; margin-bottom:20px;">Your Journey</h2>
 
-</div>
+        <!-- ADDED SUBTEXT -->
+        <p style="text-align:center; max-width:600px; margin:0 auto 60px; color:#777;">
+            Understanding each step helps you feel confident and prepared throughout your arm lift journey.
+        </p>
+
+        <!-- STEP 1 -->
+        <div style="display:flex; margin-bottom:50px;">
+            <div style="
+                width:50px;
+                height:50px;
+                border-radius:50%;
+                background:#0F203C;
+                color:#fff;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                margin-right:20px;
+                flex-shrink:0;
+            ">1</div>
+
+            <div>
+                <h3>Consultation</h3>
+                <p>
+                    Meet with your surgeon to discuss your concerns, assess skin laxity, 
+                    and plan a personalised arm contouring approach.
+                </p>
+            </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div style="display:flex; margin-bottom:50px;">
+            <div style="
+                width:50px;
+                height:50px;
+                border-radius:50%;
+                background:#0F203C;
+                color:#fff;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                margin-right:20px;
+                flex-shrink:0;
+            ">2</div>
+
+            <div>
+                <h3>Preparation</h3>
+                <p>
+                    Receive pre-operative guidance, including medication adjustments 
+                    and lifestyle recommendations for a smooth recovery.
+                </p>
+            </div>
+        </div>
+
+        <!-- STEP 3 -->
+        <div style="display:flex; margin-bottom:50px;">
+            <div style="
+                width:50px;
+                height:50px;
+                border-radius:50%;
+                background:#0F203C;
+                color:#fff;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                margin-right:20px;
+                flex-shrink:0;
+            ">3</div>
+
+            <div>
+                <h3>Procedure</h3>
+                <p>
+                    The surgery typically takes 1–2 hours under local or general anaesthesia, 
+                    depending on the extent of correction required.
+                </p>
+            </div>
+        </div>
+
+        <!-- STEP 4 -->
+        <div style="display:flex;">
+            <div style="
+                width:50px;
+                height:50px;
+                border-radius:50%;
+                background:#0F203C;
+                color:#fff;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                margin-right:20px;
+                flex-shrink:0;
+            ">4</div>
+
+            <div>
+                <h3>Recovery</h3>
+                <p>
+                    Most patients return to light activities within 1 week, 
+                    with gradual improvement and final results visible over 6–8 weeks.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
 </section>
 
 <!-- FAQ -->
-<section style="background:#F6F1EB; padding:80px 20px;">
-<div style="max-width:900px; margin:auto;">
+<section style="background:#F6F1EB; padding:100px 20px;">
 
-<h2 style="text-align:center;">Common Questions</h2>
+    <div style="max-width:900px; margin:auto;">
+        
+        <h2 style="text-align:center; margin-bottom:50px;">Common Questions</h2>
 
-<div class="faq-item">
-<div class="faq-question">Will there be visible scars?</div>
-<div class="faq-answer">Scars are placed along the inner arm and fade over time.</div>
-</div>
+        <!-- ITEM -->
+        <div class="faq-item">
+            <div class="faq-question">Am I a good candidate?</div>
+            <div class="faq-answer">
+                Ideal candidates have loose or sagging upper arm skin, good overall health, 
+                and stable body weight. A consultation will determine the most suitable approach for you.
+            </div>
+        </div>
 
-<div class="faq-item">
-<div class="faq-question">How long is recovery?</div>
-<div class="faq-answer">Most patients resume light activity within 1–2 weeks.</div>
-</div>
+        <div class="faq-item">
+            <div class="faq-question">How long is recovery?</div>
+            <div class="faq-answer">
+                Most patients return to light activities within 1 week. Swelling gradually improves, 
+                with final results visible over 6–8 weeks.
+            </div>
+        </div>
 
-</div>
-</div>
+        <div class="faq-item">
+            <div class="faq-question">Will there be visible scarring?</div>
+            <div class="faq-answer">
+                Incisions are placed along the inner arm where they are less noticeable. 
+                Scars typically fade over time and become less visible with proper care.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Can it be combined with other procedures?</div>
+            <div class="faq-answer">
+                Yes, brachioplasty can be combined with procedures such as liposuction or body contouring 
+                to achieve more comprehensive results.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How long do results last?</div>
+            <div class="faq-answer">
+                Results are long-lasting when maintaining a stable weight and healthy lifestyle. 
+                Natural aging will continue but improvements are sustained.
+            </div>
+        </div>
+
+    </div>
+
 </section>
 
 <!-- CTA -->
@@ -317,12 +456,23 @@ nav a {
 </section>
 
 <script>
-document.querySelectorAll(".faq-question").forEach(q=>{
-q.addEventListener("click",()=>{
-q.parentElement.classList.toggle("active");
-});
+document.querySelectorAll(".faq-question").forEach(q => {
+    q.addEventListener("click", () => {
+
+        const item = q.parentElement;
+
+        // close others
+        document.querySelectorAll(".faq-item").forEach(i => {
+            if(i !== item){
+                i.classList.remove("active");
+            }
+        });
+
+        // toggle current
+        item.classList.toggle("active");
+    });
 });
 </script>
-
+    
 </body>
 </html>
