@@ -93,6 +93,20 @@ img {
     border-radius:25px;
 }
 
+h1, h2, h3 {
+    letter-spacing:0.5px;
+}
+
+section {
+    box-sizing:border-box;
+}
+    
+@media(max-width:768px){
+    .grid,
+    div[style*="grid-template-columns"] {
+        grid-template-columns:1fr !important;
+    }
+}
 /* LIST */
 ul {
     padding-left:20px;
@@ -159,7 +173,7 @@ ul {
     <div><strong>Dr Agnes Yeo</strong></div>
     <nav>
         <a href="index.html">Home</a>
-        <a href="body contouring.html">Body Contouring</a>
+        <a href="body-contouring.html">Body Contouring</a>
     </nav>
 </header>
 
@@ -300,8 +314,7 @@ ul {
 </section>
 
 <!-- TYPES -->
-<section class="section">
-    <section style="background:#F6F1EB; padding:100px 20px;">
+<section style="background:#F6F1EB; padding:100px 20px;">
 
     <div style="max-width:1100px; margin:auto; text-align:center;">
         <h2 style="margin-bottom:60px;">Procedure Options</h2>
@@ -484,7 +497,7 @@ ul {
 
     </div>
 
-</section>
+</section>  <!-- END Procedure Options -->
 
 <!-- FAQ -->
 <section style="background:#F6F1EB; padding:100px 20px;">
