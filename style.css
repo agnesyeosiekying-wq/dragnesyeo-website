@@ -187,6 +187,26 @@ nav a {
  cursor:pointer;
 }
 
+/* FAQ ARROW */
+.faq-question {
+ position:relative;
+}
+
+.faq-question::after {
+ content:"⌄";
+ position:absolute;
+ right:20px;
+ top:50%;
+ transform:translateY(-50%);
+ font-size:18px;
+ transition:0.3s;
+}
+
+/* Rotate when open */
+.faq-item.active .faq-question::after {
+ transform:translateY(-50%) rotate(180deg);
+}
+
 .faq-answer {
  max-height:0;
  overflow:hidden;
