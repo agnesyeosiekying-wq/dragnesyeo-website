@@ -48,9 +48,9 @@ nav a {
 
 .logo-name {
  font-family:'Playfair Display', serif;
- font-size:22px;
+ font-size:24px;
  font-weight:600;
- letter-spacing:0.5px;
+ letter-spacing:1px;
  color:var(--navy);
 }
 
@@ -60,6 +60,13 @@ nav a {
  text-transform:uppercase;
  color:#888;
  margin-top:2px;
+}
+
+.logo-subtitle {
+ font-size:10px;
+ letter-spacing:2px;
+ text-transform:uppercase;
+ color:#aaa;
 }
 
 /* ===== HERO ===== */
