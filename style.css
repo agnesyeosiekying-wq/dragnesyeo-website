@@ -39,6 +39,29 @@ nav a {
  color:var(--navy);
 }
 
+/* ===== LOGO UPGRADE ===== */
+.logo-text-wrapper {
+ display:flex;
+ flex-direction:column;
+ line-height:1.1;
+}
+
+.logo-name {
+ font-family:'Playfair Display', serif;
+ font-size:22px;
+ font-weight:600;
+ letter-spacing:0.5px;
+ color:var(--navy);
+}
+
+.logo-subtitle {
+ font-size:11px;
+ letter-spacing:1.5px;
+ text-transform:uppercase;
+ color:#888;
+ margin-top:2px;
+}
+
 /* ===== HERO ===== */
 .hero {
  height:70vh;
