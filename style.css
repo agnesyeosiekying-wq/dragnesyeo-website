@@ -12,7 +12,11 @@ body {
  background:var(--bg);
  color:var(--text);
 }
-
+/* FULL WIDTH BACKGROUND WRAPPER */
+.section-bg {
+ background:#faf7f5;
+ padding:80px 0;
+}
 h1,h2,h3 {
  font-family:'Playfair Display', serif;
  color:var(--navy);
@@ -125,9 +129,20 @@ nav a {
  display:flex;
  flex-direction:column;
  justify-content:center;
+ max-width:420px;   /* keeps text tighter */
 }
 .who-content h2 {
  margin-bottom:10px;
+}
+.grid-2 {
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:70px;   /* increase spacing */
+ align-items:center;
+}
+.grid-2 img {
+ border-radius:25px;
+ box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 /* BETTER BULLETS */
 .feature-list {
@@ -138,9 +153,19 @@ nav a {
 
 .feature-list li {
  position:relative;
- padding-left:25px;
- margin-bottom:10px;
+ padding-left:28px;
+ margin-bottom:12px;
  color:#555;
+}
+
+/* elegant dot instead of ✓ */
+.feature-list li::before {
+ content:"•";
+ position:absolute;
+ left:0;
+ color:var(--navy);
+ font-size:20px;
+ top:-2px;
 }
 
 /* custom tick */
