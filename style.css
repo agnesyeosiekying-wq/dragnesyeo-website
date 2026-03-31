@@ -134,29 +134,39 @@ nav a {
  gap:30px;
 }
 
-/* PROCEDURE CARDS */
+/* PROCEDURE CARD REFINEMENT */
 .grid-3 div {
+ background:#0F203C;
  color:#fff;
- transform:translateY(-5px);
+ padding:40px 30px;
+ border-radius:25px;
+ transition:0.3s ease;
+ border:1px solid rgba(255,255,255,0.05);
 }
-
+/* Title */
 .grid-3 h3 {
  color:#fff;
  font-size:20px;
  margin-bottom:12px;
 }
 
+/* Description */
 .grid-3 p {
- color:#ddd;
+ color:#d1d5db;
+ margin-bottom:15px;
 }
 
+/* Bullet points */
 .grid-3 li {
- color:#ddd;
+ color:#cbd5e1;
+ margin-bottom:6px;
 }
 
 .grid-3 div:hover {
- transform:translateY(-5px);
+ transform:translateY(-6px);
+ box-shadow:0 15px 40px rgba(0,0,0,0.15);
 }
+
 /* ===== DARK SECTION ===== */
 .dark-section {
  background:linear-gradient(135deg,#2d1b3d,#0f203c);
