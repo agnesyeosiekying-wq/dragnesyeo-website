@@ -207,6 +207,57 @@ nav a {
  box-shadow:0 10px 30px rgba(0,0,0,0.05);
 }
 
+/* ===== JOURNEY TIMELINE ===== */
+.journey {
+ max-width:800px;
+ margin:auto;
+ position:relative;
+}
+
+.journey::before {
+ content:"";
+ position:absolute;
+ left:25px;
+ top:0;
+ width:2px;
+ height:100%;
+ background:#e5e7eb;
+}
+
+.journey-step {
+ display:flex;
+ align-items:flex-start;
+ margin-bottom:40px;
+ position:relative;
+}
+
+.journey-step:hover .circle {
+ background:#d6c4a8;
+ color:#0F203C;
+}
+
+.circle {
+ width:50px;
+ height:50px;
+ border-radius:50%;
+ background:#0F203C;
+ color:#fff;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ font-weight:600;
+ margin-right:20px;
+ flex-shrink:0;
+}
+
+.content h3 {
+ margin-bottom:5px;
+}
+
+.content p {
+ color:#666;
+}
+
 /* ===== FAQ ===== */
 .faq-item {
  border:1px solid #eee;
