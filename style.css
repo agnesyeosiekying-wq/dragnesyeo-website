@@ -102,6 +102,24 @@ nav a {
  margin:20px 0;
 }
 
+.hero-clean {
+    text-align:center;
+    padding:100px 20px;
+    max-width:800px;
+    margin:auto;
+}
+
+.hero-clean h1 {
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.hero-clean p {
+    font-size:18px;
+    color:#666;
+    margin-bottom:30px;
+}
+
 /* ===== BUTTON ===== */
 .btn-primary {
  display:inline-block;
