@@ -202,14 +202,6 @@ nav a {
  font-weight:600;
 }
 
-/* ===== GRID ===== */
-.grid-2 {
- display:grid;
- grid-template-columns:1fr 1fr;
- gap:50px;
- align-items:center;
-}
-
 .grid-3 {
  display:grid;
  grid-template-columns:repeat(3,1fr);
