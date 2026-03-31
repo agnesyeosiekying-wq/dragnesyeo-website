@@ -14,308 +14,16 @@
 <meta property="og:image" content="IMG_3384.webp">
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-<style>
-
-/* COLORS */
-:root {
-    --bg:#FDF7F7;
-    --navy:#0F203C;
-    --text:#555;
-}
-
-/* BASE */
-body {
-    margin:0;
-    font-family:'Inter', sans-serif;
-    background:var(--bg);
-    color:var(--text);
-}
-
-h1 { font-size:48px; }
-h2 { font-size:34px; }
-h3 { font-size:22px; }
-
-p {
-    font-size:16px;
-    line-height:1.7;
-}
-
-/* HEADER */
-header {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 40px;
-    background:#fff;
-}
-nav a {
-    margin-left:25px;
-    color:var(--navy);
-    text-decoration:none;
-}
-    
-/* LOGO */
-.logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    letter-spacing: 1px;
-    color: #fff;
-}
-
-/* HERO */
-
-.hero-lux {
-    position: relative;
-    height: 100vh;
-    background: linear-gradient(135deg, #0F203C, #1e3a5f);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-}
-    
-/* DARK LUXURY OVERLAY */
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        rgba(15, 32, 60, 0.85),
-        rgba(15, 32, 60, 0.6)
-    );
-}
-
-/* CONTENT */
-.hero-content {
-    position: relative;
-    max-width: 800px;
-    padding: 20px;
-}
-
-/* SUBTEXT */
-.subheading {
-    letter-spacing: 3px;
-    font-size: 12px;
-    color: #d6c4a8;
-    margin-bottom: 20px;
-}
-
-/* TITLE */
-.hero-lux h1 {
-    font-size: 60px;
-    margin-bottom: 20px;
-    color:#fff;
-}
-
-/* DESCRIPTION */
-.hero-desc {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #ddd;
-    margin-bottom: 30px;
-}
-
-/* BUTTON */
-.hero-btn {
-    display: inline-block;
-    padding: 14px 32px;
-    border-radius: 30px;
-    background: #d6c4a8;
-    color: #0F203C;
-    text-decoration: none;
-    font-weight: 600;
-}
-    
-/* INFO */
-.info {
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
-    max-width:1100px;
-    margin:80px auto;
-    padding:20px;
-    align-items:center;
-}
-
-.info img {
-    width:100%;
-    border-radius:30px;
-}
-
-/* LIST */
-.feature-list {
-    list-style:none;
-    padding:0;
-}
-
-.feature-list li {
-    margin-bottom:12px;
-    padding-left:25px;
-    position:relative;
-}
-
-.feature-list li::before {
-    content:"✓";
-    position:absolute;
-    left:0;
-    color:#3b82f6;
-}
-
-/* BENEFITS */
-.benefits {
-    text-align:center;
-    max-width:1100px;
-    margin:80px auto;
-}
-
-.benefit-grid {
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
-}
-
-/* STEPS */
-.steps {
-    max-width:900px;
-    margin:80px auto;
-}
-
-.step {
-    display:flex;
-    margin-bottom:30px;
-}
-
-.step-number {
-    width:40px;
-    height:40px;
-    border-radius:50%;
-    background:#0F203C;
-    color:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin-right:20px;
-}
-
-    /* TREATMENT AREAS */
-.treatment-areas {
-    max-width:1100px;
-    margin:80px auto;
-    padding:20px;
-    text-align:center;
-}
-
-.area-grid {
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-    margin-top:40px;
-}
-
-.area-card {
-    background:#fff;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,0.05);
-}
-
-.area-card img {
-    width:100%;
-    height:180px;
-    object-fit:cover;
-}
-
-.area-card p {
-    padding:15px;
-    font-weight:500;
-}
-
-
-/* FAQ */
-.faq {
-    max-width:900px;
-    margin:80px auto;
-    padding:20px;
-}
-
-.faq-item {
-    border:1px solid #eee;
-    border-radius:12px;
-    margin-bottom:15px;
-    overflow:hidden;
-}
-
-.faq-question {
-    padding:18px;
-    cursor:pointer;
-    background:#fff;
-    font-weight:500;
-    position: relative;
-}
-
-.faq-question::after {
-    content: "⌄";
-    position: absolute;
-    right: 20px;
-    transition: 0.3s;
-}
-
-.faq-item.active .faq-question::after {
-    transform: rotate(180deg);
-}
-
-.faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    padding:0 18px;
-    background:#fafafa;
-}
-
-.faq-item.active .faq-answer {
-    padding:18px;
-}
-    
-/* CTA */
-.cta {
-    text-align:center;
-    margin:100px 0;
-}
-
-.btn-primary {
-    background:linear-gradient(135deg,#2d1b3d,#0f203c);
-    color:#fff;
-    padding:14px 30px;
-    border-radius:12px;
-}
-
-.btn-secondary {
-    background:#d6c4a8;
-    color:#0F203C;
-    border-radius:30px;
-}
-.section {
-    max-width:1100px;
-    margin:80px auto;
-    padding:20px;
-}
-/* MOBILE */
-@media(max-width:768px){
-    .info,
-    .benefit-grid,
-    .area-grid {
-        grid-template-columns:1fr;
-    }
-}
-
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <div><strong>Dr Agnes Yeo</strong></div>
+<a href="index.html" class="logo-text-wrapper">
+    <span class="logo-name">Dr Agnes Yeo</span>
+    <span class="logo-subtitle">Aesthetic Plastic & Reconstructive Surgeon</span>
+</a>
     <nav>
         <a href="index.html">Home</a>
         <a href="body-contouring.html">Body Contouring</a>
@@ -336,14 +44,15 @@ nav a {
             Achieve natural-looking, lasting results with advanced liposuction techniques.
         </p>
 
-        <a href="https://wa.me/60189657735" class="hero-btn">
+        <a href="https://wa.me/60189657735" class="btn-primary">
             Book a Consultation
         </a>
     </div>
 </section>
 
 <!-- WHAT IS -->
-<section class="info">
+<section class="section">
+<div class="grid-2">
     <div>
         <h2>What is Liposuction?</h2>
         <p>
@@ -383,7 +92,9 @@ nav a {
     </div>
 </section>
 
-    <section class="treatment-areas">
+Treatment
+        <section class="section-bg">
+  <div class="section">
     <h2>Treatment Areas</h2>
 
     <div class="area-grid">
@@ -422,10 +133,11 @@ nav a {
 </section>
     
 <!-- BENEFITS -->
-<section class="benefits">
+<section class="section-bg">
+<div class="section">
+<div class="grid-3">
     <h2>Benefits of Liposuction</h2>
 
-    <div class="benefit-grid">
         <div>
             <h3>Targeted Fat Reduction</h3>
             <p>Removes stubborn fat from specific areas.</p>
@@ -444,7 +156,7 @@ nav a {
 </section>
 
 <!-- STEPS -->
-<section class="steps">
+<section class="section">
     <h2 style="text-align:center;">Your Liposuction Journey</h2>
 
     <div class="step">
@@ -472,8 +184,9 @@ nav a {
     </div>
 
 </section>
-
-<section class="faq">
+    FAQ
+<section class="section">
+<div style="max-width:800px; margin:auto;">
     <h2 style="text-align:center;">Frequently Asked Questions</h2>
 
     <div class="faq-item">
@@ -524,9 +237,10 @@ nav a {
 <section class="cta">
     <h2>Ready to refine your body contour?</h2>
 
-    <a href="https://wa.me/60189657735" class="btn primary">
+    <a href="https://wa.me/60189657735" class="btn-primary">
         WhatsApp Consultation
     </a>
+
 </section>
 
 <script>
