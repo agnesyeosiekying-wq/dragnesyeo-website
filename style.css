@@ -134,6 +134,29 @@ nav a {
  gap:30px;
 }
 
+/* PROCEDURE CARDS */
+.grid-3 div {
+ color:#fff;
+ transform:translateY(-5px);
+}
+
+.grid-3 h3 {
+ color:#fff;
+ font-size:20px;
+ margin-bottom:12px;
+}
+
+.grid-3 p {
+ color:#ddd;
+}
+
+.grid-3 li {
+ color:#ddd;
+}
+
+.grid-3 div:hover {
+ transform:translateY(-5px);
+}
 /* ===== DARK SECTION ===== */
 .dark-section {
  background:linear-gradient(135deg,#2d1b3d,#0f203c);
@@ -193,15 +216,22 @@ nav a {
 }
 
 .faq-question::after {
- content:"⌄";
  position:absolute;
  right:20px;
  top:50%;
  transform:translateY(-50%);
- font-size:18px;
+ font-size:22px;
  transition:0.3s;
+ content:"›";
+ color:#aaa;
+}
+.faq-question:hover {
+ background:#fafafa;
 }
 
+.faq-item.active .faq-question::after {
+ transform:rotate(90deg);
+}
 /* Rotate when open */
 .faq-item.active .faq-question::after {
  transform:translateY(-50%) rotate(180deg);
