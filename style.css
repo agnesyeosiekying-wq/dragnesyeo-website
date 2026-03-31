@@ -168,6 +168,9 @@ nav a {
 .grid-2 img {
  border-radius:25px;
  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+ width:100%;
+ height:auto;
+ display:block;
 }
 /* BETTER BULLETS */
 .feature-list {
