@@ -1,0 +1,39 @@
+/* DARK SECTION */
+.dark-section {
+    background:linear-gradient(135deg,#2d1b3d,#0f203c);
+    padding:100px 20px;
+    text-align:center;
+    color:#fff;
+}
+
+.dark-section h2 {
+    color:#fff;
+}
+
+.dark-section p {
+    color:#eee;
+    max-width:750px;
+    margin:20px auto 0;
+}
+
+/* BENEFITS */
+.benefits {
+    background:#F6F1EB;
+    padding:80px 20px;
+    text-align:center;
+}
+
+.benefits-grid {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    max-width:1100px;
+    margin:40px auto 0;
+}
+
+.benefit-card {
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
