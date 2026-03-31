@@ -120,6 +120,38 @@ nav a {
  margin:80px auto;
 }
 
+/* WHO SECTION ALIGNMENT */
+.who-content {
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+}
+.who-content h2 {
+ margin-bottom:10px;
+}
+/* BETTER BULLETS */
+.feature-list {
+ list-style:none;
+ padding:0;
+ margin-top:15px;
+}
+
+.feature-list li {
+ position:relative;
+ padding-left:25px;
+ margin-bottom:10px;
+ color:#555;
+}
+
+/* custom tick */
+.feature-list li::before {
+ content:"✓";
+ position:absolute;
+ left:0;
+ color:var(--accent);
+ font-weight:600;
+}
+
 /* ===== GRID ===== */
 .grid-2 {
  display:grid;
