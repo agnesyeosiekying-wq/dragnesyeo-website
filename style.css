@@ -140,7 +140,7 @@ nav a {
     padding:30px;
     border-radius:25px;
     box-shadow:0 10px 30px rgba(0,0,0,0.05);
-    transition:0.3s ease;
+    transition:all 0.35s ease;
     border:1px solid #f3ede8;
 }
 
@@ -153,8 +153,16 @@ nav a {
 }
 
 .card:hover {
-    transform:translateY(-5px);
-    box-shadow:0 20px 45px rgba(0,0,0,0.08);
+    transform:translateY(-6px);
+    box-shadow:0 12px 30px rgba(0,0,0,0.08);
+}
+
+.card i {
+  transition: transform 0.3s ease;
+}
+
+.card:hover i {
+  transform: scale(1.1);
 }
 
 @media(max-width:768px){
