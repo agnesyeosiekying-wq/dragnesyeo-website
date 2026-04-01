@@ -245,12 +245,12 @@ nav a {
 }
 
 /* ===== PREMIUM TREATMENT GRID ===== */
+
 .area-grid {
     display:grid;
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns:repeat(3, minmax(0,1fr));
     gap:30px;
 }
-
 /* CARD */
 .area-card {
     position:relative;
@@ -262,11 +262,12 @@ nav a {
 }
 
 /* IMAGE */
+
 .area-card img {
     width:100%;
-    height:240px;
+    height:220px;
     object-fit:cover;
-    transition:0.6s ease;
+    display:block;
 }
 
 /* OVERLAY (SUBTLE DARK GRADIENT) */
