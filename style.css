@@ -270,8 +270,9 @@ nav a {
 /* FULL WIDTH BACKGROUND WRAPPER */
 .section-bg {
  background:#faf7f5;
- padding:80px 0;
+ padding:60px 0;
 }
+
 .section-center {
  text-align:center;
  max-width:800px;
