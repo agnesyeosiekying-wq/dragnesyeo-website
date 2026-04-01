@@ -592,10 +592,6 @@ nav a {
 }
 
 /* ===== CTA ===== */
-.cta {
- text-align:center;
- margin:100px 0;
-}
 
 .cta h2 {
     margin-bottom:15px;
@@ -608,6 +604,25 @@ nav a {
     max-width:520px;
     margin:0 auto 30px;
     line-height:1.6;
+}
+
+.cta {
+    text-align:center;
+    margin:120px auto;
+    max-width:700px;
+    background:#f8f3ef;
+    padding:80px 30px;
+    border-radius:30px;
+}
+
+.cta .btn-primary {
+    margin-top:20px;
+}
+
+.cta-note {
+    margin-top:12px;
+    font-size:13px;
+    color:#888;
 }
 /* ===== MOBILE ===== */
 @media(max-width:768px){
