@@ -226,6 +226,19 @@ nav a {
     margin:20px auto 30px;
     max-width:600px;
 }
+
+.credentials-sub {
+    margin-top:6px;
+    font-size:13px;
+    color:#999;
+}
+
+.cred-title {
+    font-size:14px;
+    color:#0F203C;
+    margin-top:8px;
+    font-weight:500;
+}
 /* FULL WIDTH BACKGROUND WRAPPER */
 .section-bg {
  background:#faf7f5;
