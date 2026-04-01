@@ -138,6 +138,10 @@ nav a {
  padding:100px 20px;  /* increase spacing */
 }
 
+.section + .section {
+  padding-top:60px;
+}
+
 /* FULL WIDTH BACKGROUND WRAPPER */
 .section-bg {
  background:#faf7f5;
