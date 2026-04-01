@@ -120,6 +120,13 @@ nav a {
     margin-bottom:30px;
 }
 
+.hero-trust {
+    margin-top:20px;
+    font-size:14px;
+    color:#777;
+    line-height:1.6;
+}
+
 /* ===== SERVICES ===== */
 .service-grid {
     display:grid;
