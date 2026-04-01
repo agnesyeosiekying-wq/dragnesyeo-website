@@ -120,6 +120,42 @@ nav a {
     margin-bottom:30px;
 }
 
+/* ===== SERVICES GRID ===== */
+.service-grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    margin-top:40px;
+}
+
+/* CARD */
+.card {
+    background:#fff;
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+    transition:0.3s ease;
+    border:1px solid #f3ede8;
+}
+
+.card img {
+    width:100%;
+    border-radius:15px;
+    margin-bottom:15px;
+    display:block;
+}
+
+.card:hover {
+    transform:translateY(-5px);
+    box-shadow:0 20px 45px rgba(0,0,0,0.08);
+}
+
+@media(max-width:768px){
+    .service-grid {
+        grid-template-columns:1fr;
+    }
+}
+
 /* ===== BUTTON ===== */
 .btn-primary {
  display:inline-block;
