@@ -156,6 +156,44 @@ nav a {
     }
 }
 
+.why-grid {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin-top:50px;
+}
+
+.why-card {
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+    transition:0.3s ease;
+    border:1px solid #f3ede8;
+}
+
+.why-card h3 {
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+.why-card p {
+    color:#666;
+    font-size:14px;
+    line-height:1.6;
+}
+
+.why-card:hover {
+    transform:translateY(-5px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.08);
+}
+
+@media(max-width:768px){
+    .why-grid {
+        grid-template-columns:1fr;
+    }
+}
+
 /* ===== BUTTON ===== */
 .btn-primary {
  display:inline-block;
