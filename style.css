@@ -494,6 +494,18 @@ nav a {
  margin:100px 0;
 }
 
+.cta h2 {
+    margin-bottom:15px;
+}
+
+/* THIS IS THE KEY */
+.cta-subtext {
+    color:#777;
+    font-size:16px;
+    max-width:520px;
+    margin:0 auto 30px;
+    line-height:1.6;
+}
 /* ===== MOBILE ===== */
 @media(max-width:768px){
  .grid-2,
