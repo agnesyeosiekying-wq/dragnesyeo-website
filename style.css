@@ -177,7 +177,10 @@ nav a {
 .section + .section {
   padding-top:60px;
 }
-
+.section-center p {
+    margin:20px auto 30px;
+    max-width:600px;
+}
 /* FULL WIDTH BACKGROUND WRAPPER */
 .section-bg {
  background:#faf7f5;
@@ -249,6 +252,25 @@ nav a {
  display:grid;
  grid-template-columns:repeat(3,1fr);
  gap:30px;
+}
+
+.profile-placeholder {
+    width:100%;
+    height:420px;
+    border-radius:25px;
+    background:linear-gradient(135deg,#f3ece7,#e8dfd8);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#aaa;
+    font-size:14px;
+    letter-spacing:1px;
+}
+
+.about-intro {
+    font-size:17px;
+    color:#444;
+    margin-bottom:15px;
 }
 
 /* PROCEDURE CARD REFINEMENT */
