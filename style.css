@@ -120,14 +120,13 @@ nav a {
     margin-bottom:30px;
 }
 
-/* ===== SERVICES GRID ===== */
+/* ===== SERVICES ===== */
 .service-grid {
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:repeat(2, 1fr);
     gap:40px;
     margin-top:40px;
 }
-
 /* CARD */
 .card {
     background:#fff;
@@ -142,9 +141,9 @@ nav a {
     width:100%;
     border-radius:15px;
     margin-bottom:15px;
+    height:auto;
     display:block;
 }
-
 .card:hover {
     transform:translateY(-5px);
     box-shadow:0 20px 45px rgba(0,0,0,0.08);
