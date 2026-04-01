@@ -381,18 +381,18 @@ nav a {
 .journey-step {
  display:flex;
  align-items:flex-start;
- margin-bottom:40px;
+ margin-bottom:50px;
  position:relative;
 }
-
 .journey-step:hover .circle {
  background:#d6c4a8;
  color:#0F203C;
 }
 
 .circle {
- width:50px;
- height:50px;
+ width:52px;
+ height:52px;
+ font-size:16px;
  border-radius:50%;
  background:#0F203C;
  color:#fff;
@@ -403,7 +403,6 @@ nav a {
  margin-right:20px;
  flex-shrink:0;
 }
-
 .content h3 {
  margin-bottom:5px;
 }
@@ -429,55 +428,64 @@ nav a {
 }
 
 /* ===== FAQ ===== */
+/* ===== PREMIUM FAQ ===== */
+
 .faq-item {
- border:1px solid #eee;
- border-radius:12px;
- margin-bottom:15px;
- background:#fff;
+    border-radius:16px;
+    margin-bottom:18px;
+    background:#fff;
+    box-shadow:0 8px 25px rgba(0,0,0,0.04);
+    overflow:hidden;
+    transition:0.3s ease;
+    border:1px solid #f1ebe7;
+}
+/* HOVER LIFT */
+.faq-item:hover {
+    transform:translateY(-2px);
+    box-shadow:0 12px 35px rgba(0,0,0,0.06);
 }
 
+/* QUESTION */
 .faq-question {
- padding:18px;
- cursor:pointer;
+    padding:22px 24px;
+    cursor:pointer;
+    font-weight:500;
+    color:#333;
+    position:relative;
 }
 
-/* FAQ ARROW */
-.faq-question {
- position:relative;
-}
-
+/* ARROW */
 .faq-question::after {
- position:absolute;
- right:20px;
- top:50%;
- transform:translateY(-50%);
- font-size:22px;
- transition:0.3s;
- content:"›";
- color:#aaa;
-}
-.faq-question:hover {
- background:#fafafa;
+    content:"+";
+    position:absolute;
+    right:25px;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:20px;
+    color:#999;
+    transition:0.3s;
 }
 
+/* ACTIVE STATE */
 .faq-item.active .faq-question::after {
- transform:rotate(90deg);
-}
-/* Rotate when open */
-.faq-item.active .faq-question::after {
- transform:translateY(-50%) rotate(180deg);
+    content:"−";
+    color:#0F203C;
 }
 
+/* ANSWER */
 .faq-answer {
- max-height:0;
- overflow:hidden;
- transition:0.3s;
- padding:0 18px;
+    max-height:0;
+    overflow:hidden;
+    transition:all 0.35s ease;
+    padding:0 24px;
+    color:#666;
+    line-height:1.7;
 }
 
+/* OPEN */
 .faq-item.active .faq-answer {
- max-height:300px;
- padding:18px;
+    max-height:300px;
+    padding:0 24px 20px;
 }
 
 /* ===== CTA ===== */
