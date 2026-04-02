@@ -559,7 +559,7 @@ nav a {
 .journey-step {
  display:flex;
  align-items:flex-start;
- margin-bottom:50px;
+ margin-bottom:60px;
  position:relative;
 }
 .journey-step:hover .circle {
@@ -610,13 +610,15 @@ nav a {
 
 .faq-item {
     border-radius:16px;
-    margin-bottom:18px;
+    margin-bottom:20px;
     background:#fff;
     box-shadow:0 8px 25px rgba(0,0,0,0.04);
     overflow:hidden;
     transition:0.3s ease;
     border:1px solid #f1ebe7;
 }
+
+
 /* HOVER LIFT */
 .faq-item:hover {
     transform:translateY(-2px);
@@ -704,4 +706,16 @@ nav a {
  .grid-3 {
   grid-template-columns:1fr;
  }
+}
+@media(max-width:768px){
+    .sticky-cta {
+        position:fixed;
+        bottom:0;
+        left:0;
+        width:100%;
+        background:#fff;
+        padding:12px;
+        box-shadow:0 -5px 20px rgba(0,0,0,0.08);
+        text-align:center;
+    }
 }
