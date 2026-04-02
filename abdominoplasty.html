@@ -9,185 +9,16 @@
 <meta name="description" content="Tummy tuck (abdominoplasty) in Malaysia by Dr Agnes Yeo. Remove excess skin, tighten muscles, and achieve a flatter abdomen.">
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-<style>
-
-/* KEEP SAME DESIGN SYSTEM */
-:root {
-    --bg:#FDF7F7;
-    --navy:#0F203C;
-    --text:#555;
-}
-h1 { font-size:48px; }
-h2 { font-size:34px; }
-h3 { font-size:22px; }
-
-p {
-    font-size:16px;
-    line-height:1.7;
-}
-
-body {
-    margin:0;
-    font-family:'Inter', sans-serif;
-    background:var(--bg);
-    color:var(--text);
-}
-
-/* HEADER */
-header {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 40px;
-    background:#fff;
-}
-nav a {
-    margin-left:25px;
-    color:var(--navy);
-    text-decoration:none;
-}
-
-/* HERO */
-.hero {
-    height:100vh;
-    background:linear-gradient(135deg,#0F203C,#1e3a5f);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    color:#fff;
-}
-
-.hero-content {
-    max-width:800px;
-}
-
-.hero h1 {
-    font-size:60px;
-}
-
-.hero p {
-    margin:20px 0;
-}
-
-.hero-btn {
-    padding:14px 30px;
-    background:#d6c4a8;
-    color:#0F203C;
-    border-radius:30px;
-    text-decoration:none;
-}
-
-/* SECTIONS */
-.section {
-    max-width:1100px;
-    margin:80px auto;
-    padding:20px;
-}
-
-.grid {
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
-}
-
-img {
-    width:100%;
-    border-radius:25px;
-}
-
-h1, h2, h3 {
-    letter-spacing:0.5px;
-}
-
-section {
-    box-sizing:border-box;
-}
-    
-@media(max-width:768px){
-    .grid,
-    div[style*="grid-template-columns"] {
-        grid-template-columns:1fr !important;
-    }
-}
-/* LIST */
-ul {
-    padding-left:20px;
-}
-
-/* FAQ */
-.faq-item {
-    border:1px solid #eee;
-    border-radius:12px;
-    margin-bottom:15px;
-    overflow:hidden;
-}
-
-.faq-question {
-    padding:18px;
-    cursor:pointer;
-    background:#fff;
-    font-weight:500;
-    position:relative;
-}
-
-.faq-question::after {
-    content:"⌄";
-    position:absolute;
-    right:20px;
-    transition:0.3s;
-}
-
-.faq-item.active .faq-question::after {
-    transform:rotate(180deg);
-}
-
-.faq-answer {
-    max-height:0;
-    overflow:hidden;
-    transition:0.3s;
-    padding:0 18px;
-    background:#fafafa;
-}
-
-.faq-item.active .faq-answer {
-    max-height:200px;
-    padding:18px;
-}
-
-/* CTA */
-.cta {
-    text-align:center;
-    margin:100px 0;
-}
-
-.btn-primary {
-    background:linear-gradient(135deg,#2d1b3d,#0f203c);
-    color:#fff;
-    padding:14px 30px;
-    border-radius:12px;
-}
-
-.btn-secondary {
-    background:#d6c4a8;
-    color:#0F203C;
-    border-radius:30px;
-}
-    
-@media(max-width:768px){
-    .grid {
-        grid-template-columns:1fr;
-    }
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <div><strong>Dr Agnes Yeo</strong></div>
+<a href="index.html" class="logo-text-wrapper">
+    <span class="logo-name">Dr Agnes Yeo</span>
+    <span class="logo-subtitle">Aesthetic Plastic & Reconstructive Surgeon</span>
+</a>
     <nav>
         <a href="index.html">Home</a>
         <a href="body-contouring.html">Body Contouring</a>
@@ -197,165 +28,88 @@ ul {
 <!-- HERO -->
 <section class="hero">
     <div class="hero-content">
-        <h1>Restore a Flatter, Firmer Abdomen</h1>
-        <p>
-            Tummy tuck surgery removes excess skin and tightens abdominal muscles 
-            to create a more defined and confident silhouette.
+        <p style="letter-spacing:2px; font-size:13px; color:#ddd;">
+            BOARD-CERTIFIED PLASTIC SURGERY
         </p>
-        <a href="https://wa.me/60189657735" class="hero-btn">Book Consultation</a>
-    </div>
+    <h1>Restore a Flatter, Firmer Abdomen</h1>
+    <p>
+        Tummy tuck surgery removes excess skin and tightens abdominal muscles 
+        to create a more defined and confident silhouette.
+    </p>
+
+    <a href="https://wa.me/60189657735" class="btn-primary">
+        WhatsApp Consultation
+    </a>
 </section>
 
 <!-- WHAT IS -->
-<section style="max-width:1100px; margin:80px auto; padding:20px; text-align:center;">
 
+    <section class="section-center">
     <h2>What is Abdominoplasty?</h2>
 
-    <p style="max-width:700px; margin:20px auto; line-height:1.7;">
-        Abdominoplasty, commonly known as a tummy tuck, removes excess skin and fat from the abdominal area while tightening weakened muscles. 
-
-        This procedure creates a smoother, firmer abdominal profile and is ideal for patients whose contour has not improved with diet or exercise alone.
+    <p>
+        Abdominoplasty, commonly known as a tummy tuck, removes excess skin 
+        and fat from the abdomen while tightening weakened muscles.
     </p>
 
+    <p>
+        This creates a smoother, firmer abdominal profile, especially for 
+        patients whose contour has not improved with diet or exercise alone.
+    </p>
 </section>
-    
-<section style="background:#F6F1EB; padding:80px 20px;">
-    
-    <div style="max-width:1100px; margin:auto; text-align:center;">
-        <h2 style="margin-bottom:50px;">Key Benefits</h2>
 
-        <div style="
-            display:grid;
-            grid-template-columns:repeat(3,1fr);
-            gap:30px;
-        ">
+    <section class="benefits">
+    <h2>Key Benefits</h2>
 
-            <!-- CARD 1 -->
-            <div style="
-                background:#fff;
-                padding:30px;
-                border-radius:20px;
-                box-shadow:0 10px 30px rgba(0,0,0,0.05);
-            ">
-                <div style="
-                    width:50px;
-                    height:50px;
-                    margin:auto;
-                    margin-bottom:20px;
-                    border-radius:12px;
-                    background:#0F203C;
-                    color:#fff;
-                    display:flex;
-                    align-items:center;
-                    justify-content:center;
-                    font-size:20px;
-                ">✨</div>
+    <div class="benefits-grid">
 
-                <h3>Flatter Contour</h3>
-                <p>
-                    Achieve a toned, sculpted midsection that enhances your natural body proportions.
-                </p>
-            </div>
-
-            <!-- CARD 2 -->
-            <div style="
-                background:#fff;
-                padding:30px;
-                border-radius:20px;
-                box-shadow:0 10px 30px rgba(0,0,0,0.05);
-            ">
-                <div style="
-                    width:50px;
-                    height:50px;
-                    margin:auto;
-                    margin-bottom:20px;
-                    border-radius:12px;
-                    background:#0F203C;
-                    color:#fff;
-                    display:flex;
-                    align-items:center;
-                    justify-content:center;
-                    font-size:20px;
-                ">🛡️</div>
-
-                <h3>Muscle Repair</h3>
-                <p>
-                    Tighten separated abdominal muscles often caused by pregnancy or significant weight changes.
-                </p>
-            </div>
-
-            <!-- CARD 3 -->
-            <div style="
-                background:#fff;
-                padding:30px;
-                border-radius:20px;
-                box-shadow:0 10px 30px rgba(0,0,0,0.05);
-            ">
-                <div style="
-                    width:50px;
-                    height:50px;
-                    margin:auto;
-                    margin-bottom:20px;
-                    border-radius:12px;
-                    background:#0F203C;
-                    color:#fff;
-                    display:flex;
-                    align-items:center;
-                    justify-content:center;
-                    font-size:20px;
-                ">❤️</div>
-
-                <h3>Renewed Confidence</h3>
-                <p>
-                    Feel comfortable and confident in clothing, swimwear, and everyday life again.
-                </p>
-            </div>
-
+        <div class="benefit-card">
+            <h3>Flatter Contour</h3>
+            <p>Achieve a toned, sculpted midsection that enhances your natural proportions.</p>
         </div>
-    </div>
 
+        <div class="benefit-card">
+            <h3>Muscle Repair</h3>
+            <p>Tighten separated abdominal muscles often caused by pregnancy or weight changes.</p>
+        </div>
+
+        <div class="benefit-card">
+            <h3>Renewed Confidence</h3>
+            <p>Feel comfortable and confident in clothing and everyday life again.</p>
+        </div>
+
+    </div>
 </section>
 
 <!-- WHO -->
-<section class="section grid">
-    <img src="IMG_3443.webp">
+<section class="section grid-2">
+
+    <img src="IMG_3443.webp" alt="Tummy tuck Malaysia">
+
     <div>
         <h2>Who is it for?</h2>
-        <ul>
+
+        <ul class="feature-list">
             <li>Loose abdominal skin</li>
             <li>Post-pregnancy changes</li>
             <li>Separated abdominal muscles</li>
             <li>Stable body weight</li>
         </ul>
     </div>
+
 </section>
-
+    
 <!-- TYPES -->
-<section style="background:#F6F1EB; padding:100px 20px;">
 
-    <div style="max-width:1100px; margin:auto; text-align:center;">
-        <h2 style="margin-bottom:60px;">Procedure Options</h2>
+<section class="section-bg">
+    <div class="section">
+        <h2 style="text-align:center;">Procedure Options</h2>
 
-        <div style="
-            display:grid;
-            grid-template-columns:repeat(3,1fr);
-            gap:30px;
-        ">
+        <div class="grid-3">
 
-            <!-- MINI -->
-            <div style="
-                background:#0F203C;
-                color:#fff;
-                padding:40px 30px;
-                border-radius:25px;
-                text-align:left;
-            ">
+            <div>
                 <h3>Mini Tummy Tuck</h3>
-                <p>
-                    Targets the lower abdomen with a smaller incision. 
-                    Suitable for mild skin laxity.
-                </p>
-
+                <p>Targets the lower abdomen with a smaller incision.</p>
                 <ul>
                     <li>Shorter recovery</li>
                     <li>Smaller incision</li>
@@ -363,20 +117,9 @@ ul {
                 </ul>
             </div>
 
-            <!-- FULL -->
-            <div style="
-                background:#0F203C;
-                color:#fff;
-                padding:40px 30px;
-                border-radius:25px;
-                text-align:left;
-            ">
+            <div>
                 <h3>Full Tummy Tuck</h3>
-                <p>
-                    Addresses the entire abdomen with muscle tightening 
-                    and skin removal.
-                </p>
-
+                <p>Addresses the entire abdomen with muscle tightening.</p>
                 <ul>
                     <li>Full correction</li>
                     <li>Muscle repair</li>
@@ -384,20 +127,9 @@ ul {
                 </ul>
             </div>
 
-            <!-- EXTENDED -->
-            <div style="
-                background:#0F203C;
-                color:#fff;
-                padding:40px 30px;
-                border-radius:25px;
-                text-align:left;
-            ">
+            <div>
                 <h3>Extended Tummy Tuck</h3>
-                <p>
-                    Includes flanks and sides for more comprehensive 
-                    body contouring.
-                </p>
-
+                <p>Includes flanks for more comprehensive contouring.</p>
                 <ul>
                     <li>360° contouring</li>
                     <li>Flank tightening</li>
@@ -407,168 +139,96 @@ ul {
 
         </div>
     </div>
-
 </section>
 
-<section style="background:#F6F1EB; padding:100px 20px;">
+<section class="section">
 
-    <div style="max-width:900px; margin:auto;">
-        
-        <h2 style="text-align:center; margin-bottom:60px;">Your Journey</h2>
+    <h2 style="text-align:center;">Your Journey</h2>
 
-        <!-- STEP 1 -->
-        <div style="display:flex; margin-bottom:40px;">
-            <div style="
-                width:50px;
-                height:50px;
-                border-radius:50%;
-                background:#0F203C;
-                color:#fff;
-                display:flex;
-                align-items:center;
-                justify-content:center;
-                margin-right:20px;
-                flex-shrink:0;
-            ">1</div>
+    <div class="journey">
 
-            <div>
+        <div class="journey-step">
+            <div class="circle">1</div>
+            <div class="content">
                 <h3>Consultation</h3>
-                <p>
-                    Meet with your surgeon to discuss goals, evaluate candidacy, 
-                    and create a personalized surgical plan.
-                </p>
+                <p>Discuss goals and create a personalised surgical plan.</p>
             </div>
         </div>
 
-        <!-- STEP 2 -->
-        <div style="display:flex; margin-bottom:40px;">
-            <div style="
-                width:50px;
-                height:50px;
-                border-radius:50%;
-                background:#0F203C;
-                color:#fff;
-                display:flex;
-                align-items:center;
-                justify-content:center;
-                margin-right:20px;
-                flex-shrink:0;
-            ">2</div>
-
-            <div>
+        <div class="journey-step">
+            <div class="circle">2</div>
+            <div class="content">
                 <h3>Preparation</h3>
-                <p>
-                    Receive pre-operative instructions including dietary guidelines 
-                    and medication adjustments.
-                </p>
+                <p>Receive pre-operative instructions and guidance.</p>
             </div>
         </div>
 
-        <!-- STEP 3 -->
-        <div style="display:flex; margin-bottom:40px;">
-            <div style="
-                width:50px;
-                height:50px;
-                border-radius:50%;
-                background:#0F203C;
-                color:#fff;
-                display:flex;
-                align-items:center;
-                justify-content:center;
-                margin-right:20px;
-                flex-shrink:0;
-            ">3</div>
-
-            <div>
+        <div class="journey-step">
+            <div class="circle">3</div>
+            <div class="content">
                 <h3>Procedure</h3>
-                <p>
-                    The surgery typically takes 2–4 hours under general anesthesia 
-                    in an accredited surgical facility.
-                </p>
+                <p> The surgery typically takes 2–4 hours under general anesthesia 
+                    in an accredited surgical facility.</p>
             </div>
         </div>
 
-        <!-- STEP 4 -->
-        <div style="display:flex;">
-            <div style="
-                width:50px;
-                height:50px;
-                border-radius:50%;
-                background:#0F203C;
-                color:#fff;
-                display:flex;
-                align-items:center;
-                justify-content:center;
-                margin-right:20px;
-                flex-shrink:0;
-            ">4</div>
-
-            <div>
+        <div class="journey-step">
+            <div class="circle">4</div>
+            <div class="content">
                 <h3>Recovery</h3>
-                <p>
-                    Most patients return to light activities within 2 weeks, 
-                    with full results visible in 3–6 months.
-                </p>
+                <p>Most patients return to light activities within 2 weeks, 
+                    with full results visible in 3–6 months.</p>
             </div>
         </div>
 
     </div>
 
-</section>  <!-- END Procedure Options -->
+</section>
 
 <!-- FAQ -->
-<section style="background:#F6F1EB; padding:100px 20px;">
+<section class="section">
 
-    <div style="max-width:900px; margin:auto;">
-        
-        <h2 style="text-align:center; margin-bottom:50px;">Common Questions</h2>
+    <h2 style="text-align:center;">Common Questions</h2>
 
-        <!-- ITEM -->
-        <div class="faq-item">
-            <div class="faq-question">Am I a good candidate?</div>
-            <div class="faq-answer">
-                Ideal candidates have excess skin, weakened abdominal muscles, and are close to their ideal body weight with stable health.
-            </div>
-        </div>
+    <div class="faq-item">
+        <div class="faq-question">Am I a good candidate?</div>
+        <div class="faq-answer">Ideal candidates have excess skin and stable body weight.</div>
+    </div>
 
-        <div class="faq-item">
-            <div class="faq-question">How long is recovery?</div>
-            <div class="faq-answer">
-                Most patients return to light activities within 2 weeks, with full recovery over several weeks and final results in a few months.
-            </div>
-        </div>
+    <div class="faq-item">
+        <div class="faq-question">How long is recovery?</div>
+        <div class="faq-answer">Most return to light activities within 2 weeks.</div>
+    </div>
 
-        <div class="faq-item">
-            <div class="faq-question">Will there be visible scarring?</div>
-            <div class="faq-answer">
-                Scars are placed low on the abdomen and fade over time. Proper care helps achieve optimal healing.
-            </div>
-        </div>
+    <div class="faq-item">
+        <div class="faq-question">Will there be visible scarring?</div>
+        <div class="faq-answer">Scars are placed low and fade over time.</div>
+    </div>
 
-        <div class="faq-item">
-            <div class="faq-question">Can it be combined with other procedures?</div>
-            <div class="faq-answer">
-                Yes, tummy tuck is often combined with liposuction or breast procedures depending on your goals.
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question">How long do results last?</div>
-            <div class="faq-answer">
-                Results are long-lasting if you maintain a stable weight and healthy lifestyle.
-            </div>
-        </div>
-
+    <div class="faq-item">
+        <div class="faq-question">Can it be combined?</div>
+        <div class="faq-answer">Yes, often combined with liposuction or breast procedures.</div>
     </div>
 
 </section>
 
 <!-- CTA -->
 <section class="cta">
-    <h2>Ready to achieve a flatter abdomen?</h2>
-    <a href="https://wa.me/60189657735" class="hero-btn">WhatsApp Consultation</a>
-</section>
 
+    <h2>Ready to achieve a flatter abdomen?</h2>
+
+    <p class="cta-subtext">
+        Book a personalised consultation to explore the best treatment option for you.
+    </p>
+
+    <a href="https://wa.me/60189657735" class="btn-primary">
+        WhatsApp Consultation
+    </a>
+      <p class="cta-subtext">
+Receive a personalised consultation and treatment plan tailored to your goals.
+</p>
+
+</section>
 <script>
 document.querySelectorAll(".faq-question").forEach(q => {
     q.addEventListener("click", () => {
