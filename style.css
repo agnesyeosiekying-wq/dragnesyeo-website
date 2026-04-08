@@ -18,6 +18,13 @@ body {
  color:var(--text);
 }
 
+p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #6b7280;
+}
+
 h1,h2,h3 {
  font-family:'Playfair Display', serif;
  color:var(--navy);
@@ -25,14 +32,13 @@ h1,h2,h3 {
 }
 
 h2 {
- margin-bottom:20px;
   font-family: 'Playfair Display', serif;
-  font-size: 42px;
+  font-size: 38px;
   font-weight: 600;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
   color: #1f2a37;
+  margin-bottom: 20px;
 }
-
 a {
  text-decoration:none;
  color:inherit;
@@ -100,14 +106,20 @@ nav a {
 }
 
 .hero h1 {
- font-size:56px;
- color:#fff;
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
-
 .hero p {
- font-size:18px;
- color:#fff;
- margin:20px 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #e5e7eb;
+  max-width: 520px;
 }
 
 .hero-clean {
@@ -279,7 +291,13 @@ nav a {
     margin:20px auto 30px;
     max-width:600px;
 }
-
+.section-center h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: #1f2a37;
+  margin-bottom: 10px;
+}
 .section-note {
     text-align:center;
     margin-top:40px;
@@ -619,19 +637,19 @@ nav a {
 }
 
 .btn-primary {
- display:inline-block;
- padding:14px 32px;
- border-radius:999px;   /* pill shape */
- background:var(--accent);
- color:#0F203C;
- font-weight:500;
- margin-top:25px;
- transition:0.3s;
+  background-color: #cbb89d;
+  color: #1f2a37;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 14px 28px;
+  border-radius: 30px;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
- transform:translateY(-2px);
- box-shadow:0 8px 20px rgba(0,0,0,0.1);
+  background-color: #b8a88f;
 }
 
 /* ===== FAQ ===== */
