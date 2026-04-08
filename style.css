@@ -319,6 +319,12 @@ nav a {
     font-size:14px;
     height:420px;
 }
+
+.profile-image img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
 /* FULL WIDTH BACKGROUND WRAPPER */
 
 .section-bg {
