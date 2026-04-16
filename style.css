@@ -90,6 +90,45 @@ nav a {
  color:#aaa;
 }
 
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.menu-toggle {
+  font-size: 22px;
+  background: none;
+  border: none;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  padding: 20px;
+  background: #fff;
+}
+
+.mobile-menu a {
+  padding: 12px 0;
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.mobile-menu .btn-primary {
+  margin-top: 16px;
+  text-align: center;
+}
+
 /* ===== HERO ===== */
 .hero {
  height:70vh;
