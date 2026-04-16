@@ -90,43 +90,75 @@ nav a {
  color:#aaa;
 }
 
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  padding: 24px;
+  background: #fff;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  z-index: 999;
+}
+
+.mobile-menu a {
+  padding: 14px 0;
+  font-size: 16px;
+  color: #2b2b2b;
+  text-decoration: none;
+}
+
+.mobile-menu a:not(.btn-primary) {
+  border-bottom: 1px solid #eee;
+}
+
+.mobile-menu .btn-primary {
+  margin-top: 20px;
+}
+
+
 .mobile-header {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 18px;
+  padding: 16px 20px;
   background: #fff;
   border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
   font-family: 'Playfair Display', serif;
   font-size: 18px;
   font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .menu-toggle {
   font-size: 22px;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
+.mobile-header,
 .mobile-menu {
   display: none;
-  flex-direction: column;
-  padding: 20px;
-  background: #fff;
 }
 
-.mobile-menu a {
-  padding: 12px 0;
-  font-size: 16px;
-  border-bottom: 1px solid #eee;
-}
+@media (max-width: 768px) {
 
-.mobile-menu .btn-primary {
-  margin-top: 16px;
-  text-align: center;
+  header:not(.mobile-header) {
+    display: none;
+  }
+
+  .mobile-header {
+    display: flex;
+  }
 }
 
 /* ===== HERO ===== */
