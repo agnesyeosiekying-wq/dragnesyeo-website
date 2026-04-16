@@ -150,14 +150,17 @@ nav a {
   display: none;
 }
 
+/* Mobile view ONLY */
 @media (max-width: 768px) {
 
+  /* Hide the ORIGINAL header */
   header:not(.mobile-header) {
-    display: none;
+    display: none !important;
   }
 
+  /* Show mobile header */
   .mobile-header {
-    display: flex;
+    display: flex !important;
   }
 }
 
@@ -238,6 +241,24 @@ nav a {
     background:#d6c4a8;
     margin:0 auto 25px;
 }
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+}
+
 /* ===== SERVICES ===== */
 .service-grid {
     display:grid;
