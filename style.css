@@ -377,12 +377,15 @@ header:not(.mobile-header) {
 
 .concern-card {
     display: block;
-    padding: 24px;
-    border-radius: 12px;
+    padding: 28px;
+    border-radius: 16px;
     background: #ffffff;
     text-decoration: none;
     color: #0F203C;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+
+    border: 1px solid #eee; /* 👈 NEW */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06); /* 👈 STRONGER */
+
     transition: all 0.3s ease;
 }
 
@@ -403,8 +406,17 @@ header:not(.mobile-header) {
 }
 
 .concern-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transform: translateY(-6px);
+    box-shadow: 0 16px 35px rgba(0,0,0,0.10);
+}
+
+.concern-card::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #d6c4a8;
+    margin-bottom: 14px;
 }
 
 /* ===== BUTTON ===== */
