@@ -17,24 +17,6 @@
 
 </head>
 
-    <script>
-document.querySelectorAll(".faq-question").forEach(question => {
-  question.addEventListener("click", () => {
-    const item = question.parentElement;
-
-    // close other open FAQs (optional)
-    document.querySelectorAll(".faq-item").forEach(faq => {
-      if (faq !== item) {
-        faq.classList.remove("active");
-      }
-    });
-
-    // toggle current one
-    item.classList.toggle("active");
-  });
-});
-</script>
-
 <body>
 
 <!-- HEADER -->
@@ -186,6 +168,22 @@ Get Personalised Advice on WhatsApp
 <footer>
 © 2026 Dr Agnes Yeo · All rights reserved
 </footer>
+<script>
+document.querySelectorAll(".faq-question").forEach(question => {
+  question.addEventListener("click", () => {
+    const item = question.parentElement;
 
+    // close other open FAQs (optional)
+    document.querySelectorAll(".faq-item").forEach(faq => {
+      if (faq !== item) {
+        faq.classList.remove("active");
+      }
+    });
+
+    // toggle current one
+    item.classList.toggle("active");
+  });
+});
+</script>
 </body>
 </html>
