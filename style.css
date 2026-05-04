@@ -717,13 +717,20 @@ header:not(.mobile-header) {
 }
 
 /* Make link visually obvious but elegant */
+
+.service-link {
+    margin-bottom: 18px;
+}
+
 .service-link a {
     display: inline-block;
-    font-weight: 500;
+    font-weight: 600;
     color: #ffffff;
     position: relative;
     padding-bottom: 2px;
     transition: all 0.3s ease;
+     display: block;
+    margin-bottom: 4px;
 }
 
 /* underline animation */
