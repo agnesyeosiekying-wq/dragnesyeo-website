@@ -17,6 +17,24 @@
 
 </head>
 
+    <script>
+document.querySelectorAll(".faq-question").forEach(question => {
+  question.addEventListener("click", () => {
+    const item = question.parentElement;
+
+    // close other open FAQs (optional)
+    document.querySelectorAll(".faq-item").forEach(faq => {
+      if (faq !== item) {
+        faq.classList.remove("active");
+      }
+    });
+
+    // toggle current one
+    item.classList.toggle("active");
+  });
+});
+</script>
+
 <body>
 
 <!-- HEADER -->
