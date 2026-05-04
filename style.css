@@ -419,6 +419,20 @@ header:not(.mobile-header) {
     margin-bottom: 14px;
 }
 
+.related-box {
+    margin-top: 60px;
+    padding: 40px 30px;
+    border-radius: 18px;
+    background: #f8f3ef;
+    text-align: center;
+}
+
+.related-box h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+/* cards inside */
 .related-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
