@@ -881,52 +881,101 @@ header:not(.mobile-header) {
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 24px;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-top: 40px;
 }
 
-.social-card {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 14px 24px;
-  border-radius: 12px;
-  background: white;
+.social-box {
+  width: 220px;
+  padding: 35px 20px;
+  border-radius: 24px;
+  text-align: center;
   text-decoration: none;
-  color: #222;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  transition: 0.3s ease;
-  font-weight: 600;
-}
-
-.social-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.10);
-}
-
-.social-card i {
-  font-size: 20px;
-}
-
-.featured-videos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 25px;
-}
-
-.video-card {
-  border-radius: 18px;
+  background: #fff;
+  transition: all 0.35s ease;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  position: relative;
   overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  background: white;
 }
 
-.video-card iframe {
-  width: 100%;
-  height: 520px;
+.social-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 38px rgba(0,0,0,0.12);
 }
 
+/* ICON */
+.social-box i {
+  font-size: 64px;
+  margin-bottom: 18px;
+  transition: 0.3s ease;
+}
+
+/* TITLE */
+.social-box h3 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+/* USERNAME */
+.social-box p {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+/* INSTAGRAM */
+.social-box.instagram {
+  border: 2px solid #f472b6;
+}
+
+.social-box.instagram i {
+  background: linear-gradient(
+    45deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* THREADS */
+.social-box.threads {
+  border: 2px solid #222;
+}
+
+.social-box.threads i {
+  color: #111;
+}
+
+/* FACEBOOK */
+.social-box.facebook {
+  border: 2px solid #3b82f6;
+}
+
+.social-box.facebook i {
+  color: #1877f2;
+}
+
+/* LINKEDIN */
+.social-box.linkedin {
+  border: 2px solid #0a66c2;
+}
+
+.social-box.linkedin i {
+  color: #0a66c2;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .social-box {
+    width: 100%;
+    max-width: 320px;
+  }
+}
 /* ===== DARK SECTION ===== */
 .dark-section {
  background:linear-gradient(135deg,#2d1b3d,#0f203c);
