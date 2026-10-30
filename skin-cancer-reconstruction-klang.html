@@ -62,30 +62,44 @@
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-WKP3XGST');</script>
+  <link rel="stylesheet" href="site-navigation.css">
+  <script src="site-navigation.js" defer></script>
 </head>
 <body class="reconstruction-page">
+<header id="site-header">
+  <a class="site-brand" href="index.html"><span>Dr Agnes Yeo</span><small>Aesthetic Plastic &amp; Reconstructive Surgeon</small></a>
+  <button id="site-menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" hidden>Menu</button>
+  <nav id="site-navigation" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <details class="site-dropdown"><summary>Breast surgery</summary><div class="site-dropdown-links">
+      <a href="breast-augmentation-klang.html">Breast augmentation</a>
+      <a href="breast-asymmetry-klang.html">Breast asymmetry</a>
+    </div></details>
+    <details class="site-dropdown"><summary>Body contouring</summary><div class="site-dropdown-links">
+      <a href="body-contouring-klang.html">Overview</a>
+      <a href="liposuction-klang.html">Liposuction</a>
+      <a href="tummy-tuck-klang.html">Tummy tuck</a>
+      <a href="arm-lift-klang.html">Arm lift</a>
+      <a href="thigh-lift-klang.html">Thigh lift</a>
+    </div></details>
+    <details class="site-dropdown"><summary>Other services</summary><div class="site-dropdown-links">
+      <a href="reconstructive-services-klang.html">Overview</a>
+      <a href="skin-cancer-reconstruction-klang.html" aria-current="page">Skin cancer reconstruction</a>
+      <a href="lymphedema-treatment-klang.html">Upper- &amp; lower-limb lymphedema</a>
+      <a href="burn-surgery-scar-treatment-klang.html">Burn surgery &amp; scar treatment</a>
+      <a href="mole-skin-cancer-klang.html">Moles &amp; skin cancer</a>
+      <a href="lump-under-skin-klang.html">Lumps under the skin</a>
+      <a href="keloid-scar-treatment-klang.html">Keloid &amp; scar treatment</a>
+    </div></details>
+    <a href="index.html#about">About</a>
+    <a class="site-contact" href="https://wa.me/60189657735" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+  </nav>
+</header>
   <a class="skip-link" href="#main">Skip to content</a>
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WKP3XGST" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <header>
-    <a href="index.html" class="logo-text-wrapper">
-      <span class="logo-name">Dr Agnes Yeo</span>
-      <span class="logo-subtitle">Consultant Plastic &amp; Reconstructive Surgeon</span>
-    </a>
-    <nav aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="reconstructive-services-klang.html">Other Services</a>
-      <a href="#consultation" class="btn-primary">Enquire About Assessment</a>
-    </nav>
-  </header>
-  <header class="mobile-header">
-    <a class="logo" href="index.html">Dr Agnes Yeo</a>
-    <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu" hidden>☰</button>
-  </header>
-  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
-    <a href="index.html">Home</a>
-    <a href="reconstructive-services-klang.html">Other Services</a>
-    <a href="#consultation">Enquire About Assessment</a>
-  </nav>
+  
+  
+  
   <noscript><style>@media(max-width:768px){.reconstruction-page .mobile-menu{display:flex;}}</style></noscript>
   <main id="main">
     <section class="hero"><div class="hero-content">
@@ -168,29 +182,6 @@
     </section>
   </main>
   <footer>© 2026 Dr Agnes Yeo · All rights reserved</footer>
-  <script>
-    const menuButton = document.querySelector('.menu-toggle');
-    const mobileMenu = document.getElementById('mobileMenu');
-    menuButton.hidden = false;
-    function closeMenu() {
-      mobileMenu.classList.remove('active');
-      menuButton.setAttribute('aria-expanded', 'false');
-      menuButton.setAttribute('aria-label', 'Open navigation menu');
-    }
-    menuButton.addEventListener('click', function () {
-      const open = mobileMenu.classList.toggle('active');
-      menuButton.setAttribute('aria-expanded', String(open));
-      menuButton.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
-    });
-    mobileMenu.addEventListener('click', function (event) {
-      if (event.target.closest('a')) closeMenu();
-    });
-    document.addEventListener('keydown', function (event) {
-      if (event.key === 'Escape' && mobileMenu.classList.contains('active')) {
-        closeMenu();
-        menuButton.focus();
-      }
-    });
-  </script>
+  
 </body>
 </html>

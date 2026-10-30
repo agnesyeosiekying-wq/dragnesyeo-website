@@ -24,35 +24,43 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 
+  <link rel="stylesheet" href="site-navigation.css">
+  <script src="site-navigation.js" defer></script>
 </head>
 
 <body>
+<header id="site-header">
+  <a class="site-brand" href="index.html"><span>Dr Agnes Yeo</span><small>Aesthetic Plastic &amp; Reconstructive Surgeon</small></a>
+  <button id="site-menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" hidden>Menu</button>
+  <nav id="site-navigation" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <details class="site-dropdown"><summary>Breast surgery</summary><div class="site-dropdown-links">
+      <a href="breast-augmentation-klang.html">Breast augmentation</a>
+      <a href="breast-asymmetry-klang.html">Breast asymmetry</a>
+    </div></details>
+    <details class="site-dropdown"><summary>Body contouring</summary><div class="site-dropdown-links">
+      <a href="body-contouring-klang.html">Overview</a>
+      <a href="liposuction-klang.html">Liposuction</a>
+      <a href="tummy-tuck-klang.html">Tummy tuck</a>
+      <a href="arm-lift-klang.html">Arm lift</a>
+      <a href="thigh-lift-klang.html">Thigh lift</a>
+    </div></details>
+    <details class="site-dropdown"><summary>Other services</summary><div class="site-dropdown-links">
+      <a href="reconstructive-services-klang.html">Overview</a>
+      <a href="skin-cancer-reconstruction-klang.html">Skin cancer reconstruction</a>
+      <a href="lymphedema-treatment-klang.html">Upper- &amp; lower-limb lymphedema</a>
+      <a href="burn-surgery-scar-treatment-klang.html">Burn surgery &amp; scar treatment</a>
+      <a href="mole-skin-cancer-klang.html">Moles &amp; skin cancer</a>
+      <a href="lump-under-skin-klang.html" aria-current="page">Lumps under the skin</a>
+      <a href="keloid-scar-treatment-klang.html">Keloid &amp; scar treatment</a>
+    </div></details>
+    <a href="index.html#about">About</a>
+    <a class="site-contact" href="https://wa.me/60189657735" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+  </nav>
+</header>
 
 <!-- HEADER -->
-<header>
-    <a href="index.html" class="logo-text-wrapper">
-        <span class="logo-name">Dr Agnes Yeo</span>
-        <span class="logo-subtitle">Aesthetic Plastic & Reconstructive Surgeon</span>
-    </a>
-    <nav>
-    <a href="index.html">Home</a>
-    <a href="breast-augmentation-klang.html">Breast Augmentation</a>
-    <a href="body-contouring-klang.html">Body Contouring</a>
-    <a href="reconstructive-services-klang.html">Other Services</a>
 
-        <nav class="mobile-menu" id="mobileMenu">
-  <a href="index.html">Home</a>
-  <a href="breast-augmentation-klang.html">Breast Augmentation</a>
-  <a href="body-contouring-klang.html">Body Contouring</a>
-  <a href="reconstructive-services-klang.html">Other Services</a>
-
-        <a href="https://wa.me/60189657735?text=Hi%20Dr%20Agnes,%20I%20would%20like%20to%20enquire%20about%20lump%20under%20skin" 
-        target="_blank"
-        class="btn-primary whatsapp-btn">
-        Contact
-        </a>
-    </nav>
-</header>
 
 <!-- HERO -->
 <section class="hero">
