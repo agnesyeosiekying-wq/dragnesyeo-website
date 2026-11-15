@@ -1,65 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-<url>
-<loc>https://www.dragnesyeo.com/</loc>
-</url>
-
-<url>
-  <loc>https://www.dragnesyeo.com/breast-augmentation-klang.html</loc>
-</url>
-
-<url>
-<loc>https://www.dragnesyeo.com/body-contouring-klang.html</loc>
-</url>
-
-<url>
-<loc>https://www.dragnesyeo.com/tummy-tuck-klang.html</loc>
-</url>
-
-<url>
-<loc>https://www.dragnesyeo.com/liposuction-klang.html</loc>
-</url>
-
-<url>
-<loc>https://www.dragnesyeo.com/arm-lift-klang.html</loc>
-</url>
-
-<url>
-<loc>https://www.dragnesyeo.com/thigh-lift-klang.html</loc>
-</url>
-
-<url>
-<loc>https://www.dragnesyeo.com/reconstructive-services-klang.html</loc>
-</url>
-
-<url>
-<loc>https://www.dragnesyeo.com/lump-under-skin-klang.html</loc>
-</url>
-
-<url>
-<loc>https://www.dragnesyeo.com/mole-skin-cancer-klang.html</loc>
-</url>
-
-<url>
-<loc>https://www.dragnesyeo.com/keloid-scar-treatment-klang.html</loc>
-</url>
-
-<url>
-<loc>https://www.dragnesyeo.com/burn-surgery-scar-treatment-klang.html</loc>
-</url> 
-
-<url>
-<loc>https://www.dragnesyeo.com/breast-asymmetry-klang.html</loc>
-</url> 
-  
-<url>
-<loc>https://www.dragnesyeo.com/lymphedema-treatment-klang.html</loc>
-</url>
-
-<url>
-<loc>https://www.dragnesyeo.com/skin-cancer-reconstruction-klang.html</loc>
-</url>
-
+  <url><loc>https://www.dragnesyeo.com/arm-lift-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/zh/arm-lift-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/body-contouring-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/zh/body-contouring-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/breast-asymmetry-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/zh/breast-asymmetry-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/breast-augmentation-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/zh/breast-augmentation-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/burn-surgery-scar-treatment-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/zh/burn-surgery-scar-treatment-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/</loc></url>
+  <url><loc>https://www.dragnesyeo.com/zh/</loc></url>
+  <url><loc>https://www.dragnesyeo.com/keloid-scar-treatment-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/zh/keloid-scar-treatment-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/liposuction-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/zh/liposuction-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/lump-under-skin-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/zh/lump-under-skin-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/lymphedema-treatment-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/zh/lymphedema-treatment-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/mole-skin-cancer-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/zh/mole-skin-cancer-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/reconstructive-services-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/zh/reconstructive-services-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/skin-cancer-reconstruction-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/zh/skin-cancer-reconstruction-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/thigh-lift-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/zh/thigh-lift-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/tummy-tuck-klang.html</loc></url>
+  <url><loc>https://www.dragnesyeo.com/zh/tummy-tuck-klang.html</loc></url>
 </urlset>

@@ -1,0 +1,16 @@
+/* Shared language controls stay visible outside the collapsed mobile menu. */
+#site-header .site-language{display:flex;align-items:center;gap:3px;flex-shrink:0;padding:3px;border:1px solid #d6c4a8;border-radius:30px;background:#fff;margin-left:auto}
+#site-header .site-language a{display:block;padding:8px 12px;border-radius:24px;font-size:13px;line-height:1.4;white-space:nowrap}
+#site-header .site-language a[aria-current="true"]{background:#0f203c;color:#fff;font-weight:600}
+#site-header .site-language a:hover{background:#f8f3ef;color:#0f203c}
+#site-header .site-language a:focus-visible{outline:3px solid #725733;outline-offset:3px}
+html[lang="zh-Hans"] body{font-family:Inter,"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif}
+html[lang="zh-Hans"] h1,html[lang="zh-Hans"] h2,html[lang="zh-Hans"] h3,html[lang="zh-Hans"] h4{font-family:"Songti SC","Noto Serif CJK SC","Microsoft YaHei",serif;line-height:1.5;letter-spacing:normal;overflow-wrap:anywhere}
+html[lang="zh-Hans"] p,html[lang="zh-Hans"] li{line-height:1.9}
+html[lang="zh-Hans"] .btn-primary{max-width:100%;box-sizing:border-box;white-space:normal;line-height:1.6}
+html[lang="zh-Hans"] .hero{height:auto;min-height:55vh}
+.faq-item.active .faq-answer{max-height:none!important}
+.faq-question[role="button"]:focus-visible{outline:3px solid #725733;outline-offset:3px}
+@media(min-width:1251px){#site-header .site-language{order:3}#site-navigation{gap:16px}}
+@media(max-width:1250px){#site-header{gap:12px}#site-navigation{order:5}}
+@media(max-width:600px){#site-header .site-brand{flex-basis:100%}#site-header .site-language{margin-left:0;margin-right:auto}#site-header .site-brand small{font-size:9px}html[lang="zh-Hans"] .hero h1{font-size:30px}}
